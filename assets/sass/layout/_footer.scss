@@ -1,46 +1,119 @@
 .footer-section{
 	box-sizing: border-box;
 	background-color: $lightBrown;
+	color: $white;
+	font-family: Raleway-Thin;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	text-align: center;
 	
-		.col-1 {width: 8.33%;}
-		.col-2 {width: 16.66%;}
-		.col-3 {width: 25%;}
-		.col-4 {width: 33.33%;}
-		.col-5 {width: 41.66%;}
-		.col-6 {width: 50%;}
-		.col-7 {width: 58.33%;}
-		.col-8 {width: 66.66%;}
-		.col-9 {width: 75%;}
-		.col-10 {width: 83.33%;}
-		.col-11 {width: 91.66%;}
-		.col-12 {width: 100%;}
-	
+		.col-small {
+    	align-items: center;
+			display: inline-flex;
+    	justify-content: center;
+			min-height: 211px;
+			width: 30%;
+			
+		}
+		.col-medium {
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;			
+			min-height: 211px;
+			padding: 20px;
+			width: 40%;
+		}	
+		.col-full {width: 100%;}
 		[class*="col-"] {
 			float: left;
-			padding: 15px;
 			border: 2px solid $gray;
 		}
+	
 		.row::after {
 			content: "";
 			clear: both;
 			display: table;
 		}
+	
 		.address-wrapper{
-			color: $white;
-			font-family: Raleway-Light;
-			font-size: 12px;
-			font-weight: bold;
-			line-height: 14px;
-			text-align: center;
-				
+			padding: 30px;
+					
 				.pin-image{
-					background-image: url(../../assets/images/pinExample.png);
-					height: 100px;
-					width: 73px;
+					background-image: url(../../assets/images/desktop/pinExample.png);
+					height: 39.11px;
+					width: 39.11px;
 					display: inline-block;
 					background-repeat: no-repeat;
 					background-size: contain;
 				}
-
 		}
+	
+		.certified-wrapper{
+				
+			.moprosoft-image{
+					background-image: url(../../assets/images/desktop/bitmap.png);
+					height: 66px;
+					width: 66px;
+					display: inline-block;
+					background-repeat: no-repeat;
+					background-size: contain;				
+			}
+			
+			.moprosoft-p{
+				display: inline-block;
+				text-align: left;
+				max-width: 272px;
+				margin: 15px 0px 15px 15px;
+			}
+		}
+	
+		
+		.contact-wrapper{
+			display: inline-block;
+			text-align: left;
+			
+			.contact-center{
+				align-items: center;
+				display: inline-flex;
+				justify-content: center;
+				margin: 5px;
+						
+					.logo{
+						background-size: contain;
+						background-repeat: no-repeat;
+						display: inline-block;
+						height: 40px;
+						width: 40px;
+					}
+					.contact-p{
+						display: inline-block;
+						margin: 15px 0px 15px 15px;
+					}
+
+					.facebook-logo{
+						background-image: url(../../assets/images/desktop/facebookExample.png);
+					}
+
+					.mail-logo{
+						background-image: url(../../assets/images/desktop/mailExample.png);	
+					}
+		}		
+	}
+	.autor-footer{
+		padding: 34px;
+		
+			.empress-footer-logo{
+				background-image: url(../../assets/images/desktop/EmpressFooter.png);
+				display: inline-block;
+				float: left;
+				min-width: 131px;
+				min-height: 27px;		
+			}
+			.autor{
+				display: inline-block;
+				float: right;
+				line-height: 2.4;
+			}
+	}
 }
