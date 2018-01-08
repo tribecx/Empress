@@ -1,13 +1,49 @@
 .image-write{
-  float: left;
-  height: 50vh;
-  width: 50%;
+  height: 30vw;
+  width: 100%;
 
   .image-write-wrapper{
   	background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   	background-image: url("../images/writting.jpg");
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.services-list{
+  background-color: #D9DC58;
+  margin-left: 70px;
+  margin-top: 50px;
+  
+  .services-list-wrapper{
+    color: #4A4A4A;
+    font-size: .6875em;
+    line-height: 1.6em;
+    padding: 1.8em;
+
+    .services-ul{
+      margin: 0;
+      margin-left: 1.5em;
+
+      .services-li{
+        margin-top: 1.0em;
+      }
+    }
+  }
+}
+
+.image-background-hero{
+  margin-top: 50px;
+  height: 15vw;
+  width: 70%;
+
+  .image-background-hero-wrapper{
+  	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  	background-image: url("../images/background-beige.jpeg");
     height: 100%;
     width: 100%;
   }
