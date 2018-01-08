@@ -1,0 +1,14 @@
+.image-write{
+  float: left;
+  height: 50vh;
+  width: 50%;
+
+  .image-write-wrapper{
+  	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  	background-image: url("../images/writting.jpg");
+    height: 100%;
+    width: 100%;
+  }
+}
