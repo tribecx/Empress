@@ -52,7 +52,6 @@
 .empress-small-title{
   margin-left: 80px;
   margin-top: 50px;
-  width: 100%;
 
   .empress-title{
 	color: #D9DC58;
@@ -83,5 +82,48 @@
       font-size: .6875em;
       line-height: 1em;
     }
+  }
+}
+
+.services-contact-section{
+  background-color: #07778C;
+
+  .services-contact-left{
+  	display: inline-block;
+  	height: 100%;
+  	padding:  50px 0;
+  	vertical-align: middle;
+  	width: 50%;
+
+  	.services-contact-wrapper{
+  	  margin: 0 auto;
+  	  position: relative;
+  	  text-align: center;
+
+  	  .services-contact-title{
+  	  	color: #ffffff;
+  	  	line-height: 60px;
+  	  }
+  	}
+  }
+}
+
+.services-contact-section{
+  background-color: #07778C;
+  color: #ffffff;
+  margin: 0;
+
+  .services-contact-wrapper{
+    padding: 50px 0;
+
+    .services-contact-title{
+  	  color: #ffffff;
+  	  line-height: 60px;
+  	  text-align: center;
+    }
+  }
+
+  .email-services-wrapper{
+  	padding: 50px 0;
   }
 }
