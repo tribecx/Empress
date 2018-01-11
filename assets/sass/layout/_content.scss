@@ -1,0 +1,10 @@
+.content {
+
+  @media #{$medium-and-up} {
+    width: calc(100% - 140px);
+  }
+
+  @media #{$large-and-up} {
+    width: calc(100% - 160px);
+  }
+}
