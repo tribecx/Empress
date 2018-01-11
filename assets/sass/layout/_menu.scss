@@ -1,0 +1,39 @@
+.menu {
+  padding: 40px 1.5em 0 !important;
+  position: fixed;
+
+  @media #{$medium-and-up} {
+    width: 140px;
+  }
+
+  @media #{$large-and-up} {
+    width: 160px;
+  }
+
+  .menu-img {
+    height: auto;
+    width: 40px;
+  }
+
+  .menu-img, .menu-link {
+    display: block;
+    text-align: right;
+  }
+
+  .menu-link:first-child {
+    margin-top: 3.7em;
+  }
+
+  .menu-link {
+    color: $primary;
+    font-family: Raleway-Bold;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin: 1em 0;
+
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+}
