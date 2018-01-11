@@ -3,6 +3,7 @@
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
+  'abstracts/colors',
   'abstracts/functions',
   'abstracts/mixins';
 
@@ -33,6 +34,8 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/menu',
+  'layout/content',
   'layout/footer';
 
 
