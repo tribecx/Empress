@@ -3,9 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 3;
+  height: 100vh;
+  padding: 50px 80px 75px 0 !important;
 }
 
 .oficial-image-who{
@@ -53,12 +52,12 @@
 
   .wrapper-paragraph-who{
   	margin: auto;
-  	width: 37%;
+  	width: 42%;
 
   	.paragraph-who{
   		color: $asphalt;
   		font-family: Raleway-Regular;
-  		font-size: .6em;
+  		font-size: .7em;
   		font-weight: bold;
   		line-height: 1.3em;
   		text-align: left;
@@ -80,7 +79,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 37%;
+  width: 42%;
 
   &:hover{
   	cursor: pointer;
