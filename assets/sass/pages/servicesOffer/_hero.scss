@@ -1,6 +1,15 @@
+.first-area{
+  @media #{$small-and-down} {
+    float: right !important;
+  }
+
 .image-write{
   height: 30vw;
   width: 100%;
+
+  @media #{$small-and-down} {
+    float: right;
+  }
 
   .image-write-wrapper{
   	background-image: url("../images/writting.jpg");
@@ -17,6 +26,10 @@
   float: right;
   margin-top: 50px;
   width: 70%;
+
+  @media #{$small-and-down} {
+    margin-right: 50px;
+  }
   
   .services-list-wrapper{
     color: #4A4A4A;
@@ -25,6 +38,7 @@
     padding: 1.8em;
 
     .services-ul{
+      font-family: Raleway-Regular;
       margin: 0;
       margin-left: 1.5em;
 
@@ -34,11 +48,16 @@
     }
   }
 }
+}
 
 .image-background-hero{
   margin-top: 50px;
   height: 15vw;
   width: 70%;
+
+  @media #{$small-and-down} {
+    margin: auto;
+  }
 
   .image-background-hero-wrapper{
   	background-image: url("../images/background-beige.jpeg");
@@ -47,12 +66,20 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+
+    @media #{$small-and-down} {
+      visibility: hidden;
+    }
   }
 }
 
 .empress-small-title{
   margin-left: 80px;
   margin-top: 50px;
+
+  @media #{$small-and-down} {
+    margin-top: 0;
+  }
 
   .empress-title{
 	color: #D9DC58;
@@ -66,7 +93,8 @@
   width: 50%;
 
   .empress-title-big{
-	color: #07778C;  
+	color: #07778C; 
+  font-family: Raleway-Bold;
   }
 }
 
@@ -81,6 +109,7 @@
 
     .services-text{
       color: #4A4A4A;
+      font-family: Raleway-Regular;
       font-size: .6875em;
       line-height: 1.2em;
     }
@@ -105,6 +134,7 @@
 
   	  .services-contact-title{
   	  	color: #ffffff;
+        font-family: Raleway-Bold;
   	  	line-height: 60px;
   	  	margin: auto;
   	  }
@@ -138,6 +168,7 @@
 
   	  .left-paragraph{
   	  	color: #ffffff;
+        font-family: Raleway-Light;
   	  	font-size: .65em;
   	  	line-height: 1.4em;
   	  	text-align: center;
