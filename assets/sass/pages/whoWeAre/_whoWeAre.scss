@@ -1,0 +1,90 @@
+.background-image-who{
+  background-image: url("../images/background-beige.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+.oficial-image-who{
+  background-image: url("../images/writting.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.small-title-wrapper-who{
+  height: 100%;
+  width: 100%;
+  padding: 75px 75px 0 25px;
+
+  .small-title-who{
+  	color: #D9DC58;
+  	font-family: Raleway-Bold;
+  	line-height: 1.64em;
+  	text-align: center;
+  	width: 60%;
+  } 
+}
+
+.big-title-wrapper-who{
+  height: 100%;
+  margin-left: -3.5em;
+  padding: 2em 0 -1.5em 1em;
+  width: 100%;
+  z-index: 2;
+
+  .big-title-who{
+  	color: $primary;
+  	font-family: Raleway-Bold;
+  	line-height: 1.3em;
+  	margin: 0;
+  	width: 50%;
+  }
+}
+
+.section-paragraph-who{
+  
+
+  .wrapper-paragraph-who{
+  	margin: auto;
+  	width: 37%;
+
+  	.paragraph-who{
+  		color: $asphalt;
+  		font-family: Raleway-Regular;
+  		font-size: .6em;
+  		font-weight: bold;
+  		line-height: 1.3em;
+  		text-align: left;
+  	}
+  }
+}
+
+.button-who{
+  border: solid 2px $secondary;
+  color: $secondary;
+  display: block;
+  font-family: Raleway-Bold;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  margin-top: 0.8em;
+  margin: auto;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 37%;
+
+  &:hover{
+  	cursor: pointer;
+  	background-color: $secondary;
+  	color: $white;
+  }
+}
