@@ -1,0 +1,31 @@
+.background-image.who{
+  background-image: url("../images/background-beige.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+.oficial-image-who{
+  background-image: url("../images/writting.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.small-title-wrapper-who{
+  height: 100%;
+  width: 100%;
+  padding: 75px 75px 0 25px;
+
+  .small-title-who{
+  	color: #D9DC58;
+  	font-family: Raleway-Bold;
+  	line-height: 1.64em;
+  } 
+}
