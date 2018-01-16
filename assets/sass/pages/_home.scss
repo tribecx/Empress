@@ -1,3 +1,121 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
+.home {
+
+  .news {
+    background-color: $secondary;
+    padding: 3em 0 2em;
+    text-align: center;
+
+    @media #{$medium-and-down} {
+      padding: 1em 0;
+    }
+  }
+
+  .news-wrapper {
+    margin: 0;
+    padding: 0 3em;
+
+    @media #{$medium-and-down} {
+      padding: 0 2em;
+    }
+
+    @media #{$small-and-down} {
+      padding: 0 1em;
+    }
+  }
+
+  .news-item {
+    margin: 0.5em 0 0.3em;
+
+    &:hover {
+      cursor: pointer;
+
+      .info {
+        background-color: $primary;
+      }
+
+      .title, .excerpt, .time {
+        color: $white;
+      }
+    }
+
+    .thumbnail {
+      width: 100%;
+    }
+
+    .info {
+      background-color: $white;
+      display: inline-block;
+      margin: -3em auto 1em;
+      padding: 0.5em 0.8em 1em;
+      position: relative;
+      width: calc(100% - 1em);
+
+      @media #{$medium-and-down} {
+        margin: -1em auto 0.4em;
+      }
+    }
+
+    .tag {
+      @include center(true,false);
+
+      background-color: $secondary;
+      color: $asphalt;
+      font-family: Raleway-Bold;
+      font-size: 0.7em;
+      height: 2.3em;
+      line-height: 2.3em;
+      padding: 0 0.8em;
+      text-transform: uppercase;
+      top: -1.2em;
+    }
+
+    .title {
+      @include line-clamp(21px, 1.2, 2);
+
+      color: $primary;
+      font-family: Raleway-Bold;
+      margin: 1em 0 0.6em;
+    }
+
+    .excerpt {
+      @include line-clamp(13px, 1.4, 2);
+
+      color: $smoke;
+      font-family: Raleway-SemiBold;
+      margin: 0.6em 0.2em;
+
+      @media #{$medium-and-down} {
+        color: $asphalt;
+      }
+    }
+
+    .time {
+      color: $smoke;
+      font-family: Raleway-Bold;
+      font-size: 0.7em;
+
+      @media #{$medium-and-down} {
+        color: $asphalt;
+      }
+    }
+  }
+
+  .news-more {
+    border: solid 2px $primary;
+    color: $primary;
+    display: inline-block;
+    font-family: Raleway-Bold;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+    line-height: 2.6em;
+    margin-top: 0.8em;
+    padding: 0 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $primary;
+      color: $secondary;
+    }
+  }
+}
