@@ -5,6 +5,14 @@
   background-size: cover;
   height: 100vh;
   padding: 50px 80px 75px 0 !important;
+
+  @media #{$medium-and-up} {
+    height: 60vw;
+  }
+
+  @media #{$medium-and-down} {
+    height: 75vw;
+  }
 }
 
 .oficial-image-who{
@@ -22,6 +30,14 @@
   width: 100%;
   padding: 75px 75px 0 25px;
 
+  @media #{$medium-and-up} {
+    padding: 0;
+  }
+
+  @media #{$medium-and-down} {
+    padding: 0;
+  }
+
   .small-title-who{
   	color: #D9DC58;
   	font-family: Raleway-Bold;
@@ -38,6 +54,14 @@
   width: 100%;
   z-index: 2;
 
+  @media #{$medium-and-up} {
+    margin: auto;
+  }
+
+  @media #{$medium-and-down} {
+    margin: auto;
+  }
+
   .big-title-who{
   	color: $primary;
   	font-family: Raleway-Bold;
@@ -53,6 +77,14 @@
   .wrapper-paragraph-who{
   	margin: auto;
   	width: 42%;
+
+  	@media #{$medium-and-up} {
+      width: 55%;
+    }
+
+  	@media #{$medium-and-down} {
+      width: 74%;
+    }
 
   	.paragraph-who{
   		color: $asphalt;
@@ -80,6 +112,14 @@
   text-decoration: none;
   text-transform: uppercase;
   width: 42%;
+
+  @media #{$medium-and-up} {
+    width: 55%;
+  }
+
+  @media #{$medium-and-down} {
+    width: 74%;
+  }
 
   &:hover{
   	cursor: pointer;
