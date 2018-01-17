@@ -46,6 +46,7 @@
 
   @media #{$medium-and-down} {
     padding: 0;
+    margin-top: 3em;
   }
 
   @media #{$large-and-up} {
@@ -92,6 +93,10 @@
 
 .table-section{
   padding-top: 50px;
+
+  @media #{$medium-and-down} {
+    margin-left: -15em;
+  }
 }
 
 .table-name {
@@ -118,4 +123,11 @@
   @extend .table-name;
   background-color: #EBEBEB;
   color: $asphalt;
+}
+
+.icon-section-tech {
+
+  @media #{$medium-and-down} {
+    margin-left: -15em;
+  }
 }
