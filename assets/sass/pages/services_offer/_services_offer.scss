@@ -22,7 +22,7 @@
 }
 
 .services-list {
-  background-color: #D9DC58;
+  background-color: $secondary;
   float: right;
   margin-top: 50px;
   width: 70%;
@@ -32,7 +32,7 @@
   }
   
   .services-list-wrapper {
-    color: #4A4A4A;
+    color: $asphalt;
     font-size: .6875em;
     line-height: 1.6em;
     padding: 1.8em;
@@ -82,7 +82,7 @@
   }
 
   .empress-title {
-	color: #D9DC58;
+	color: $secondary;
 	font-weight: bold;
   }
 }
@@ -92,8 +92,8 @@
   margin-top: 10px;
   width: 50%;
 
-  .empress-title-bi g{
-	color: #07778C; 
+  .empress-title-big {
+	color: $primary; 
   font-family: Raleway-Bold;
   }
 }
@@ -108,7 +108,7 @@
     width: 100%;
 
     .services-text {
-      color: #4A4A4A;
+      color: $asphalt;
       font-family: Raleway-Regular;
       font-size: .6875em;
       line-height: 1.2em;
