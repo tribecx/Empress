@@ -1,0 +1,121 @@
+.background-image-tech {
+  background-image: url("../images/background-beige.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 80px 75px 0 !important;
+
+  @media #{$small-and-down} {
+    padding: 0 30px 50px 30px !important;
+  }
+
+  @media #{$medium-and-up} {
+    height: 60vw;
+  }
+
+  @media #{$medium-and-down} {
+    height: 75vw;
+  }
+
+  @media #{$large-and-up} {
+    height: 70vw;
+  }
+
+   @media #{$extra-large-and-up} {
+    height: 50vw;
+  }
+}
+
+.oficial-image-tech {
+  background-image: url("../images/writting.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.small-title-wrapper-tech {
+  height: 100%;
+  width: 100%;
+
+  @media #{$medium-and-up} {
+    padding: 0;
+  }
+
+  @media #{$medium-and-down} {
+    padding: 0;
+  }
+
+  @media #{$large-and-up} {
+    padding: 75px 75px 0 60px;
+  }
+
+  .small-title-tech {
+    color: $secondary;
+    font-family: Raleway-SemiBold;
+    line-height: 1.64em;
+    text-align: center;
+    width: 60%;
+    margin: auto 0;
+    text-align: left;
+  } 
+}
+
+.big-title-wrapper-tech {
+  height: 100%;
+  padding: 2em 0 -1.5em 1em;
+  width: 100%;
+  z-index: 2;
+
+  @media #{$medium-and-up} {
+    margin: auto;
+  }
+
+  @media #{$medium-and-down} {
+    margin: auto;
+  }
+
+  @media #{$large-and-up} {
+    margin-left: -3.5em;
+  }
+
+  .big-title-tech {
+    color: $primary;
+    font-family: Raleway-Bold;
+    line-height: 1.3em;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.table-section{
+  padding-top: 50px;
+}
+
+.table-name {
+  background-color: $secondary;
+  font-family: Raleway-SemiBold;
+  font-size: .6em;
+  padding: .5em !important;
+  line-height: 1em;
+  font-weight: 500;
+
+  &:hover{
+    color: $primary;
+    background-color: $secondary;
+  }
+}
+
+.table-field-high {
+  @extend .table-name;
+  background-color: #F6F6F6;
+  color: $asphalt;
+}
+
+.table-field-highlight {
+  @extend .table-name;
+  background-color: #EBEBEB;
+  color: $asphalt;
+}
