@@ -1,10 +1,13 @@
-.background-image-who{
+.background-image-who {
   background-image: url("../images/background-beige.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
   padding: 50px 80px 75px 0 !important;
+
+  @media #{$small-and-down} {
+    padding: 0 30px 50px 30px !important;
+  }
 
   @media #{$medium-and-up} {
     height: 60vw;
@@ -13,9 +16,13 @@
   @media #{$medium-and-down} {
     height: 75vw;
   }
+
+  @media #{$large-and-up} {
+    height: 100vh;
+  }
 }
 
-.oficial-image-who{
+.oficial-image-who {
   background-image: url("../images/writting.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -25,10 +32,9 @@
   z-index: 1;
 }
 
-.small-title-wrapper-who{
+.small-title-wrapper-who {
   height: 100%;
   width: 100%;
-  padding: 75px 75px 0 25px;
 
   @media #{$medium-and-up} {
     padding: 0;
@@ -38,18 +44,23 @@
     padding: 0;
   }
 
-  .small-title-who{
-  	color: #D9DC58;
-  	font-family: Raleway-Bold;
-  	line-height: 1.64em;
-  	text-align: center;
-  	width: 60%;
+  @media #{$large-and-up} {
+    padding: 75px 75px 10px 85px;
+  }
+
+  .small-title-who {
+    color: $secondary;
+    font-family: Raleway-Bold;
+    line-height: 1.64em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    text-align: left;
   } 
 }
 
-.big-title-wrapper-who{
+.big-title-wrapper-who {
   height: 100%;
-  margin-left: -3.5em;
   padding: 2em 0 -1.5em 1em;
   width: 100%;
   z-index: 2;
@@ -62,7 +73,11 @@
     margin: auto;
   }
 
-  .big-title-who{
+  @media #{$large-and-up} {
+    margin-left: -3.5em;
+  }
+
+  .big-title-who {
   	color: $primary;
   	font-family: Raleway-Bold;
   	line-height: 1.3em;
@@ -71,12 +86,11 @@
   }
 }
 
-.section-paragraph-who{
+.section-paragraph-who {
   
 
-  .wrapper-paragraph-who{
+  .wrapper-paragraph-who {
   	margin: auto;
-  	width: 42%;
 
   	@media #{$medium-and-up} {
       width: 55%;
@@ -86,7 +100,11 @@
       width: 74%;
     }
 
-  	.paragraph-who{
+    @media #{$large-and-up} {
+      width: 42%;
+    }
+
+  	.paragraph-who {
   		color: $asphalt;
   		font-family: Raleway-Regular;
   		font-size: .7em;
@@ -97,7 +115,7 @@
   }
 }
 
-.button-who{
+.button-who {
   border: solid 2px $secondary;
   color: $secondary;
   display: block;
@@ -111,7 +129,6 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 42%;
 
   @media #{$medium-and-up} {
     width: 55%;
@@ -121,7 +138,11 @@
     width: 74%;
   }
 
-  &:hover{
+  @media #{$large-and-up} {
+    width: 42%;
+  }
+
+  &:hover {
   	cursor: pointer;
   	background-color: $secondary;
   	color: $white;
