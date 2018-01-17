@@ -18,7 +18,11 @@
   }
 
   @media #{$large-and-up} {
-    height: 100vh;
+    height: 70vw;
+  }
+
+   @media #{$extra-large-and-up} {
+    height: 50vw;
   }
 }
 
