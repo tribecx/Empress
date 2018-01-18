@@ -37,3 +37,57 @@
     }
   }
 }
+
+.mobile-menu {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  .menu-img {
+    height: auto;
+    left: 14px;
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    z-index: 1;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 21px;
+    top: 28px;
+    width: 25px;
+    z-index: 1;
+  }
+
+  .menu-box {
+    background-color: $primary;
+    height: 100vh;
+    position: absolute;
+    right: -100vw;
+    transition: 0.5s;
+    width: 100vw;
+
+    &.out {
+      right: 0;
+    }
+  }
+
+  .menu-links {
+    @include center(false,true);
+
+    right: 0;
+  }
+
+  .menu-link {
+    color: $secondary;
+    display: block;
+    font-family: Raleway-Bold;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 2em;
+  }
+}
