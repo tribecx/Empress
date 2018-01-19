@@ -1,0 +1,154 @@
+.background-image-who {
+  background-image: url("../images/background-beige.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 80px 75px 0 !important;
+
+  @media #{$small-and-down} {
+    padding: 0 30px 50px 30px !important;
+  }
+
+  @media #{$medium-and-up} {
+    height: 60vw;
+  }
+
+  @media #{$medium-and-down} {
+    height: 75vw;
+  }
+
+  @media #{$large-and-up} {
+    height: 70vw;
+  }
+
+   @media #{$extra-large-and-up} {
+    height: 50vw;
+  }
+}
+
+.oficial-image-who {
+  background-image: url("../images/writting.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.small-title-wrapper-who {
+  height: 100%;
+  width: 100%;
+
+  @media #{$medium-and-up} {
+    padding: 0;
+  }
+
+  @media #{$medium-and-down} {
+    padding: 0;
+  }
+
+  @media #{$large-and-up} {
+    padding: 75px 75px 10px 50px;
+  }
+
+  .small-title-who {
+    color: $secondary;
+    font-family: Raleway-SemiBold;
+    line-height: 1.64em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+  } 
+}
+
+.big-title-wrapper-who {
+  height: 100%;
+  padding: 2em 0 -1.5em 1em;
+  width: 100%;
+  z-index: 2;
+
+  @media #{$medium-and-up} {
+    margin: auto;
+  }
+
+  @media #{$medium-and-down} {
+    margin: auto;
+  }
+
+  @media #{$large-and-up} {
+    margin-left: -3.5em;
+  }
+
+  .big-title-who {
+  	color: $primary;
+  	font-family: Raleway-Bold;
+  	line-height: 1.3em;
+  	margin: 0;
+  	width: 50%;
+  }
+}
+
+.section-paragraph-who {
+  
+
+  .wrapper-paragraph-who {
+  	margin: auto;
+
+  	@media #{$medium-and-up} {
+      width: 55%;
+    }
+
+  	@media #{$medium-and-down} {
+      width: 74%;
+    }
+
+    @media #{$large-and-up} {
+      width: 50%;
+    }
+
+  	.paragraph-who {
+  		color: $asphalt;
+  		font-family: Raleway-Regular;
+  		font-size: .7em;
+  		font-weight: bold;
+  		line-height: 1.3em;
+  		text-align: left;
+  	}
+  }
+}
+
+.button-who {
+  border: solid 2px $secondary;
+  color: $secondary;
+  display: block;
+  font-family: Raleway-Bold;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  margin-top: 0.8em;
+  margin: auto;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media #{$medium-and-up} {
+    width: 55%;
+  }
+
+  @media #{$medium-and-down} {
+    width: 74%;
+  }
+
+  @media #{$large-and-up} {
+    width: 50%;
+  }
+
+  &:hover {
+  	cursor: pointer;
+  	background-color: $secondary;
+  	color: $white;
+  }
+}
