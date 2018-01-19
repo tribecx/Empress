@@ -40,13 +40,19 @@
   height: 100%;
   width: 100%;
 
+  @media #{$small-and-down} {
+    width: 80%;
+  }
+
   @media #{$medium-and-up} {
     padding: 0;
+    width: 60%
   }
 
   @media #{$medium-and-down} {
     padding: 0;
     margin: 3em 0 0 3em;
+    width: 60%;
   }
 
   @media #{$large-and-up} {
@@ -61,6 +67,18 @@
     width: 60%;
     margin: auto 0;
     text-align: left;
+
+    @media #{$small-and-down} {
+    width: 100%;
+    }
+
+    @media #{$medium-and-up} {
+      width: 100%;
+    }
+    
+    @media #{$medium-and-down} {
+      width: 100%;
+    }
   } 
 }
 
@@ -94,7 +112,11 @@
 .table-section{
   padding-top: 50px;
 
-  @media #{$medium-and-down} {
+  @media #{$small-and-down} {
+    margin-left: 0;
+  }
+
+  @media #{$medium-and-up} {
     margin-left: -15em;
   }
 }
@@ -129,9 +151,23 @@
   color: $asphalt;
 }
 
+.bigger-field{
+  /*@media #{$small-and-down} {
+    padding: 1em !important;
+  }
+  
+  @media #{$medium-and-down} {
+    padding: 1em !important;
+  }*/
+}
+
 .icon-section-tech {
 
-  @media #{$medium-and-down} {
+  @media #{$small-and-down} {
+    margin-left: 0;
+  }
+
+  @media #{$medium-and-up} {
     margin-left: -15em;
   }
 }
