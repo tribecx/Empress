@@ -1,4 +1,4 @@
-.home {
+.home {  
 
   .news {
     background-color: $secondary;
@@ -8,6 +8,10 @@
     @media #{$medium-and-down} {
       padding: 1em 0;
     }
+  }
+
+  .blog-background {
+    background-color: $white;
   }
 
   .news-wrapper {
@@ -53,6 +57,10 @@
       @media #{$medium-and-down} {
         margin: -1em auto 0.4em;
       }
+    }
+
+    .blog-info {
+      background-color: $gray-light;  
     }
 
     .tag {
