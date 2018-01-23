@@ -21,8 +21,40 @@
       .blog-big-title {
       	color: $white;
       	font-family: Raleway-SemiBold;
-      	margin: 0 0 30px 0;
+      	margin-bottom: 30px !important;
+      	margin: auto;
+      	text-align: center;
+      	width: 74%;
       }
     }
+  }
+}
+
+.blog-info-cover {
+  background-color: $secondary;
+
+  .time-wrapper {
+  	padding: 1em;
+
+  	.blog-cover-time {
+  	  color: $asphalt;
+  	  font-family: Raleway-SemiBold;
+  	  font-size: .8em;	
+  	  margin-top: 15px !important;
+  	  margin: auto;
+  	}
+  }
+
+  .info-wrapper {
+  	padding: 1em;
+
+  	.info-cover {
+  	  color: $primary;
+  	  font-family: Raleway-SemiBold;
+  	  font-size: .8em;
+  	  margin-top: 15px !important;
+  	  margin: auto;
+  	  text-align: left;
+  	}
   }
 }
