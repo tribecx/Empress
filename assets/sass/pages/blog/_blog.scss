@@ -62,3 +62,50 @@
   	}
   }
 }
+
+.section-popular {
+  padding: 0 2em !important;
+}
+
+.most-popular {
+  border-top: 5px solid $secondary;
+}
+
+.title-popular {
+  color: #07778C;
+  display: block;
+  font-family: Raleway-Bold;
+  font-size: 21px;
+  height: 50.4px;
+  line-height: 1.2;
+  margin: 1em 0 0.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popular-news-wrapper{
+  border: 2px solid $secondary;
+  display: block;
+  position: relative;
+}
+
+.week-title {
+  @include center(true,false);
+
+  background-color: $white;
+  color: black;
+  font-family: Raleway-Bold;
+  font-size: 0.7em;
+  height: 2.3em;
+  line-height: 2.3em;
+  padding: 0 0.8em;
+  text-transform: uppercase;
+  top: -1.2em;
+  transform: translate(-100%, 0) !important;
+}
+
+.month-title {
+  @extend .week-title;
+  transform: translate(0, 0) !important;
+  border-left: 2px solid $secondary;
+}
