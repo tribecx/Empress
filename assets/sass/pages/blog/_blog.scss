@@ -117,11 +117,19 @@
   margin: 10%;
   padding: 1.5em;
 
+  &:hover{
+    cursor: pointer;
+  }
+
   .popular-title-wraper {
 
     .popular-titles {
       border: 3px solid $white;
       text-align: center;
+
+      &:hover {
+        border-color: $primary;
+      }
 
       .tiny-title {
         color: $secondary;
@@ -129,6 +137,10 @@
         font-size: 15px;
         display: block;
         margin-top: 10px;
+
+        &:hover {
+          color: $primary;
+        }
         }
 
       .soft-title {
@@ -136,8 +148,43 @@
         font-family: Raleway-SemiBold;
         font-size: 20px;
         margin-bottom: 10px;
+
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }
 }
 
+.little-popular-image {
+  @extend .most-popular-image;
+}
+
+
+.titles-wrapper {
+  margin: 10%;
+  text-align: left;
+
+  &:hover {
+    background-color: $gray-light;
+  }
+
+  .little-title {
+    color: $secondary;
+    font-family: Raleway-SemiBold;
+    font-size: 11px;
+    margin: auto;
+  }
+
+  .medium-title {
+    color: black;
+    font-family: Raleway-SemiBold;
+    font-size: 15px;
+    margin: auto;
+  }
+}
+
+.litlle-news {
+  cursor: pointer;
+}
