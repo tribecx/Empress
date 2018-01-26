@@ -1,0 +1,48 @@
+.contact{
+	background-color: $empress-blue;
+	color: $white;
+	font-family: Raleway-Bold;
+	font-size: 58px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 60px;
+	padding: 2%;
+	
+	.contact-wrapper{
+		width: 90%;
+		margin: auto;
+		
+			.contact-title{
+				display: inline-block;
+			}
+
+			.contact-form{
+				display: inline-block;
+				float: right;
+				padding: 5%;
+				width: 50%;			
+					
+					input::placeholder {
+						color: $light-gray;
+						font-family:Raleway-Light;
+						font-size: 18px;
+						font-weight: 500;
+						line-height: 21px;
+					}
+				
+					input{
+						border-bottom: 2px solid $white !important;
+						width: 80% !important;
+					}
+				
+					.material-icons{
+						color: $empress-green;
+					}
+				
+					button{
+						background: none;
+						border: none;
+					}
+			}
+	}
+}

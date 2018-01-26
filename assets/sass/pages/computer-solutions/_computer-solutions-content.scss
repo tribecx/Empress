@@ -1,0 +1,153 @@
+.computer-solutions-header-wrapper{
+	margin-left: 180px;
+	
+	
+		.computer-solutions-image-header{
+			background-image: url(../../assets/images/computer-solutions-header.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			padding: 20%;
+			max-width: 393px;
+			margin: 30px;
+		}	
+	
+		.computer-solutions-content-header{
+			color: $asphalt;
+			display: inline-block;
+			font-family: Raleway-Light;
+			font-size: 11px;
+			font-weight: 500;
+			line-height: 16px;
+			max-width: 312px;
+		}
+	
+		.computer-solutions-small-title{
+			color: $secondary;
+			font-family: Raleway-Bold;
+			font-size: 1.5em;
+			font-weight: bold;
+			line-height: 19px;
+			margin: 0px
+		}
+	
+		.computer-solutions-big-title{
+			color: $empress-blue;
+			font-family: Raleway-Bold;
+			font-size: 5em;
+			font-weight: bold;
+			letter-spacing: 1px;
+			line-height: 60px;
+			margin: 0px;
+			margin-left: -30px;
+		}
+	
+		.computer-solutions-line-header{
+			background-color: $empress-green;
+			border: none;
+			display: inline-block;
+			height: 2px;
+			margin-top: 10px;
+			margin-bottom: 15px;
+			width: 33px;
+		}
+}
+
+.computer-solutions-content-wrapper{
+	text-align: right;
+	margin-left: 180px;
+	padding: 10px;
+	
+	.slick-slider{
+		height: 100%;
+	}
+	
+	.computer-solutions-content-dinamic-changes{
+		background-color: $empress-blue;
+		padding: 13px;
+		
+		.computer-solutions-topic-wrapper{
+			align-items: center;
+			display: inline-flex;
+			font-size: 9px;
+			position: relative;
+			text-align: right;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			z-index: 100;
+			
+				.topic-paragraph{
+					color: $smoke;
+					margin: 12px;
+					width: min-content;	
+				}
+			
+				.active{
+					color: $empress-green;
+				}
+			
+				.topic-paragraph:hover{
+					color: $empress-green;
+				}
+	
+				.rectangle-changing-topic{
+					height: 50px;
+					width: 50px;
+					border-radius: 10px;
+					background-color: $smoke;
+				}
+			
+				a{
+					text-decoration: none;
+				}
+		}		
+	}
+}
+
+.computer-solutions-content-middle-wrapper{
+	padding: 0px 10%;
+	text-align: left;
+		
+		.computer-solutions-title-middle{
+			color: $empress-blue;
+			font-family: Raleway-Bold;
+			margin: 0px;
+		}
+	
+		.computer-solutions-paragraph-middle{
+			color: $asphalt;
+			font-family: Raleway-Light;
+			font-size: 11px;
+			font-weight: 500;
+			line-height: 18px;
+		}
+	
+		.computer-solutions-image-middle{
+			background-image: url(../../assets/images/computer-solutions-module.png);
+			background-size: contain;
+			height: 325px;
+			width: 444px;
+				
+		}
+}
+
+.computer-solutions-left-side-module-wrapper{
+	text-align: left;
+	color: $asphalt;
+	font-family: Raleway-Light;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 16px;
+	
+		.computer-solutions-left-side-title{
+			background-color: $empress-green;
+			color: $white;		
+			font-size: 13px;	
+			font-weight: bold;
+			line-height: 16px;
+			text-align: center;
+			padding: 3px;
+		}
+}
+
+				
