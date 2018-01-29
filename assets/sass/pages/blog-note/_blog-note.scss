@@ -1,0 +1,48 @@
+.centered-title-section {
+  background-color: $primary;
+
+  .centered-title-wrapper {
+  	padding: 50px;
+
+  	.centered-title {
+  	  color: $white;
+  	  font-family: Raleway-SemiBold;
+  	  margin: auto;
+  	  text-align: center;
+  	}
+
+  	.subtitle-wrapper {
+  		margin-top: 15px;
+  		text-align: center;
+
+  	  .subtitle {
+  	    background-color: $secondary;
+  	    color: $white;
+  	    display: inline-block;
+  	    font-family: Raleway-SemiBold;
+  	    font-size: .8em;
+  	    line-height: 16px;
+  	    padding: .5em;
+  	    text-align: center;
+  	  }
+
+  	  .subtitle-time {
+  	    color: $gray-light;
+  	    display: inline-block;
+  	    font-family: Raleway-SemiBold;
+  	    font-size: .8em;
+  	    line-height: 16px;
+  	    text-align: center;
+  	  }
+    }
+  }
+}
+
+.cover-image-note {
+  background-image: url("../images/nuestra-oferta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 30px;
+  padding: 250px;
+}
