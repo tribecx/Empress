@@ -1,0 +1,71 @@
+.government-section{
+	margin-left: 180px;
+	color: $asphalt;
+	font-family: Raleway-Light;
+	font-size: .68em;
+	font-weight: 500;
+	line-height: 16px;
+	
+		.government-image-wrapper{
+			position: relative;
+			background-image: url(../../assets/images/waterMark.svg);
+			background-size: contain;
+			background-repeat:no-repeat;
+			background-position: right top;
+			display: inline-flex;
+			height: 37em;
+			width: 100%;
+			
+			.front-image{
+				height: auto;
+				position: relative;
+				width: 80%;
+  			z-index: 1;
+			}
+			.background-image{
+				position: absolute;
+				top: 0;
+				width: 50%;
+				right: 0;
+			}
+			
+		}
+		.government-content-wrapper{
+			padding: 10%;
+			
+				.small-title-header{
+					color: $empress-green;
+					font-family: Raleway-SemiBold;
+					font-size: 1em;
+					font-weight: bold;
+					line-height: 19px;
+					margin: 0;
+				}
+			
+				.big-title-header{
+					color: $empress-blue;	
+					font-family: Raleway-Bold;
+					font-size: 3.375em;
+					font-weight: bold;
+					letter-spacing: 1px;
+					line-height: 60px;
+					margin: 0px 0px 0px -30px;
+
+				}
+			
+				.line{
+					border: 1px solid;
+    			color: #D9DC58;
+					display: inline-block;
+   				width: 33px; 
+				}
+				
+				.government-image-squeme{
+					// asset missing background-image: url();
+					background-color: gray;
+					height: 14em;
+					width: 100%;
+				
+				}
+		}
+}
