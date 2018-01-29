@@ -27,7 +27,7 @@
 }
 
 .oficial-image-tech {
-  background-image: url("../images/writting.jpg");
+  background-image: url("../images/plataforma-tecnologica.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -119,6 +119,10 @@
   @media #{$medium-and-up} {
     margin-left: -15em;
   }
+
+  @media #{$large-and-up} {
+    margin-left: auto;
+  }
 }
 
 .table-name {
@@ -169,5 +173,9 @@
 
   @media #{$medium-and-up} {
     margin-left: -15em;
+  }
+
+  @media #{$large-and-up} {
+    margin-left: auto;
   }
 }
