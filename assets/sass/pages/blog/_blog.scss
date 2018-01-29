@@ -9,6 +9,10 @@
   background-size: cover;
   margin-top: 80px;
 
+  @media #{$medium-and-down} {
+    margin-left: 25px !important;
+  }
+
   .blog-title-wrapper {
     padding: 30px 30px 80px 30px;
 
@@ -29,6 +33,10 @@
       	margin: auto;
       	text-align: center;
       	width: 74%;
+
+        @media #{$medium-and-down} {
+          width: 86%;
+        }
       }
     }
   }
@@ -36,6 +44,10 @@
 
 .blog-info-cover {
   background-color: $secondary;
+
+  @media #{$medium-and-down} {
+    margin-left: 25px !important;
+  }
 
   .time-wrapper {
   	padding: 1em;
@@ -64,10 +76,18 @@
 
 .section-popular {
   padding: 0 2em !important;
+  
+  @media #{$medium-and-down} {
+    margin: 0 15% !important;
+  }  
 }
 
 .most-popular {
   border-top: 5px solid $secondary;
+  
+  @media #{$medium-and-down} {
+    border: none;
+  }
 }
 
 .title-popular {
