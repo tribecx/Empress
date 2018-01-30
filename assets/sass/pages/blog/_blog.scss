@@ -75,6 +75,7 @@
 }
 
 .section-popular {
+  margin-top: 10px !important;
   padding: 0 2em !important;
   
   @media #{$medium-and-down} {
@@ -143,12 +144,18 @@
 
   .popular-title-wraper {
 
+    
+
     .popular-titles {
       border: 3px solid $white;
       text-align: center;
 
       &:hover {
         border-color: $primary;
+
+        .tiny-title, .soft-title {
+          color: $primary;
+        }
       }
 
       .tiny-title {
@@ -157,10 +164,6 @@
         font-size: 15px;
         display: block;
         margin-top: 10px;
-
-        &:hover {
-          color: $primary;
-        }
         }
 
       .soft-title {
@@ -168,10 +171,6 @@
         font-family: Raleway-SemiBold;
         font-size: 20px;
         margin-bottom: 10px;
-
-        &:hover {
-          color: $primary;
-        }
       }
     }
   }
@@ -183,7 +182,7 @@
 
 
 .titles-wrapper {
-  margin: 10%;
+  margin: 7%;
   text-align: left;
 
   &:hover {
@@ -207,4 +206,16 @@
 
 .litlle-news {
   cursor: pointer;
+}
+
+.news-padding {
+  padding: 0 !important;
+}
+
+.padding-left {
+  padding: 0 0 0 5px !important;
+}
+
+.padding-right {
+  padding: 0 5px 0 0 !important;
 }
