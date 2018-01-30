@@ -38,6 +38,14 @@
   white-space: nowrap;
 }
 
+.trickle-height {
+  height: 100%;
+
+  @media #{$small-and-down} {
+    height: auto;
+  }
+}
+
 /**
  * Hide element while making it readable for screen readers
  * Shamelessly borrowed from HTML5Boilerplate:

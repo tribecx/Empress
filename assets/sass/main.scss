@@ -21,7 +21,7 @@
 // 2. Vendors
 /*
 @import
-  'vendor/normalize';
+  'vendor/slick';
 */
 
 // 3. Base stuff
@@ -42,7 +42,8 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/elements';
 
 //================= Materialize =================
 // components
@@ -80,10 +81,9 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home/news';
-@import
-  'pages/government/government';
-@import
+  'pages/home/news',
+	'pages/home/clients',
+  'pages/government/government',
   'pages/computer-solutions/computer-solutions-content';
 
 // 7. Themes

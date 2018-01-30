@@ -1,0 +1,169 @@
+.clients {
+  background-color: $primary;
+  color: $white;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+  @media #{$small-and-down} {
+    height: auto;
+  }
+
+  .clients-text {
+    margin-top: 4vw;
+    padding-left: 5vw;
+
+    @media #{$small-and-down} {
+      display: inline-block;
+      margin: 75px 0;
+    }
+
+    .clients-head {
+      display: inline-block;
+      font-family: Raleway-Bold;
+
+      @media #{$small-and-down} {
+        margin-left: 14%;
+      }
+    }
+
+    .clients-tag {
+      color: $secondary;
+      display: block;
+      font-size: 0.9em;
+      margin: 0;
+      text-align: right;
+
+      @media #{$medium-and-down} {
+        text-align: center;
+      }
+
+      @media #{$small-and-down} {
+        margin-bottom: 0.8em;
+      }
+    }
+
+    .clients-title {
+      display: inline-block;
+      font-size: 3em;
+      margin: 0 0 0.6em;
+
+      @media #{$small-and-down} {
+        font-size: 1.7em;
+      }
+    }
+
+    .clients-content {
+      font-size: 0.7em;
+      margin-left: 20%;
+      width: 110%;
+
+      @media #{$medium-and-down} {
+        margin-left: 10%;
+      }
+
+      @media #{$small-and-down} {
+        margin-left: 3%;
+        width: 100%;
+      }
+    }
+
+    .clients-separator {
+      padding: 0 .75rem;
+    }
+
+    .separator-green {
+      @media #{$small-and-down} {
+        border: solid 1px $white;
+      }
+    }
+
+    .clients-states {
+      font-family: Raleway-Bold;
+      margin-top: 1em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .clients-anchor {
+      color: $secondary;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 0 1.2em 0;
+
+      @media #{$small-and-down} {
+        display: block;
+      }
+
+      &:link, &:hover, &:active {
+        color: $white;
+        text-decoration: none;
+      }
+
+      &.active {
+        color: $white;
+      }
+    }
+
+    .clients-info {
+      font-family: Raleway-Medium;
+      margin-top: 1em;
+
+      @media #{$small-and-down} {
+        padding-right: 11%;
+      }
+    }
+
+    .clients-item {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .clients-decor {
+    padding: 0;
+
+    .decor-wrapper {
+      margin-bottom: 6vw;
+      position: relative;
+      width: 100%;
+
+      @media #{$small-and-down} {
+        margin: 0;
+      }
+    }
+
+    .clients-background {
+      background: url('../images/texture-green-short.png') 0 0/cover no-repeat;
+      height: 17vw;
+      width: 100%;
+
+      @media #{$medium-and-down} {
+        background-size: 200%;
+        height: 21vw;
+      }
+
+      @media #{$small-and-down} {
+        bottom: 0;
+        height: 47vw;
+        position: absolute;
+      }
+    }
+
+    .clients-image {
+      background: url('../images/clients.png') center/contain no-repeat;
+      height: 24vw;
+      margin-top: -8vw;
+      width: 100%;
+
+      @media #{$small-and-down} {
+        height: 56vw;
+        margin-bottom: 36vw;
+        margin-top: 0;
+      }
+    }
+  }
+}
