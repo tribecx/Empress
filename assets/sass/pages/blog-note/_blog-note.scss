@@ -76,10 +76,6 @@
   padding: 0 30px !important;
   text-align: left;
 
-   @media #{$small-and-down} {
-    padding: 0 10px !important;
-  }
-
   .post-information {
     color: $asphalt;
     font-size: .9em;
@@ -242,6 +238,28 @@
 
 .margin-post {
    @media #{$small-and-down} {
-    margin-left: 10px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* margin-left: 10px !important;*/
+  }
+}
+
+.divided-image-wrapper {
+  @media #{$small-and-down} {
+    padding: 0 0 0 5px !important;
+    width: 41% !important;
+  }
+}
+
+.margin-image {
+  @media #{$small-and-down} {
+    margin-left: 30px !important;
+    padding: 0 !important;
+  }  
+}
+
+.blog-note-content {
+  @media #{$small-and-down} {
+    margin-left: 20px !important;
   }
 }
