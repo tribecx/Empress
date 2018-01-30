@@ -262,4 +262,8 @@
   @media #{$small-and-down} {
     margin-left: 20px !important;
   }
+
+  @media #{$medium-and-down} {
+    margin-left: auto !important;
+  }
 }
