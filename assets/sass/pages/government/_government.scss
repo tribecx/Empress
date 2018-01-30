@@ -1,0 +1,99 @@
+.government-section{
+	margin-left: 180px;
+	color: $asphalt;
+	font-family: Raleway-Light;
+	font-size: .68em;
+	font-weight: 500;
+	line-height: 16px;
+	
+	@media #{$small-and-down} {
+  	margin: 80px 0px 0px 0px;
+  }
+		.col{	
+			@media #{$small-and-down} {
+				padding: 0px !important;	
+			}
+		}
+		.government-image-wrapper{
+			position: relative;
+			display: inline-flex;
+			height: 37em;
+			width: 100%;
+			
+			@media #{$small-and-down} {
+				height: 25em;
+			}	
+			
+			.front-image{
+				height: auto;
+				position: relative;
+				margin: auto;
+				width: 80%;
+  			z-index: 1;
+				
+				@media #{$small-and-down} {				
+					width: 60%;
+				}
+			}
+			.background-image{
+				background-image: url(../../assets/images/texture-green.png);
+				background-size: cover;
+				background-repeat:no-repeat;
+				height: 100%; 		
+    		position: absolute;
+				right: 0;
+				width: 50%;		
+				
+				@media #{$small-and-down} {
+					width: 100%;
+				}
+			}		
+		}
+	
+		.government-content-wrapper{
+			padding: 20% 10%;
+			
+			@media #{$small-and-down} {
+				padding: 20%;
+			}
+			
+			  .small-title-header{
+					color: $empress-green;
+					font-family: Raleway-SemiBold;
+					font-size: 1em;
+					font-weight: bold;
+					line-height: 19px;
+					margin: 0;
+					
+					@media #{$small-and-down} {
+					 font-size: 1.5em;
+					}
+				}
+			
+				.big-title-header{
+					color: $empress-blue;	
+					font-family: Raleway-Bold;
+					font-size: 3.375em;
+					font-weight: bold;
+					letter-spacing: 1px;
+					line-height: 60px;
+					margin: 0px 0px 0px -30px;
+
+				}
+			
+				.line{
+					border: 1px solid;
+    			color: #D9DC58;
+					display: inline-block;
+   				width: 33px; 
+				}
+				
+				.government-image-squeme{
+					// asset missing background-image: url();
+					background-color: gray;
+					height: 14em;
+					width: 100%;
+				
+				}
+		}
+}

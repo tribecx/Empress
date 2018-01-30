@@ -36,6 +36,7 @@
   'layout/header',
   'layout/menu',
   'layout/content',
+	'layout/contact',
   'layout/footer';
 
 
@@ -81,7 +82,9 @@
 // 6. Page-specific styles
 @import
   'pages/home/news',
-  'pages/home/clients';
+	'pages/home/clients',
+  'pages/government/government',
+  'pages/computer-solutions/computer-solutions-content';
 
 // 7. Themes
 @import
