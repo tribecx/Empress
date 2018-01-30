@@ -4,11 +4,19 @@
   .centered-title-wrapper {
   	padding: 50px;
 
+    @media #{$small-and-down} {
+      padding: 65px 50px 50px 50px;
+    }
+
   	.centered-title {
   	  color: $white;
   	  font-family: Raleway-SemiBold;
   	  margin: auto;
   	  text-align: center;
+
+      @media #{$small-and-down} {
+        font-size: 35px;
+      }
   	}
 
   	.subtitle-wrapper {
@@ -38,6 +46,15 @@
   }
 }
 
+.middle-notes {
+   @media #{$small-and-down} {
+    margin: 0 22px !important;
+  }
+
+  @media #{$medium-and-down} {
+    margin-left: 13% !important;
+  }
+}
 
 .cover-image-note {
   background-image: url("../images/nuestra-oferta.jpg");
@@ -47,11 +64,21 @@
   height: 40vw;
   margin: 50px 30px;
   /*padding: 250px;*/
+
+   @media #{$small-and-down} {
+    height: 334px;
+    margin-top: -40px;
+    position: relative;
+  }
 }
 
 .post-information-wrapper {
   padding: 0 30px !important;
   text-align: left;
+
+   @media #{$small-and-down} {
+    padding: 0 10px !important;
+  }
 
   .post-information {
     color: $asphalt;
@@ -66,6 +93,11 @@
   height: 20vw;
   margin: 50px 20px;
   padding: 0;
+
+   @media #{$small-and-down} {
+    height: 137px;
+    margin: auto;
+  }
 }
 
 .section-popular {
@@ -90,7 +122,7 @@
   font-family: Raleway-Bold;
   font-size: 21px;
   height: 50.4px;
-  line-height: 1.2;
+  line-height: 1.2em;
   margin: 1em 0 0.6em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -206,4 +238,10 @@
 .center-notes {
   margin-top: 50px;
   text-align: center;
+}
+
+.margin-post {
+   @media #{$small-and-down} {
+    margin-left: 10px !important;
+  }
 }
