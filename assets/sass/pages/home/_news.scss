@@ -131,3 +131,13 @@
     }
   }
 }
+
+
+.news-background {
+
+  &:hover {
+    .info-section, .image-section {
+      background-color: $gray-light;
+    }
+  }
+}
