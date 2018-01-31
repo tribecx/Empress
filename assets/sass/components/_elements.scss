@@ -1,4 +1,8 @@
 .separator-green {
   border: solid 1px $secondary;
   width: 33px;
+  
+    &.separator-aligned-right{
+      display: inline-block;
+    }
 }
