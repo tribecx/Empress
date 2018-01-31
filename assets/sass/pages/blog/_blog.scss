@@ -10,7 +10,11 @@
   margin-top: 80px;
   object-fit: cover;
   position: relative;
-
+  
+  @media #{$small-and-down} {
+    margin: 80px 25px 0 32px;
+    padding: 0 !important;
+  }
 
   @media #{$medium-and-down} {
     margin-left: 25px !important;
@@ -33,14 +37,26 @@
   .blog-title-wrapper {
     padding: 30px 30px 80px 30px;
 
+    @media #{$small-and-down} {
+      padding: 10px !important;
+    }
+
     .blog-titles {
       border: 8px solid $white;
       text-align: center;
+
+      @media #{$small-and-down} {
+        border: 3px solid $white;
+      }
 
       .blog-small-title {
       	color: $secondary;
       	font-family: Raleway-SemiBold;
       	margin-top: 40px;
+
+        @media #{$small-and-down} {
+          margin-top: 15px !important;
+        }
       }
 
       .blog-big-title {
@@ -50,6 +66,12 @@
       	margin: auto;
       	text-align: center;
       	width: 74%;
+
+        @media #{$small-and-down} {
+          font-size: 22px;
+          width: 85%;
+          margin-bottom: 15px !important;
+        }
 
         @media #{$medium-and-down} {
           width: 86%;
@@ -64,12 +86,23 @@
   position: relative;
   z-index: 1;
 
+  @media #{$small-and-down} {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   @media #{$medium-and-down} {
     margin-left: 25px !important;
   }
 
   .time-wrapper {
   	padding: 1em;
+
+    @media #{$small-and-down} {
+      padding-top: 0;
+      text-align: center;
+    }
 
   	.blog-cover-time {
   	  color: $asphalt;
@@ -82,6 +115,10 @@
 
   .info-wrapper {
   	padding: 1em;
+
+    @media #{$small-and-down} {
+      padding-bottom: 0;
+    }
 
   	.info-cover {
   	  color: $primary;
@@ -96,6 +133,10 @@
 .section-popular {
   margin-top: 10px !important;
   padding: 0 2em !important;
+
+  @media #{$small-and-down} {
+    margin: 0 15% !important;
+  }
   
   @media #{$medium-and-down} {
     margin: 0 15% 0 17% !important;
@@ -242,6 +283,10 @@
 
 .news-padding {
   padding: 0 !important;
+
+  @media #{$small-and-down} {
+    padding: 0 !important;
+  }
 }
 
 .padding-left {
@@ -266,12 +311,14 @@
   width: 100%;
   z-index: 0;
 
+  @media #{$small-and-down} {
+    height: 50% !important;
+  }
+
   @media #{$medium-and-up} {
     height: 70%;
   }
-  @media #{$medium-and-down} {
-    height: 70%;
-  }
+
   @media #{$large-and-up} {
     height: 85%;
   }
@@ -305,6 +352,11 @@
 }
 
 .medium {
+  @media #{$small-and-down} {
+    margin-left: 25px !important;
+    padding: 1em 0 !important;
+  }
+
   @media #{$medium-and-up} {
     padding: 1em !important;
   }
