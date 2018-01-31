@@ -253,6 +253,10 @@
 }
 
 .blue-background {
+  background-image: url("../images/texture-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $primary;
   height: 85%;
   left: 0;
