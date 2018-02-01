@@ -9,6 +9,11 @@
       padding: 65px 50px 50px 50px;
     }
 
+    @media #{$medium-and-down} {
+      width: 90%;
+      padding: 50px 50px 50px 0 !important;
+    }
+
   	.centered-title {
   	  color: $white;
   	  font-family: Raleway-SemiBold;
@@ -53,7 +58,7 @@
   }
 
   @media #{$medium-and-down} {
-    margin-left: 13% !important;
+    margin: auto 17% !important;
   }
 }
 
@@ -70,6 +75,11 @@
     height: 334px;
     margin-top: -40px;
     position: relative;
+  }
+
+  @media #{$medium-and-down} {
+    height: 80vh;
+    margin: 35px;
   }
 }
 
@@ -94,6 +104,10 @@
    @media #{$small-and-down} {
     height: 137px;
     margin: auto;
+  }
+
+  @media #{$medium-and-down} {
+    height: 25vw;
   }
 }
 
@@ -203,16 +217,16 @@
 
 .little-popular-image {
   @extend .most-popular-image;
+
+  @media #{$medium-and-down} {
+    margin: 11% !important;
+  }
 }
 
 
 .titles-wrapper {
   margin: 7%;
   text-align: left;
-
-  &:hover {
-    background-color: $gray-light;
-  }
 
   .little-title {
     color: $secondary;
@@ -243,6 +257,10 @@
     margin: 0 !important;
     padding: 0 !important;
     /* margin-left: 10px !important;*/
+  }
+
+  @media #{$medium-and-down} {
+    padding: 0 !important;
   }
 }
 
@@ -294,6 +312,7 @@
   position: relative;
   z-index: 1;
   background-color: $white;
+  padding: 0 !important;
 }
 
 .note-menu {
@@ -324,15 +343,6 @@
   &:hover {
     .notes-info, .notes-image {
       background-color: $gray-light !important;
-    }
-  }
-}
-
-.news-background {
-
-  &:hover {
-    .info-section, .image-section {
-      background-color: $gray-light;
     }
   }
 }
