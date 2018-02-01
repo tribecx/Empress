@@ -374,3 +374,12 @@
     padding: 0 !important;
   }
 }
+
+.news-background {
+
+  &:hover {
+    .info-section, .image-section {
+      background-color: $gray-light;
+    }
+  }
+}
