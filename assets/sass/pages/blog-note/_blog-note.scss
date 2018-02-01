@@ -6,12 +6,11 @@
   	padding: 50px;
 
     @media #{$small-and-down} {
-      padding: 65px 50px 50px 50px;
+      padding: 50px !important;
     }
 
     @media #{$medium-and-down} {
-      width: 90%;
-      padding: 50px 50px 50px 0 !important;
+      padding: 50px !important;
     }
 
   	.centered-title {
