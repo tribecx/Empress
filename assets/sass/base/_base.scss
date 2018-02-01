@@ -32,4 +32,8 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
+
+  &:link, &:hover, &:active {
+    text-decoration: none;
+  }
 }
