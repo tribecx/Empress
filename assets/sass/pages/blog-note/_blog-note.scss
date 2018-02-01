@@ -159,6 +159,7 @@
   background-size: cover;
   margin: 10%;
   padding: 1.5em;
+  position: relative;
 
   &:hover{
     cursor: pointer;
@@ -206,7 +207,7 @@
 
 
 .titles-wrapper {
-  margin: 10%;
+  margin: 7%;
   text-align: left;
 
   &:hover {
@@ -294,3 +295,36 @@
   z-index: 1;
   background-color: $white;
 }
+
+.note-menu {
+  position: fixed;
+  z-index: 1;
+}
+
+.note-menu-link {
+  color: $white !important;
+}
+
+.shadow {
+  background-color: rgba(0,0,0,0.3);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  &:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+
+.news-background {
+
+  &:hover {
+    .note-info, .notes-image {
+      background-color: $gray-light;
+    }
+  }
+}
+
