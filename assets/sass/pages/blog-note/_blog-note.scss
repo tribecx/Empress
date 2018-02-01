@@ -322,9 +322,17 @@
 .news-background {
 
   &:hover {
-    .note-info, .notes-image {
-      background-color: $gray-light;
+    .notes-info, .notes-image {
+      background-color: $gray-light !important;
     }
   }
 }
 
+.news-background {
+
+  &:hover {
+    .info-section, .image-section {
+      background-color: $gray-light;
+    }
+  }
+}
