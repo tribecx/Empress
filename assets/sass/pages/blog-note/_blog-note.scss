@@ -1,5 +1,6 @@
 .centered-title-section {
-  background-color: $primary;
+  position: relative;
+  z-index: 1;
 
   .centered-title-wrapper {
   	padding: 50px;
@@ -266,4 +267,30 @@
   @media #{$medium-and-down} {
     margin-left: auto !important;
   }
+}
+
+.note-background {
+  background-image: url("../images/texture-green.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $primary;
+  height: 85%;
+  left: 0;
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.white {
+  background-color: none;
+  color: $white;
+}
+
+.information {
+  position: relative;
+  z-index: 1;
+  background-color: $white;
 }
