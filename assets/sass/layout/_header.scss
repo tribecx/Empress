@@ -1,10 +1,19 @@
 .header {
-  background: $primary url('../images/header-texture.svg') center/cover no-repeat;
+  background: $primary url('../images/texture-green-smooth.png') center/cover no-repeat;
+
+  @media #{$small-and-down} {
+    background: $primary url('../images/texture-green-smooth.png') center/260% no-repeat;
+  }
 
   .header-logo {
     display: block;
     margin: auto;
     padding: 5em 0;
     width: 75%;
+
+    @media #{$small-and-down} {
+      padding: 7em 0 3em;
+      width: 90%;
+    }
   }
 }
