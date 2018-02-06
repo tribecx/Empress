@@ -52,7 +52,7 @@
       color: $asphalt;
       display: inline-block;
       font-family: Raleway-Light;
-      font-size: 11px;
+      font-size: .68em;
       font-weight: 500;
       line-height: 16px;
       margin: 0 30px !important;
@@ -124,10 +124,12 @@
         background-color: $primary;
         padding: 13px;
         width: min-content !important;
+        position: relative;
+        z-index: 1;
 
-        .computer-solutions-topic-wrapper {
+        .link-dinamic-change {
           align-items: center;
-          font-size: 9px;
+          font-size: .56em;
           position: relative;     
           margin-top: 10px;
           margin-bottom: 10px;
@@ -155,10 +157,6 @@
               }
             }
 
-            .active {
-              color: $secondary;
-            }
-
             .topic-paragraph:hover {
               color: $secondary;
             }
@@ -175,14 +173,19 @@
                 margin: 20px 0;
               }
             }
-            .active {
-              background-color: blueviolet;
-            }
-
             a {
               text-decoration: none;
             }
-        }		
+        }
+        .selected{
+          :nth-child(odd) {
+            color: $secondary;
+          }
+
+          :nth-child(even) {
+            background: $secondary;
+          }          
+        }
       }
     }
 
@@ -229,7 +232,7 @@
       text-align: left;
       color: $asphalt;
       font-family: Raleway-Light;
-      font-size: 11px;
+      font-size: .68em;
       font-weight: 500;
       line-height: 16px;
 
@@ -256,7 +259,7 @@
         .computer-solutions-left-side-title {
           background-color: $secondary;
           color: $white;		
-          font-size: 13px;	
+          font-size: .81em;	
           font-weight: bold;
           line-height: 16px;
           text-align: center;
