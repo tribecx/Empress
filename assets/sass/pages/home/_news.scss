@@ -1,15 +1,16 @@
-.home {
+.home-news {
+  background-color: $secondary;
+  padding: 3em 0 2em;
+  text-align: center;
 
-  .news {
-    background-color: $secondary;
-    padding: 3em 0 2em;
-    text-align: center;
-
-    @media #{$medium-and-down} {
-      padding: 1em 0;
-    }
+  @media #{$medium-and-down} {
+    padding: 1em 0;
   }
 
+  @media #{$small-and-down} {
+    padding: 1.5em 0;
+  }
+  
   .news-wrapper {
     margin: 0;
     padding: 0 3em;

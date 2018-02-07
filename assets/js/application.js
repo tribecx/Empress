@@ -2,6 +2,7 @@ $(document).ready(function() {
   menu();
   clientsState();
   equalHeight();
+  menuPosition();
 });
 
 function menu() {
@@ -37,5 +38,23 @@ function equalHeight() {
     $(this).children('div').each(function() {
       $(this).css('height', higher);
     });
+  });
+}
+
+function menuPosition() {
+  var menu = $('.menu'),
+      startPosition = menu.offset().top,
+      stopPosition = $('.footer').offset().top - menu.outerHeight();
+
+  $(document).scroll(function() {
+    var top = $(this).scrollTop();
+
+    if (top > startPosition) {
+      if (top > stopPosition) {
+        menu.css({'position':'absolute','top':stopPosition});
+      } else {
+        menu.css({'position':'fixed','top':0});
+      }
+    }
   });
 }
