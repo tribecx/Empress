@@ -9,7 +9,7 @@
   background-size: cover;
   margin-top: 80px;
   position: relative;
-  
+
   @media #{$small-and-down} {
     margin: 80px 25px 0 32px;
     padding: 0 !important;
@@ -108,7 +108,7 @@
   	.blog-cover-time {
   	  color: $asphalt;
   	  font-family: Raleway-SemiBold;
-  	  font-size: .8em;	
+  	  font-size: .8em;
   	  margin-top: 15px !important;
   	  margin: auto;
   	}
@@ -138,15 +138,15 @@
   @media #{$small-and-down} {
     margin: 0 15% !important;
   }
-  
+
   @media #{$medium-and-down} {
     margin: 0 15% 0 17% !important;
-  }  
+  }
 }
 
 .most-popular {
   border-top: 5px solid $secondary;
-  
+
   @media #{$medium-and-down} {
     border: none;
   }
@@ -218,7 +218,7 @@
     }
   }
 
-  .popular-title-wraper {    
+  .popular-title-wraper {
 
     .popular-titles {
       border: 3px solid $white;
@@ -260,7 +260,7 @@
   text-align: left;
 
   &:hover {
-    background-color: $gray-light;
+    background-color: $charcoal;
   }
 
   .little-title {
@@ -385,7 +385,7 @@
 
   &:hover {
     .info-section, .image-section {
-      background-color: $gray-light;
+      background-color: $charcoal;
     }
   }
 }
