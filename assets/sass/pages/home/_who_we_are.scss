@@ -1,0 +1,147 @@
+.home-who {
+  margin: 0;
+  margin-top: 58px;
+  position: relative;
+
+  @media #{$medium-and-down} {
+    margin-top: 72px;
+  }
+
+  .who-decor {
+    height: 100vh;
+    padding: 0;
+    position: relative;
+
+    .decor-wrapper {
+      height: 100%;
+      width: 100%;
+    }
+
+    .who-background {
+      background: url('../images/texture-green.png') 0 0/cover no-repeat;
+      height: 100%;
+      width: 100%;
+
+      @media #{$small-and-down} {
+        bottom: 0;
+        height: 113vw;
+        position: absolute;
+      }
+    }
+  }
+
+  .who-image {
+    background: url('../images/who.jpg') center/cover no-repeat;
+    height: 72.8vh;
+    margin-top: -90vh;
+    width: 84.3%;
+
+    @media #{$medium-and-down} {
+      height: 58.2vh;
+      margin-top: -85vh;
+      width: 82.2%;
+    }
+
+    @media #{$small-and-down} {
+      height: 109.4vw;
+      margin: 0 8vw 65px;
+      position: relative;
+      width: 84vw;
+    }
+  }
+
+  .who-text {
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    @media #{$small-and-down} {
+      float: none;
+    }
+  }
+
+  .text-wrapper {
+    font-family: Raleway-Bold;
+    margin-top: 5vw;
+    padding: 0 11.1vw 0 12vw;
+
+    @media #{$medium-and-down} {
+      margin: 0 0 3em;
+      padding: 0 2.5vw 0 12vw;
+    }
+
+    @media #{$small-and-down} {
+      margin: 0 0 40px;
+      padding: 0 20vw 0 22vw;
+    }
+  }
+
+  .who-tag {
+    color: $secondary;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    width: 100%;
+
+    @media #{$small-and-down} {
+      margin-bottom: 1em;
+    }
+  }
+
+  .who-title {
+    color: $primary;
+    display: inline-block;
+    font-size: 3em;
+    margin: 0 0 0.6em -3.5em;
+    width: 100%;
+
+    @media #{$medium-and-down} {
+      margin-left: -10vw;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 1.7em;
+      margin-left: -7vw;
+    }
+  }
+
+  .who-paraghraph {
+    color: $asphalt;
+    font-family: Raleway-Medium;
+    font-size: 0.6em;
+    line-height: 1.4em;
+    margin: 2.5em 0;
+
+    @media #{$medium-and-down} {
+      font-size: 0.63em;
+    }
+  }
+
+  .who-btn {
+    border: solid 2px $secondary;
+    color: $secondary;
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 29px;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 0.59em;
+      padding: 0 0.9em;
+    }
+  }
+
+  .who-mobile {
+    background: url('../images/who.jpg') center/cover no-repeat;
+    height: 38vw;
+    margin: 10%;
+    width: 80%;
+  }
+}

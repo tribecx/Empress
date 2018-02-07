@@ -1,0 +1,145 @@
+.home-tech {
+  margin: 0;
+  position: relative;
+
+  .tech-decor {
+    height: 100vh;
+    padding: 0;
+    position: relative;
+
+    .decor-wrapper {
+      height: 100%;
+      width: 100%;
+    }
+
+    .tech-background {
+      background: url('../images/texture-green.png') 0 0/cover no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .tech-image {
+    background: url('../images/tech.jpg') center/cover no-repeat;
+    height: 79vh;
+    margin-top: -90vh;
+    width: 76%;
+  }
+
+  .tech-text {
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    @media #{$small-and-down} {
+      float: none;
+    }
+  }
+
+  .text-wrapper {
+    font-family: Raleway-Bold;
+    margin-top: 5vw;
+    padding: 0 3vw;
+
+    @media #{$medium-and-down} {
+      padding: 0 3vw 0 11.5vw;
+    }
+
+    @media #{$small-and-down} {
+      margin: 72px 0 50px 0;
+      padding: 0 4vw 0 24vw;
+    }
+  }
+
+  .tech-tag {
+    color: $secondary;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    width: 100%;
+
+    @media #{$small-and-down} {
+      margin-bottom: 1em;
+    }
+  }
+
+  .tech-title {
+    color: $primary;
+    display: inline-block;
+    font-size: 3em;
+    margin: 0 0 0.6em -2em;
+    width: 100%;
+
+    @media #{$medium-and-down} {
+      margin: 0 0 0.6em -1.4em;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 1.7em;
+      margin: 0 0 0.6em -0.8em;
+    }
+  }
+
+  .separator-green {
+    margin-left: 3px;
+  }
+
+  .tech-info {
+    @media #{$medium-and-down} {
+      margin-left: -105%;
+      width: 190%;
+    }
+
+    @media #{$small-and-down} {
+      margin-left: -20vw;
+      width: 92vw;
+    }
+  }
+
+  .tech-table {
+    border-collapse: separate;
+    border-spacing: 3px 0;
+    font-size: 0.6em;
+    margin-top: 2em;
+
+    @media #{$small-and-down} {
+      border-spacing: 5px 0;
+      font-size: 0.63em;
+    }
+
+    .table-row {
+      background-color: $ivory;
+
+      &:nth-child(even) {
+        background-color: $bone;
+      }
+    }
+
+    .table-head, .table-cell {
+      border-radius: 0 !important;
+      color: $asphalt;
+      padding: 2px 15px;
+      text-align: center;
+    }
+
+    .table-head {
+      background-color: $secondary;
+      font-family: Raleway-SemiBold;
+    }
+
+    .table-cell {
+      font-family: Raleway-Medium;
+    }
+  }
+
+  .tech-icons {
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .tech-icon {
+    display: inline-block;
+    margin: 0 7px;
+  }
+}

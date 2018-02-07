@@ -1,4 +1,4 @@
-.clients {
+.home-clients {
   background-color: $primary;
   color: $white;
   height: 100vh;
@@ -79,17 +79,23 @@
     }
 
     .clients-states {
+      font-size: 0.85em;
       font-family: Raleway-Bold;
       margin-top: 1em;
+      max-width: 110px;
       text-align: right;
       text-transform: uppercase;
+
+      @media #{$medium-and-down} {
+        font-size: 0.9em;
+      }
     }
 
     .clients-anchor {
       color: $secondary;
       cursor: pointer;
       display: inline-block;
-      margin: 0 0 1.2em 0;
+      margin: 0 0 1.5em 0;
 
       @media #{$small-and-down} {
         display: block;
@@ -106,8 +112,15 @@
     }
 
     .clients-info {
+      font-size: 0.85em;
       font-family: Raleway-Medium;
+      line-height: 1.5em;
       margin-top: 1em;
+      max-width: 450px;
+
+      @media #{$medium-and-down} {
+        font-size: 0.9em
+      }
 
       @media #{$small-and-down} {
         padding-right: 11%;

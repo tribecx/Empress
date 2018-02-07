@@ -42,7 +42,7 @@
   height: 100%;
 
   @media #{$small-and-down} {
-    height: auto;
+    height: auto !important;
   }
 }
 
