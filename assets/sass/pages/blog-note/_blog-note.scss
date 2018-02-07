@@ -40,7 +40,7 @@
   	  }
 
   	  .subtitle-time {
-  	    color: $gray-light;
+  	    color: $ashes;
   	    display: inline-block;
   	    font-family: Raleway-SemiBold;
   	    font-size: .8em;
@@ -116,15 +116,15 @@
 
 .section-popular {
   padding: 0 2em !important;
-  
+
   @media #{$medium-and-down} {
     margin: 0 15% !important;
-  }  
+  }
 }
 
 .most-popular {
   border-top: 5px solid $secondary;
-  
+
   @media #{$medium-and-down} {
     border: none;
   }
@@ -284,14 +284,14 @@
 .float-image {
   @media #{$small-and-down} {
     float: right !important;
-  }  
+  }
 }
 
 .margin-image {
   @media #{$small-and-down} {
     margin-left: 0 !important;
     padding: 0 5px 0 0 !important;
-  }  
+  }
 
   @media #{$medium-and-up} {
     padding: 0 0 0 15px !important;
@@ -366,7 +366,7 @@
 
   &:hover {
     .notes-info, .notes-image {
-      background-color: $gray-light !important;
+      background-color: $ashes !important;
     }
   }
 }
