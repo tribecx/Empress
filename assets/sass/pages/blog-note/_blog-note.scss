@@ -67,7 +67,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vw;
-  margin: 50px 30px;
+  margin: 50px 30px 50px 40px;
   /*padding: 250px;*/
 
    @media #{$small-and-down} {
@@ -83,7 +83,7 @@
 }
 
 .post-information-wrapper {
-  padding: 0 30px !important;
+  padding: 0 40px !important;
   text-align: left;
 
   .post-information {
@@ -249,6 +249,7 @@
 .center-notes {
   margin-top: 50px;
   text-align: center;
+  padding-right: 50px !important;
 }
 
 .margin-post {
@@ -271,6 +272,8 @@
 }
 
 .margin-image {
+  padding: 0 0 0 20px !important;
+
   @media #{$small-and-down} {
     margin-left: 30px !important;
     padding: 0 !important;
