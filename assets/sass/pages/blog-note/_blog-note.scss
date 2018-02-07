@@ -1,0 +1,372 @@
+.centered-title-section {
+  position: relative;
+  z-index: 1;
+
+  .centered-title-wrapper {
+  	padding: 50px;
+
+    @media #{$small-and-down} {
+      padding: 50px !important;
+    }
+
+    @media #{$medium-and-down} {
+      padding: 50px !important;
+    }
+
+  	.centered-title {
+  	  color: $white;
+  	  font-family: Raleway-SemiBold;
+  	  margin: auto;
+  	  text-align: center;
+
+      @media #{$small-and-down} {
+        font-size: 35px;
+      }
+  	}
+
+  	.subtitle-wrapper {
+  		margin-top: 15px;
+  		text-align: center;
+
+  	  .subtitle {
+  	    background-color: $secondary;
+  	    color: $white;
+  	    display: inline-block;
+  	    font-family: Raleway-SemiBold;
+  	    font-size: .8em;
+  	    line-height: 16px;
+  	    padding: .5em;
+  	    text-align: center;
+  	  }
+
+  	  .subtitle-time {
+  	    color: $gray-light;
+  	    display: inline-block;
+  	    font-family: Raleway-SemiBold;
+  	    font-size: .8em;
+  	    line-height: 16px;
+  	    text-align: center;
+  	  }
+    }
+  }
+}
+
+.middle-notes {
+   @media #{$small-and-down} {
+    margin: 0 22px !important;
+  }
+
+  @media #{$medium-and-down} {
+    margin: auto 17% !important;
+  }
+}
+
+.cover-image-note {
+  background-image: url("../images/nuestra-oferta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vw;
+  margin: 50px 30px 50px 40px;
+  /*padding: 250px;*/
+
+   @media #{$small-and-down} {
+    height: 334px;
+    margin-top: -40px;
+    position: relative;
+  }
+
+  @media #{$medium-and-down} {
+    height: 80vh;
+    margin: 35px;
+  }
+}
+
+.post-information-wrapper {
+  padding: 0 40px !important;
+  text-align: left;
+
+  @media #{$medium-and-down} {
+    padding: 0 35px !important;
+  }
+
+  .post-information {
+    color: $asphalt;
+    font-size: .9em;
+    font-family: Raleway-Regular;
+    line-height: 20px;
+  }
+}
+
+.divided-image-note {
+  @extend .cover-image-note;
+  height: 20vw;
+  margin: 50px 20px;
+  padding: 0;
+
+   @media #{$small-and-down} {
+    height: 137px;
+    margin: auto;
+  }
+
+  @media #{$medium-and-down} {
+    height: 25vw;
+  }
+}
+
+.section-popular {
+  padding: 0 2em !important;
+  
+  @media #{$medium-and-down} {
+    margin: 0 15% !important;
+  }  
+}
+
+.most-popular {
+  border-top: 5px solid $secondary;
+  
+  @media #{$medium-and-down} {
+    border: none;
+  }
+}
+
+.title-popular {
+  color: #07778C;
+  display: block;
+  font-family: Raleway-Bold;
+  font-size: 21px;
+  height: 50.4px;
+  line-height: 1.2em;
+  margin: 1em 0 0.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popular-news-wrapper{
+  border: 2px solid $secondary;
+  display: block;
+  position: relative;
+}
+
+.week-title {
+  @include center(true,false);
+
+  background-color: $white;
+  color: black;
+  font-family: Raleway-Bold;
+  font-size: 0.7em;
+  height: 2.3em;
+  line-height: 2.3em;
+  padding: 0 0.8em;
+  text-transform: uppercase;
+  top: -1.2em;
+  transform: translate(-100%, 0) !important;
+}
+
+.month-title {
+  @extend .week-title;
+  transform: translate(0, 0) !important;
+  border-left: 2px solid $secondary;
+}
+
+.most-popular-image {
+  background-image: url("../images/clients.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10%;
+  padding: 1.5em;
+  position: relative;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  .popular-title-wraper {
+
+    .popular-titles {
+      border: 3px solid $white;
+      text-align: center;
+
+      &:hover {
+        border-color: $primary;
+      }
+
+      .tiny-title {
+        color: $secondary;
+        font-family: Raleway-SemiBold;
+        font-size: 15px;
+        display: block;
+        margin-top: 10px;
+
+        &:hover {
+          color: $primary;
+        }
+        }
+
+      .soft-title {
+        color: $white;
+        font-family: Raleway-SemiBold;
+        font-size: 20px;
+        margin-bottom: 10px;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.little-popular-image {
+  @extend .most-popular-image;
+
+  @media #{$medium-and-down} {
+    margin: 11% !important;
+  }
+}
+
+
+.titles-wrapper {
+  margin: 7%;
+  text-align: left;
+
+  .little-title {
+    color: $secondary;
+    font-family: Raleway-SemiBold;
+    font-size: 11px;
+    margin: auto;
+  }
+
+  .medium-title {
+    color: black;
+    font-family: Raleway-SemiBold;
+    font-size: 15px;
+    margin: auto;
+  }
+}
+
+.litlle-news {
+  cursor: pointer;
+}
+
+.center-notes {
+  margin-top: 50px;
+  text-align: center;
+  padding-right: 50px !important;
+}
+
+.margin-post {
+   @media #{$small-and-down} {
+    margin: 0 !important;
+    padding: 0 !important;
+    /* margin-left: 10px !important;*/
+  }
+
+  @media #{$medium-and-down} {
+    padding: 0 !important;
+  }
+}
+
+.divided-image-wrapper {
+  @media #{$small-and-down} {
+    padding: 0 0 0 5px !important;
+    width: 47% !important;
+  }
+}
+
+.divided-image-section {
+  @media #{$small-and-down} {
+    margin: auto 35px;
+  }
+}
+
+.float-image {
+  @media #{$small-and-down} {
+    float: right !important;
+  }  
+}
+
+.margin-image {
+  @media #{$small-and-down} {
+    margin-left: 0 !important;
+    padding: 0 5px 0 0 !important;
+  }  
+
+  @media #{$medium-and-up} {
+    padding: 0 0 0 15px !important;
+  }
+
+  @media #{$large-and-up} {
+    padding: 0 0 0 20px !important;
+  }
+}
+
+.blog-note-content {
+  @media #{$small-and-down} {
+    margin-left: 20px !important;
+  }
+
+  @media #{$medium-and-down} {
+    margin-left: auto !important;
+  }
+}
+
+.note-background {
+  background-image: url("../images/texture-green.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $primary;
+  height: 85%;
+  left: 0;
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.white {
+  background-color: none;
+  color: $white;
+}
+
+.information {
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+  padding: 0 !important;
+}
+
+.note-menu {
+  position: fixed;
+  z-index: 1;
+}
+
+.note-menu-link {
+  color: $white !important;
+}
+
+.shadow {
+  background-color: rgba(0,0,0,0.3);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  &:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+
+.news-background {
+
+  &:hover {
+    .notes-info, .notes-image {
+      background-color: $gray-light !important;
+    }
+  }
+}
