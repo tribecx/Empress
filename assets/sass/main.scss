@@ -80,7 +80,6 @@
 
 // 6. Page-specific styles
 @import
-  'pages/computer-solutions/computer-solutions-content',
   'pages/home/news',
   'pages/home/who_we_are',
   'pages/home/clients',
@@ -88,7 +87,9 @@
   'pages/home/computer_solutions',
   'pages/home/government',
   'pages/government/government',
-  'pages/services_offer/services_offer';
+  'pages/services_offer/services_offer',
+  'pages/computer-solutions/computer-solutions-content',
+  'pages/blog/blog';
 
 // 7. Themes
 @import

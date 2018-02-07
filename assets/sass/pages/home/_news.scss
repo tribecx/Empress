@@ -7,6 +7,10 @@
     padding: 1em 0;
   }
 
+  .blog-background {
+    background-color: $white;
+  }
+
   @media #{$small-and-down} {
     padding: 1.5em 0;
   }
@@ -22,6 +26,10 @@
     @media #{$small-and-down} {
       padding: 0 1em;
     }
+  }
+
+  .blog-news-wrapper {
+    padding: 0 !important;
   }
 
   .news-item {
@@ -54,6 +62,10 @@
       @media #{$medium-and-down} {
         margin: -1em auto 0.4em;
       }
+    }
+
+    .blog-info {
+      background-color: $gray-light;  
     }
 
     .tag {
@@ -120,3 +132,5 @@
     }
   }
 }
+
+
