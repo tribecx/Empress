@@ -18,10 +18,18 @@
   .menu-img, .menu-link {
     display: block;
     text-align: right;
+
+    &.menu-alt {
+      text-align: left;
+    }
   }
 
   .menu-link:first-child {
     margin-top: 3.7em;
+  }
+
+  .menu-link:last-child {
+    margin-bottom: 2em;
   }
 
   .menu-link {

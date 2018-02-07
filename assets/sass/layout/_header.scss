@@ -1,8 +1,8 @@
 .header {
-  background: $primary url('../images/header-texture.svg') center/cover no-repeat;
+  background: $primary url('../images/texture-green-smooth.png') center/cover no-repeat;
 
   @media #{$small-and-down} {
-    background: $primary url('../images/header-texture.svg') center/260% no-repeat;
+    background: $primary url('../images/texture-green-smooth.png') center/260% no-repeat;
   }
 
   .header-logo {

@@ -1,0 +1,147 @@
+.home-gov {
+  margin: 0;
+  position: relative;
+
+  @media #{$medium-and-down} {
+    margin-top: 72px;
+  }
+
+  .gov-decor {
+    height: 100vh;
+    padding: 0;
+
+    .decor-wrapper {
+      position: relative;
+      width: 100%;
+
+      @media #{$medium-and-down} {
+        margin-top: 3em;
+      }
+
+      @media #{$small-and-down} {
+        margin-bottom: 55px;
+        margin-top: 2em;
+      }
+    }
+
+    .gov-background {
+      background: url('../images/texture-green-short.png') 0 0/cover no-repeat;
+      height: 17vw;
+      width: 100%;
+
+      @media #{$medium-and-down} {
+        background-size: 200%;
+        height: 21vw;
+      }
+
+      @media #{$small-and-down} {
+        height: 47vw;
+      }
+    }
+
+    .gov-image {
+      background: url('../images/government.png') center/contain no-repeat;
+      height: 30vw;
+      margin-bottom: -7.5vw;
+      position: relative;
+      width: 100%;
+
+      @media #{$medium-and-down} {
+        height: 32vw;
+        margin-bottom: -12.5vw;
+      }
+
+      @media #{$small-and-down} {
+        height: 77vw;
+        margin-bottom: -23.5vw;
+      }
+    }
+  }
+
+  .gov-text {
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    @media #{$small-and-down} {
+      float: none;
+    }
+  }
+
+  .text-wrapper {
+    font-family: Raleway-Bold;
+    padding: 0 11.1vw 0 12vw;
+
+    @media #{$medium-and-down} {
+      margin: 0 0 5em;
+      padding: 0 4.5vw 0 3vw;
+    }
+
+    @media #{$small-and-down} {
+      margin: 0 0 40px;
+      padding: 0 20vw 0 22vw;
+    }
+  }
+
+  .gov-tag {
+    color: $secondary;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    width: 100%;
+
+    @media #{$small-and-down} {
+      margin-bottom: 1em;
+      width: 110%;
+    }
+  }
+
+  .gov-title {
+    color: $primary;
+    display: inline-block;
+    font-size: 3em;
+    margin: 0 0 0.6em -3.5em;
+    width: 100%;
+
+    @media #{$medium-and-down} {
+      margin-left: -10vw;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 1.7em;
+      margin-left: -7vw;
+    }
+  }
+
+  .gov-paraghraph {
+    color: $asphalt;
+    font-family: Raleway-Medium;
+    font-size: 0.6em;
+    line-height: 1.4em;
+    margin: 2.5em 0;
+
+    @media #{$medium-and-down} {
+      font-size: 0.63em;
+    }
+  }
+
+  .gov-btn {
+    border: solid 2px $secondary;
+    color: $secondary;
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 29px;
+    padding: 0 2.2em;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 0.59em;
+    }
+  }
+}
