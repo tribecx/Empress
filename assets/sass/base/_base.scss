@@ -21,9 +21,6 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
 a {
   color: $brand-color;
   text-decoration: none;
@@ -36,4 +33,9 @@ a {
   &:link, &:hover, &:active {
     text-decoration: none;
   }
+}
+
+nav {
+  background-color: unset !important;
+  box-shadow: unset !important
 }

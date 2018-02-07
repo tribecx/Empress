@@ -2,6 +2,7 @@
   padding: 40px 1.5em 0 !important;
   position: fixed;
 
+
   @media #{$medium-and-up} {
     width: 140px;
   }
@@ -22,6 +23,10 @@
 
   .menu-link:first-child {
     margin-top: 3.7em;
+  }
+
+  .menu-link:last-child {
+    margin-bottom: 2em;
   }
 
   .menu-link {
