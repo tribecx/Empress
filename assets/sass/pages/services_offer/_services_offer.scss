@@ -1,0 +1,154 @@
+.services {
+
+  .services-image {
+    height: 30vw;
+    width: 100%;
+
+    @media #{$small-and-down} {
+      height: 40vw;
+    }
+
+    .services-image-wrapper {
+  	  background-image: url("../images/who.jpg");
+  	  background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+
+      @media #{$small-and-down} {
+       margin: 80px 0 0 73px;
+      }
+    }
+  }
+
+  .services-list-wrapper  {
+    background-color: $secondary;
+    float: right;
+    margin-top: 50px;
+    width: 70%;
+
+    @media #{$small-and-down} {
+      margin-right: 50px;
+    }
+  
+    .services-list {
+      color: $asphalt;
+      font-size: 11px; 
+      line-height: 1.6em;
+      padding: 1.8em;
+
+      .services-unordered {
+        font-family: Raleway-SemiBold;
+        margin: 0;
+        margin-left: 1.5em;
+
+        .services-points{
+          margin-top: 1.0em;
+          list-style-type: initial;
+        }
+      }
+    }
+  }
+
+  .services-image-background{
+  	margin: 50px 0 50px -23px;
+    height: 15vw;
+    width: 70%;
+
+    @media #{$small-and-down} {
+      margin: auto;
+    }
+
+    .services-image-background-wrapper{
+  	  background-image: url("../images/texture-green-short.png");
+  	  background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+
+      @media #{$small-and-down} {
+        visibility: hidden;
+      }
+
+      @media #{$medium-and-up} {
+        width: 100%;
+      }
+      @media #{$medium-and-down} {
+        width: 100%;
+      }
+      @media #{$large-and-up} {
+        width: 100%;
+      }
+    }
+  }
+
+  .services-small-title-wrapper{
+    margin-left: 80px;
+    margin-top: 50px;
+
+    @media #{$small-and-down} {
+      margin-top: 0;
+    }
+
+    .services-small-title{
+	  color: $primary;
+	  font-weight: bold;
+
+	  @media #{$small-and-down} {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .services-title-wrapper{
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 50%;
+
+    .services-title{
+	  color: $secondary; 
+      font-family: Raleway-Bold;
+
+      @media #{$small-and-down} {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }    
+  }
+
+  .services-text-section{
+    margin: 50px 0 0 80px;
+    width: 63%;
+
+    @media #{$small-and-down} {
+      margin-top: 15px;
+    }
+
+    .services-text-wrapper{
+      height: 100%;
+      width: 100%;
+
+      .services-line {
+  	    border: 2px solid;
+  	    color: $secondary;
+  	    float: left;
+  	    width: 33px;
+        }
+
+      .services-text{
+        color: #4A4A4A;
+        font-family: Raleway-Regular;
+        font-size: .6875em;
+        float: left;
+        line-height: 1.2em;
+        
+        @media #{$small-and-down} {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
