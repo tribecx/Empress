@@ -271,7 +271,7 @@
 .divided-image-wrapper {
   @media #{$small-and-down} {
     padding: 0 0 0 5px !important;
-    width: 41% !important;
+    width: 47% !important;
   }
 }
 
@@ -281,9 +281,15 @@
   }
 }
 
+.float-image {
+  @media #{$small-and-down} {
+    float: right !important;
+  }  
+}
+
 .margin-image {
   @media #{$small-and-down} {
-    margin-left: 30px !important;
+    margin-left: 0 !important;
     padding: 0 5px 0 0 !important;
   }  
 
