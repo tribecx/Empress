@@ -256,7 +256,7 @@
 
 
 .titles-wrapper {
-  margin: 7%;
+  margin: 6%;
   text-align: left;
 
   &:hover {
@@ -386,6 +386,8 @@
   &:hover {
     .info-section, .image-section {
       background-color: $charcoal;
+      padding: 0 1.2rem !important;
     }
   }
 }
+
