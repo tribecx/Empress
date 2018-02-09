@@ -7,16 +7,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 80px;
+  margin-top: 5.333rem;
   position: relative;
 
   @media #{$small-and-down} {
-    margin: 80px 25px 0 32px;
+    margin: 5.333rem 1.667rem 0 2.133rem;
     padding: 0 !important;
   }
 
   @media #{$medium-and-down} {
-    margin-left: 25px !important;
+    margin-left: 1.667rem !important;
   }
 
 
@@ -36,42 +36,42 @@
   }
 
   .blog-title-wrapper {
-    padding: 30px 30px 80px 30px;
+    padding: 2rem 2rem 5.333rem 2rem;
 
     @media #{$small-and-down} {
-      padding: 10px !important;
+      padding: 1.6667rem !important;
     }
 
     .blog-titles {
-      border: 8px solid $white;
+      border: 0.5333rem solid $white;
       text-align: center;
 
       @media #{$small-and-down} {
-        border: 3px solid $white;
+        border: 0.2rem solid $white;
       }
 
       .blog-small-title {
       	color: $secondary;
       	font-family: Raleway-SemiBold;
-      	margin-top: 40px;
+      	margin-top: 2.667rem;
 
         @media #{$small-and-down} {
-          margin-top: 15px !important;
+          margin-top: 1rem !important;
         }
       }
 
       .blog-big-title {
       	color: $white;
       	font-family: Raleway-SemiBold;
-      	margin-bottom: 30px !important;
+      	margin-bottom: 2rem !important;
       	margin: auto;
       	text-align: center;
       	width: 74%;
 
         @media #{$small-and-down} {
-          font-size: 22px;
+          font-size: 1.467rem;
           width: 85%;
-          margin-bottom: 15px !important;
+          margin-bottom: 1rem !important;
         }
 
         @media #{$medium-and-down} {
@@ -88,13 +88,13 @@
   z-index: 1;
 
   @media #{$small-and-down} {
-    font-size: 13px;
+    font-size: 0.8667rem;
     display: flex;
     flex-direction: column-reverse;
   }
 
   @media #{$medium-and-down} {
-    margin-left: 25px !important;
+    margin-left: 1.667rem !important;
   }
 
   .time-wrapper {
@@ -109,7 +109,7 @@
   	  color: $asphalt;
   	  font-family: Raleway-SemiBold;
   	  font-size: .8em;
-  	  margin-top: 15px !important;
+  	  margin-top: 1rem !important;
   	  margin: auto;
   	}
   }
@@ -125,14 +125,14 @@
   	  color: $primary;
   	  font-family: Raleway-SemiBold;
   	  font-size: .8em;
-  	  margin: 15px auto !important;
+  	  margin: 1rem auto !important;
   	  text-align: left;
   	}
   }
 }
 
 .section-popular {
-  margin-top: 10px !important;
+  margin-top: 0.6667rem !important;
   padding: 0 2em !important;
 
   @media #{$small-and-down} {
@@ -145,7 +145,7 @@
 }
 
 .most-popular {
-  border-top: 5px solid $secondary;
+  border-top: 0.3333rem solid $secondary;
 
   @media #{$medium-and-down} {
     border: none;
@@ -156,8 +156,8 @@
   color: #07778C;
   display: block;
   font-family: Raleway-Bold;
-  font-size: 21px;
-  height: 50.4px;
+  font-size: 1.4rem;
+  height: 3.333rem;
   line-height: 1.2;
   margin: 1em 0 0.6em;
   overflow: hidden;
@@ -165,7 +165,7 @@
 }
 
 .popular-news-wrapper{
-  border: 2px solid $secondary;
+  border: 0.1333rem solid $secondary;
   display: block;
   position: relative;
 }
@@ -188,7 +188,7 @@
 .month-title {
   @extend .week-title;
   transform: translate(0, 0) !important;
-  border-left: 2px solid $secondary;
+  border-left: 0.1333rem solid $secondary;
 }
 
 .most-popular-image {
@@ -221,7 +221,7 @@
   .popular-title-wraper {
 
     .popular-titles {
-      border: 3px solid $white;
+      border: 0.2rem solid $white;
       text-align: center;
 
       &:hover {
@@ -235,7 +235,7 @@
       .tiny-title {
         color: $secondary;
         font-family: Raleway-SemiBold;
-        font-size: 15px;
+        font-size: 1rem;
         display: block;
         margin-top: 10px;
         }
@@ -243,8 +243,8 @@
       .soft-title {
         color: $white;
         font-family: Raleway-SemiBold;
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 1.333rem;
+        margin-bottom: 0.6667rem;
       }
     }
   }
@@ -266,14 +266,14 @@
   .little-title {
     color: $secondary;
     font-family: Raleway-SemiBold;
-    font-size: 11px;
+    font-size: 0.7333rem;
     margin: auto;
   }
 
   .medium-title {
     color: black;
     font-family: Raleway-SemiBold;
-    font-size: 15px;
+    font-size: 1rem;
     margin: auto;
   }
 }
@@ -291,7 +291,7 @@
 }
 
 .padding-left {
-  padding: 0 0 0 5px !important;
+  padding: 0 0 0 0.3333rem !important;
 
   @media #{$small-and-down} {
     padding: 0 !important;
@@ -299,7 +299,7 @@
 }
 
 .padding-right {
-  padding: 0 5px 0 0 !important;
+  padding: 0 0.3333rem 0 0 !important;
 
   @media #{$small-and-down} {
     padding: 0 !important;
@@ -321,11 +321,11 @@
   z-index: 0;
 
   @media #{$small-and-down} {
-    height: 340px !important;
+    height: 22.67rem !important;
   }
 
   @media #{$medium-and-up} {
-    height: 70%;
+    height: 50%;
   }
 
   @media #{$large-and-up} {
@@ -366,7 +366,7 @@
 
 .medium {
   @media #{$small-and-down} {
-    margin-left: 25px !important;
+    margin-left: 1.667rem !important;
     padding: 1em 0 !important;
   }
 

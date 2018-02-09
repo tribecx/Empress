@@ -3,14 +3,14 @@
   z-index: 1;
 
   .centered-title-wrapper {
-  	padding: 50px;
+  	padding: 3.333rem;
 
     @media #{$small-and-down} {
-      padding: 50px !important;
+      padding: 3.333rem !important;
     }
 
     @media #{$medium-and-down} {
-      padding: 50px !important;
+      padding: 3.333rem !important;
     }
 
   	.centered-title {
@@ -20,12 +20,12 @@
   	  text-align: center;
 
       @media #{$small-and-down} {
-        font-size: 35px;
+        font-size: 2.333rem;
       }
   	}
 
   	.subtitle-wrapper {
-  		margin-top: 15px;
+  		margin-top: 1rem;
   		text-align: center;
 
   	  .subtitle {
@@ -34,7 +34,7 @@
   	    display: inline-block;
   	    font-family: Raleway-SemiBold;
   	    font-size: .8em;
-  	    line-height: 16px;
+  	    line-height: 1.067rem;
   	    padding: .5em;
   	    text-align: center;
   	  }
@@ -44,7 +44,7 @@
   	    display: inline-block;
   	    font-family: Raleway-SemiBold;
   	    font-size: .8em;
-  	    line-height: 16px;
+  	    line-height: 1.067rem;
   	    text-align: center;
   	  }
     }
@@ -53,7 +53,7 @@
 
 .middle-notes {
    @media #{$small-and-down} {
-    margin: 0 22px !important;
+    margin: 0 1.467rem !important;
   }
 
   @media #{$medium-and-down} {
@@ -67,45 +67,45 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vw;
-  margin: 50px 30px 50px 40px;
+  margin:  1.467rem 2rem  1.467rem 2.667rem;
   /*padding: 250px;*/
 
    @media #{$small-and-down} {
-    height: 334px;
-    margin-top: -40px;
+    height: 22.27rem;
+    margin-top: -2.667rem;
     position: relative;
   }
 
   @media #{$medium-and-down} {
     height: 80vh;
-    margin: 35px;
+    margin: 2.333rem;
   }
 }
 
 .post-information-wrapper {
-  padding: 0 40px !important;
+  padding: 0 2.667rem !important;
   text-align: left;
 
   @media #{$medium-and-down} {
-    padding: 0 35px !important;
+    padding: 0 2.333rem !important;
   }
 
   .post-information {
     color: $asphalt;
     font-size: .9em;
     font-family: Raleway-Regular;
-    line-height: 20px;
+    line-height: 1.333rem;
   }
 }
 
 .divided-image-note {
   @extend .cover-image-note;
   height: 20vw;
-  margin: 50px 20px;
+  margin: 3.333rem 1.333rem;
   padding: 0;
 
    @media #{$small-and-down} {
-    height: 137px;
+    height:  9.133rem;
     margin: auto;
   }
 
@@ -123,7 +123,7 @@
 }
 
 .most-popular {
-  border-top: 5px solid $secondary;
+  border-top: 0.3333rem solid $secondary;
   
   @media #{$medium-and-down} {
     border: none;
@@ -134,8 +134,8 @@
   color: #07778C;
   display: block;
   font-family: Raleway-Bold;
-  font-size: 21px;
-  height: 50.4px;
+  font-size: 1.4rem;
+  height: 3.333rem;
   line-height: 1.2em;
   margin: 1em 0 0.6em;
   overflow: hidden;
@@ -143,7 +143,7 @@
 }
 
 .popular-news-wrapper{
-  border: 2px solid $secondary;
+  border: .1333rem solid $secondary;
   display: block;
   position: relative;
 }
@@ -166,7 +166,7 @@
 .month-title {
   @extend .week-title;
   transform: translate(0, 0) !important;
-  border-left: 2px solid $secondary;
+  border-left: .1333rem solid $secondary;
 }
 
 .most-popular-image {
@@ -178,6 +178,10 @@
   padding: 1.5em;
   position: relative;
 
+  @media #{$medium-and-up} {
+    padding: .7rem;
+  }
+
   &:hover{
     cursor: pointer;
   }
@@ -185,7 +189,7 @@
   .popular-title-wraper {
 
     .popular-titles {
-      border: 3px solid $white;
+      border: 0.2rem solid $white;
       text-align: center;
 
       &:hover {
@@ -195,9 +199,9 @@
       .tiny-title {
         color: $secondary;
         font-family: Raleway-SemiBold;
-        font-size: 15px;
+        font-size: 1rem;
         display: block;
-        margin-top: 10px;
+        margin-top: 0.6667rem;
 
         &:hover {
           color: $primary;
@@ -207,8 +211,8 @@
       .soft-title {
         color: $white;
         font-family: Raleway-SemiBold;
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 1.333rem;
+        margin-bottom: 0.6667rem;
 
         &:hover {
           color: $primary;
@@ -224,6 +228,11 @@
   @media #{$medium-and-down} {
     margin: 11% !important;
   }
+
+  @media #{$medium-and-up} {
+    margin: 7% !important;
+    padding: 1.7em;
+  }
 }
 
 
@@ -234,14 +243,14 @@
   .little-title {
     color: $secondary;
     font-family: Raleway-SemiBold;
-    font-size: 11px;
+    font-size: 0.7333rem;
     margin: auto;
   }
 
   .medium-title {
     color: black;
     font-family: Raleway-SemiBold;
-    font-size: 15px;
+    font-size: 1rem;
     margin: auto;
   }
 }
@@ -251,9 +260,9 @@
 }
 
 .center-notes {
-  margin-top: 50px;
+  margin-top: 3.333rem;
   text-align: center;
-  padding-right: 50px !important;
+  padding-right: 3.333rem !important;
 }
 
 .margin-post {
@@ -270,14 +279,14 @@
 
 .divided-image-wrapper {
   @media #{$small-and-down} {
-    padding: 0 0 0 5px !important;
+    padding: 0 0 0 .3333rem !important;
     width: 47% !important;
   }
 }
 
 .divided-image-section {
   @media #{$small-and-down} {
-    margin: auto 35px;
+    margin: auto 2.333rem;
   }
 }
 
@@ -290,21 +299,21 @@
 .margin-image {
   @media #{$small-and-down} {
     margin-left: 0 !important;
-    padding: 0 5px 0 0 !important;
+    padding: 0 .3333rem 0 0 !important;
   }  
 
   @media #{$medium-and-up} {
-    padding: 0 0 0 15px !important;
+    padding: 0 0 0 1rem !important;
   }
 
   @media #{$large-and-up} {
-    padding: 0 0 0 20px !important;
+    padding: 0 0 0 1.333rem !important;
   }
 }
 
 .blog-note-content {
   @media #{$small-and-down} {
-    margin-left: 20px !important;
+    margin-left: 1.333rem !important;
   }
 
   @media #{$medium-and-down} {
