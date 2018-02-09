@@ -137,5 +137,11 @@
 
   .blog-menu-link {
     color: $white !important;
+  } 
+
+  .new-right {
+    @media #{$large-and-up} {
+      padding-right: 0 !important;
+    }
   }
 }
