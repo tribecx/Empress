@@ -1,6 +1,5 @@
 .blog-news {
-  background-color: $secondary;
-  padding: 3em 0 2em;
+  background-color: $white;
   text-align: center;
 
   @media #{$medium-and-down} {
@@ -129,6 +128,20 @@
     &:hover {
       background-color: $primary;
       color: $secondary;
+    }
+  }
+
+  .blog-menu {
+    z-index: 1;
+  }
+
+  .blog-menu-link {
+    color: $white !important;
+  } 
+
+  .new-right {
+    @media #{$large-and-up} {
+      padding-right: 0 !important;
     }
   }
 }
