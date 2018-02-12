@@ -19,8 +19,6 @@
     margin-left: 1.667rem !important;
   }
 
-
-
   .shadow {
     background-color: rgba(0,0,0,0.3);
     height: 100%;
@@ -36,7 +34,7 @@
   }
 
   .blog-title-wrapper {
-    padding: 2rem 2rem 5.333rem 2rem;
+    padding: 3.333rem 2.667rem 6.667rem 2.667rem;
 
     @media #{$small-and-down} {
       padding: 1.6667rem !important;
@@ -76,6 +74,9 @@
 
         @media #{$medium-and-down} {
           width: 86%;
+        }
+        @media #{$extra-extra-screen} {
+          width: 50%;
         }
       }
     }
@@ -333,7 +334,11 @@
   }
 
   @media #{$extra-large-and-up} {
-    height: 90%;
+    height: 100%;
+  }
+
+  @media #{$extra-extra-screen} {
+    height: 55%;
   }
 }
 

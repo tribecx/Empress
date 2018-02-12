@@ -182,6 +182,10 @@
     padding: .7rem;
   }
 
+  @media #{$extra-extra-screen} {
+    padding: 4.7rem;
+  }
+
   &:hover{
     cursor: pointer;
   }
@@ -203,10 +207,13 @@
         display: block;
         margin-top: 0.6667rem;
 
+        @media #{$extra-extra-screen} {
+          font-size: 1.3rem;
+        }   
         &:hover {
           color: $primary;
         }
-        }
+      }
 
       .soft-title {
         color: $white;
@@ -214,6 +221,9 @@
         font-size: 1.333rem;
         margin-bottom: 0.6667rem;
 
+        @media #{$extra-extra-screen} {
+          font-size: 1.7rem !important;
+        }
         &:hover {
           color: $primary;
         }
@@ -233,12 +243,20 @@
     margin: 7% !important;
     padding: 1.7em;
   }
+
+  @media #{$extra-extra-screen} {
+    padding: 2.7em;
+  }
 }
 
 
 .titles-wrapper {
   margin: 7%;
   text-align: left;
+
+  @media #{$extra-extra-screen} {
+    padding: .86em;
+  }
 
   .little-title {
     color: $secondary;
