@@ -40,7 +40,7 @@
   	  }
 
   	  .subtitle-time {
-  	    color: $gray-light;
+  	    color: $ashes;
   	    display: inline-block;
   	    font-family: Raleway-SemiBold;
   	    font-size: .8em;
@@ -393,7 +393,7 @@
 
   &:hover {
     .notes-info, .notes-image {
-      background-color: $gray-light !important;
+      background-color: $ashes !important;
     }
   }
 }

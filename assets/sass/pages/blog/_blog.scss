@@ -19,6 +19,10 @@
     margin-left: 1.667rem !important;
   }
 
+  @media #{$extra-large-and-up} {
+    min-height: 500px !important;
+  }
+
   .shadow {
     background-color: rgba(0,0,0,0.3);
     height: 100%;
@@ -96,6 +100,10 @@
 
   @media #{$medium-and-down} {
     margin-left: 1.667rem !important;
+  }
+
+  @media #{$extra-large-and-up} {
+    min-height: 175px !important;
   }
 
   .time-wrapper {
@@ -308,37 +316,44 @@
 }
 
 .blue-background {
+  background-color: $primary;
   background-image: url("../images/texture-green.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $primary;
-  height: 85%;
   left: 0;
-  position: absolute;
   opacity: 0.9;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 0;
 
   @media #{$small-and-down} {
     height: 90vw !important;
+    max-height: 320px !important;
+    min-height: 300px !important;
   }
 
   @media #{$medium-and-up} {
-    height: 60vw;
+    height: 70vw;
+    max-height: 585px;
+    min-height: 560px;
+  }
+
+  @media #{$medium-and-down} {
+    height: 70vw;
+    max-height: 585px;
+    min-height: 560px;
   }
 
   @media #{$large-and-up} {
     height: 70vw;
+    max-height: 700px;
   }
 
   @media #{$extra-large-and-up} {
-    height: 50vw;
-  }
-
-  @media #{$extra-extra-screen} {
-    height: 55%;
+    height: 70vw;
+    max-height: 680px;
   }
 }
 
