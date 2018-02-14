@@ -41,7 +41,8 @@
     padding: 3.333rem 2.667rem 6.667rem 2.667rem;
 
     @media #{$small-and-down} {
-      padding: 1.6667rem !important;
+      min-height: 167px;
+      padding: 2.6667rem !important;
     }
 
     .blog-titles {
@@ -268,10 +269,6 @@
   margin: 6%;
   text-align: left;
 
-  &:hover {
-    background-color: $charcoal;
-  }
-
   .little-title {
     color: $secondary;
     font-family: Raleway-SemiBold;
@@ -317,12 +314,11 @@
 
 .blue-background {
   background-color: $primary;
-  background-image: url("../images/texture-green.png");
+  background-image: url("../images/trama-blog.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
-  opacity: 0.9;
   position: absolute;
   top: 0;
   width: 100%;
@@ -405,8 +401,6 @@
 
   &:hover {
     .info-section, .image-section {
-      background-color: $charcoal;
-      padding: 0 1.2rem !important;
     }
   }
 }

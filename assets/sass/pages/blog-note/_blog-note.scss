@@ -240,12 +240,13 @@
   }
 
   @media #{$medium-and-up} {
-    margin: 7% !important;
+    margin: 6% !important;
     padding: 1.7em;
   }
 
-  @media #{$extra-extra-screen} {
-    padding: 2.7em;
+  @media #{$extra-large-and-up} {
+    margin: 6% !important;
+    padding: 1.7em;
   }
 }
 
