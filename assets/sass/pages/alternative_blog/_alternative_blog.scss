@@ -21,11 +21,17 @@
     }
   }
 
-  .image {
+  .cover-image {
   	background-image: url("../images/blog-cover.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  	height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .image {  	
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -198,7 +204,7 @@
   }
 
   .popular {
-    border-top: solid 5px $stone;
+    border-top: solid 5px $secondary;
     display: block;
     float: right;
     margin: 1vw 1.5vw;
@@ -216,15 +222,16 @@
     }
 
     .popular-title {
-      font-family: Raleway-SemiBold;
-      font-size: 2.5em;
+      color: $primary;
+      font-family: Raleway-Bold;
+      font-size: 1.4em;
       margin: 1em 0 1.2em;
       text-align: center;
       width: 100%;
     }
 
     .popular-wrapper {
-      border: solid 2px $stone;
+      border: solid 2px $secondary;
       padding: 5px 15px 0 15px;
       position: relative;
     }
@@ -245,18 +252,19 @@
       color: $black;
       cursor: pointer;
       display: inline-block;
-      font-family: Raleway-SemiBold;
-      font-size: 11px;
+      font-family: Raleway-Bold;
+      font-size: 0.7em;
       font-weight: bold;
       vertical-align: middle;
+      text-transform: uppercase;
 
       &:hover {
-        color: $grave;
+        color: $asphalt;
       }
     }
 
     .nav-line {
-      background-color: $stone;
+      background-color: $secondary;
       display: inline-block;
       height: 35px;
       margin: 0 12px;
@@ -301,8 +309,9 @@
     }
 
     .popular-tag {
-      font-size: 10px;
+      font-size: 1rem;
       margin: 0;
+      color: $secondary;
     }
 
     .popular-head {
@@ -346,7 +355,7 @@
     }
 
     .tag {
-      color: $dark;
+      color: $secondary;
       font-family: Raleway-SemiBold;
       font-size: 1.1em;
       margin: 0;
@@ -375,7 +384,6 @@
   .articles {
     display: block;
     float: right;
-    font-size: 0;
     width: 57vw;
 
     @include medium-blog {
@@ -388,6 +396,18 @@
       margin: 1vw;
       vertical-align: top;
       width: 26.5vw;
+
+      &:hover {
+      cursor: pointer;
+
+      .item-info {
+        background-color: $primary;
+      }
+
+      .item-title, .item-excerpt, .item-date {
+        color: $white;
+      }
+    }
 
       @include medium-blog {
         width: 44vw;
@@ -413,13 +433,12 @@
   }
 
   .item-content {
-    background-color: white;
     display: inline-block;
     text-align: center;
     width: 100%;
 
     .item-info {
-      background-color: $stone;
+      background-color: $ashes;
       margin: -1vw auto 1vw;
       padding: 1.5vw;
       position: relative;
@@ -441,11 +460,10 @@
     .item-tag {
       @include center(true,false);
 
-      background-color: $white;
-      color: $grave;
-      font-family: Raleway-Light;
-      font-size: 1.3em;
-      font-weight: bold;
+      background-color: $secondary;
+      color: $asphalt;
+      font-family: Raleway-Bold;
+      font-size: .7em;
       line-height: 2.3em;
       margin: -1.15em 0;
       padding: 0 0.9em;
@@ -454,9 +472,10 @@
     }
 
     .item-title {
+      color: $primary;
       cursor: pointer;
       font-family: Raleway-SemiBold;
-      font-size: 2.1em;
+      font-size: 1.4em;
       margin: 1em 0 0.5em;
 
       &:hover {
@@ -465,20 +484,19 @@
     }
 
     .item-excerpt {
-      color: $grave;
-      font-family: Raleway-Light;
-      font-size: 1.3em;
-      font-weight: bold;
-      line-height: 1.6em;
-      margin: 0.7em;
+      color: $smoke;
+      font-family: Raleway-SemiBold;
+      font-size: .867em;
+      line-height: 1.4;
+      margin: .6em .2em;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .item-date {
-      color: $grayButton;
-      font-family: Raleway-SemiBold;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin: 1em 0;
+      color: $smoke;
+      font-family: Raleway-Bold;
+      font-size: .7em;
 
       @include small-blog {
         display: none;
