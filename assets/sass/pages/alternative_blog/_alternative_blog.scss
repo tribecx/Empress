@@ -186,9 +186,9 @@
     }
   }
 
-  .container {
+  .blog-container {
     height: 70vw;
-    margin: 0 0 2vw 7vw;
+    margin: 1vw 0 0 0;
     width: 86vw;
 
     @include medium-blog {
@@ -484,6 +484,14 @@
         display: none;
       }
     }
+  }
+
+  .margin-right {
+  	margin: 1vw 0 1vw 1vw !important;  	
+  }
+
+  .margin-left {    
+    margin: 1vw 1vw 1vw 0 !important;
   }
 }
 
