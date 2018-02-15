@@ -60,7 +60,27 @@ $breakpoints: (
 ) !default;
 
 
+$small-blog-width: 480px;
+$medium-blog-width: 768px;
+$large-blog-width: 1200px;
 
+@mixin small-blog {
+  @media (max-width: #{$small-blog-width}){
+    @content;
+  }
+}
+
+@mixin medium-blog {
+  @media (max-width: #{$medium-blog-width}){
+    @content;
+  }
+}
+
+@mixin large-blog {
+  @media (max-width: #{$large-blog-width}) {
+    @content;
+  }
+}
 
 
 
