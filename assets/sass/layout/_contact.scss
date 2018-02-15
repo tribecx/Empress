@@ -1,0 +1,86 @@
+.contact-section {
+  background-color: $primary;
+  color: $white;
+  padding: 50px;
+  
+    .contact-title {
+      color: $white;
+      font-family: Raleway-Bold;
+      font-size: 3.1em;
+      letter-spacing: 1px;
+      line-height: 60px;
+    }
+    
+    .contact-row{
+      align-items: center;
+      display: flex;
+    }
+  
+    .contact-form{
+      position: relative;
+      
+        .input-email{
+          border-bottom: 1px solid $white;
+          margin: auto;
+          
+          ::placeholder{
+            color: $ashes;
+            font-size: 1.12em;
+            font-family: Raleway-Thin;
+          }
+        }
+      
+        .contact-arrow{
+          color: $secondary !important;
+          cursor: pointer;
+          font-size: 2rem;
+          line-height: 1.5;
+          position: absolute;
+          right: 0;   
+          
+          &:hover{
+            color: $white;
+          }
+        }
+      
+        a:link{
+          text-decoration: none; 
+        }
+        /*Hide all except first fieldset*/
+        fieldset:not(:first-of-type) {
+          display: none;
+        }
+      
+        fieldset{
+          border: none;
+        }
+      
+        .action-button {
+          background-color: $ashes;
+          border: 0 none;
+          border-radius: 3px;
+          cursor: pointer;
+          color: $primary;
+          font-family: Raleway-Bold;
+          font-size: .6em;
+          text-align: center;
+          width: 110px;
+          padding: 12px; 
+
+          &.active{
+            background-color:$secondary;
+          }
+        }
+        
+        .answer-message{
+          color: $secondary;
+          display: inline-block;
+          font-size: .8em;       
+        }
+    }
+}
+
+
+
+
+
