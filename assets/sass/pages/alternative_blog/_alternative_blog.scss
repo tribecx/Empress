@@ -44,12 +44,12 @@
     width: 55vw;
 
     @include medium-blog {
-      margin: 10em 0 1vw 3vw;
+      margin: 6em 0 1vw 3vw;
       width: 90vw;
     }
 
     @include small-blog {
-      margin: 10em 0 4vw 4vw;
+      margin: 7em 0 0 .4em;
       width: 88vw;
     }
 
@@ -63,10 +63,12 @@
 
       @include medium-blog {
         height: 56vw;
+        width: 80%;
       }
 
       @include small-blog {
         height: 50vw;
+        width: 89vw;
       }
 
       &:hover {
@@ -145,12 +147,15 @@
     padding: 5%;
 
     @include medium-blog {
-      font-size: 1.6em;
+      font-size: .8em;
+      width: 80%;
     }
 
     @include small-blog {
       padding: 7% 7% 5%;
       text-align: center;
+      font-size: .8em !important;
+      width: 89vw;
     }
 
     .main-date {
@@ -180,10 +185,9 @@
     }
 
     .mobile-date {
-      color: $clear;
+      color: $asphalt;
       display: none;
       font-family: Raleway-SemiBold;
-      font-weight: bold;
       margin: 0.7em 0 0;
 
       @include small-blog {
@@ -199,7 +203,13 @@
 
     @include medium-blog {
       margin: 0 0 2vw 2vw;
-      width: 92vw;
+      width: calc(100% - 53px);
+    }
+
+    @include small-blog {
+      height: 100%;
+      margin: .4em;
+      width: 100%;
     }
   }
 
@@ -319,7 +329,7 @@
       margin: 3px 0 0;
 
       @include medium-blog {
-        font-size: 2.5em;
+        font-size: 1.5em;
       }
     }
 
@@ -361,7 +371,7 @@
       margin: 0;
 
       @include medium-blog {
-      	font-size: 1.4em;
+      	font-size: .8em;
       }
     }
 
@@ -372,7 +382,7 @@
       margin: 2px 0 0;
 
       @include medium-blog {
-        font-size: 1.7em;
+        font-size: .9em;
       }
 
       &:hover {
@@ -388,6 +398,12 @@
 
     @include medium-blog {
       float: none;
+      width: 100%;
+    }
+
+    @include small-blog {
+      float: none;
+      margin-top: 1em;
       width: 92vw;
     }
 
@@ -437,6 +453,10 @@
     text-align: center;
     width: 100%;
 
+    @include medium-blog {
+      font-size: .8em;
+    }
+
     .item-info {
       background-color: $ashes;
       margin: -1vw auto 1vw;
@@ -445,12 +465,12 @@
       width: 25vw;
 
       @include medium-blog {
-        font-size: 1.2em;
         margin: -1.6vw auto 2vw;
         width: 41vw;
       }
 
       @include small-blog {
+      	font-size: .8em !important;
         margin: -2vw auto 2vw;
         padding: 1.5vw 4.5vw 5vw;
         width: 84vw;
@@ -469,6 +489,10 @@
       padding: 0 0.9em;
       text-transform: uppercase;
       top: 0;
+
+      @include small-blog {
+      	font-size: 1em;
+      }
     }
 
     .item-title {
@@ -506,13 +530,24 @@
 
   .margin-right {
   	margin: 1vw 0 1vw 1vw !important;  	
+
+  	@include medium-blog {
+  	  margin: 1vw !important;
+  	}
   }
 
   .margin-left {    
     margin: 1vw 1vw 1vw 0 !important;
+
+    @include medium-blog {
+     margin: 1vw !important;
+    }
   }
+
+  .menu-link {
+  color: $white !important;
+  }
+
+
 }
 
-.menu-link {
-  color: $white !important;
-}
