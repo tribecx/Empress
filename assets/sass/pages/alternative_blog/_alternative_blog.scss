@@ -111,6 +111,7 @@
     }
 
     .main-title {
+      color: $white !important;
       font-family: Raleway-SemiBold; 
       font-size: 3.5vw;
       line-height: 1.3em;
@@ -377,6 +378,7 @@
     }
 
     .title {
+      color: $smoke;
       cursor: pointer;
       font-family: Raleway-SemiBold;
       font-size: 1.4vw;
@@ -550,7 +552,10 @@
   .menu-link {
   color: $white !important;
   }
-
+  
+  a {
+  	color: none;
+  }
 
 }
 
