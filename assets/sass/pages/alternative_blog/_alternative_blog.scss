@@ -13,7 +13,8 @@
       z-index: -1;
 
     @include medium-blog {
-      height: 64vw;
+      height: 80vw;
+      max-height: 720px;
     }
 
     @include small-blog {
@@ -45,7 +46,7 @@
 
     @include medium-blog {
       margin: 6em 0 1vw 3vw;
-      width: 90vw;
+      width: 76vw;
     }
 
     @include small-blog {
@@ -203,7 +204,7 @@
 
     @include medium-blog {
       margin: 0 0 2vw 2vw;
-      width: calc(100% - 53px);
+      width: 63vw;
     }
 
     @include small-blog {
@@ -399,6 +400,7 @@
     @include medium-blog {
       float: none;
       width: 100%;
+      text-align: center; 
     }
 
     @include small-blog {
@@ -426,7 +428,8 @@
     }
 
       @include medium-blog {
-        width: 44vw;
+        width: 320px;
+        display: inline-block;
       }
 
       @include small-blog {
@@ -466,7 +469,7 @@
 
       @include medium-blog {
         margin: -1.6vw auto 2vw;
-        width: 41vw;
+        width: 300px;
       }
 
       @include small-blog {

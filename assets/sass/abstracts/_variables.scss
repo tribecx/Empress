@@ -62,7 +62,7 @@ $breakpoints: (
 
 $small-blog-width: 600px;
 $medium-blog-width: 992px;
-$large-blog-width: 993px;
+$large-blog-width: 1200px;
 
 @mixin small-blog {
   @media (max-width: #{$small-blog-width}){
