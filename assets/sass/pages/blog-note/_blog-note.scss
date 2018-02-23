@@ -207,7 +207,7 @@
       .soft-title {
         color: $white;
         font-family: Raleway-SemiBold;
-        font-size: 20px;
+        font-size: 1.333em;
         margin-bottom: 10px;
 
         &:hover {
@@ -254,6 +254,10 @@
   margin-top: 50px;
   text-align: center;
   padding-right: 50px !important;
+
+  @media #{$medium-and-down} {
+    padding: 0 !important;
+  }
 }
 
 .margin-post {
@@ -359,14 +363,5 @@
 
   &:hover {
     background-color: rgba(0,0,0,0.6);
-  }
-}
-
-.news-background {
-
-  &:hover {
-    .notes-info, .notes-image {
-      background-color: $ashes !important;
-    }
   }
 }
