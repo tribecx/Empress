@@ -23,19 +23,19 @@
     <link type="text/css" rel="stylesheet" href="assets/css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body class="blog">
-  <div class="menu hide-on-small-only note-menu">
+<body class="blog-note">
+  <div class="menu hide-on-small-only">
       <a href="index.html">
         <img class="menu-img right" src="assets/images/icons/icon-empress-blue.svg">
       </a>
       <div>
-        <a href="#" class="menu-link right-align note-menu-link">Quiénes somos</a>
-        <a href="#" class="menu-link right-align note-menu-link">Clientes y usuarios</a>
-        <a href="#" class="menu-link right-align note-menu-link">Plataforma tecnológica</a>
-        <a href="#" class="menu-link right-align note-menu-link">Soluciones informáticas</a>
-        <a href="#" class="menu-link right-align note-menu-link">E-Gobierno</a>
-        <a href="#" class="menu-link right-align note-menu-link">Registro de solicitud</a>
-        <a href="#" class="menu-link right-align note-menu-link">Blog</a>
+        <a href="#who-we-are" id="blog-links" class="menu-link right-align">Quiénes somos</a>
+        <a href="#clients" id="blog-links" class="menu-link right-align">Clientes y usuarios</a>
+        <a href="#platform" id="blog-links" class="menu-link right-align">Plataforma tecnológica</a>
+        <a href="computer-solutions.html" id="blog-links" class="menu-link right-align">Soluciones informáticas</a>
+        <a href="government.html" id="blog-links" class="menu-link right-align">E-Gobierno</a>
+        <a href="#" id="blog-links" class="menu-link right-align">Registro de solicitud</a>
+        <a href="blog.html" id="blog-links" class="menu-link right-align">Blog</a>
       </div>
     </div>
     <div class="mobile-menu hide-on-med-and-up">
@@ -45,18 +45,19 @@
       <img class="menu-btn" src="assets/images/icons/menu-green.svg">
       <div class="menu-box">
         <div class="menu-links">
-          <a href="#" class="menu-link right-align">Quiénes somos</a>
-          <a href="#" class="menu-link right-align">Clientes y usuarios</a>
-          <a href="#" class="menu-link right-align">Plataforma tecnológica</a>
-          <a href="#" class="menu-link right-align">Soluciones informáticas</a>
-          <a href="#" class="menu-link right-align">E-Gobierno</a>
+          <a href="#who-we-are" class="menu-link right-align">Quiénes somos</a>
+          <a href="#clients" class="menu-link right-align">Clientes y usuarios</a>
+          <a href="#platform" class="menu-link right-align">Plataforma tecnológica</a>
+          <a href="computer-solutions.html" class="menu-link right-align">Soluciones informáticas</a>
+          <a href="government.html" class="menu-link right-align">E-Gobierno</a>
           <a href="#" class="menu-link right-align">Registro de solicitud</a>
-          <a href="#" class="menu-link right-align">Blog</a>
+          <a href="blog.html" class="menu-link right-align">Blog</a>
         </div>
       </div>
     </div>
+
     <div class="content right">
-      <div class="note-background"></div>
+      <div class="notebackground"></div>
       <section class="centered-title-section">
       	<div class="centered-title-wrapper">
       	  <h1 class="centered-title">When photography meets impressionism</h1>
@@ -164,5 +165,9 @@
       	</div>
       </section>
     </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/blog-note.js"></script>
 </body>
 </html>

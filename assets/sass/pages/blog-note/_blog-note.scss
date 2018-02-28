@@ -1,3 +1,4 @@
+.blog-note {
 .centered-title-section {
   position: relative;
   z-index: 1;
@@ -316,7 +317,7 @@
   }
 }
 
-.note-background {
+.notebackground {
   background-image: url("../images/trama-blog.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -364,4 +365,18 @@
   &:hover {
     background-color: rgba(0,0,0,0.6);
   }
+}
+
+.menu-link {
+  color: $white !important;
+}
+
+.alternative-link {
+  color: $primary !important;
+}
+
+.menu {
+  z-index: 2;
+}
+
 }
