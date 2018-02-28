@@ -534,7 +534,7 @@
   }
 
   .margin-right {
-  	margin: 1vw 0 1vw 1vw !important;  	
+  	margin: 1vw 0 1vw .66vw !important;  	
 
   	@include medium-blog {
   	  margin: 1vw !important;
@@ -555,6 +555,10 @@
   
   a {
   	color: none;
+  }
+
+  .alternative-link {
+  	color: $primary !important;
   }
 
 }
