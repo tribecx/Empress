@@ -1,3 +1,4 @@
+.blog-note {
 .centered-title-section {
   position: relative;
   z-index: 1;
@@ -207,7 +208,7 @@
       .soft-title {
         color: $white;
         font-family: Raleway-SemiBold;
-        font-size: 20px;
+        font-size: 1.333em;
         margin-bottom: 10px;
 
         &:hover {
@@ -254,6 +255,10 @@
   margin-top: 50px;
   text-align: center;
   padding-right: 50px !important;
+
+  @media #{$medium-and-down} {
+    padding: 0 !important;
+  }
 }
 
 .margin-post {
@@ -312,8 +317,8 @@
   }
 }
 
-.note-background {
-  background-image: url("../images/texture-green.png");
+.notebackground {
+  background-image: url("../images/trama-blog.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,7 +346,7 @@
 
 .note-menu {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
 }
 
 .note-menu-link {
@@ -362,11 +367,16 @@
   }
 }
 
-.news-background {
+.menu-link {
+  color: $white !important;
+}
 
-  &:hover {
-    .notes-info, .notes-image {
-      background-color: $ashes !important;
-    }
-  }
+.alternative-link {
+  color: $primary !important;
+}
+
+.menu {
+  z-index: 2;
+}
+
 }

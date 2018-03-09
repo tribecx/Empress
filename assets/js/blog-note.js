@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    menuBehaviour();
+    menuNoteBehaviour();
 });
 
-function menuBehaviour() {
+function menuNoteBehaviour() {
   $(document).scroll(function() {
-    if ($(document).scrollTop() < ($('.background').offset().top + $('.background').innerHeight())) {
+    if ($(document).scrollTop() < ($('.notebackground').offset().top + $('.notebackground').innerHeight())) {
       $('.menu-link').removeClass('alternative-link');
     } else {
       $('.menu-link').addClass('alternative-link');
