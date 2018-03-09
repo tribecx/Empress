@@ -1,0 +1,565 @@
+.alternative_blog {
+	
+	.background {
+	  background-image: url("../images/trama-blog.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: $primary;
+      height: 50vw;
+      max-height: 655px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+
+    @include medium-blog {
+      height: 80vw;
+      max-height: 720px;
+    }
+
+    @include small-blog {
+      height: 90vw;
+    }
+  }
+
+  .cover-image {
+  	background-image: url("../images/blog-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  	height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .image {  	
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .main-article {
+    color: $white;
+    display: inline-block;
+    margin: 5.333em 0 0 0;
+    width: 55vw;
+
+    @include medium-blog {
+      margin: 6em 0 1vw 3vw;
+      width: 76vw;
+    }
+
+    @include small-blog {
+      margin: 7em 0 0 .4em;
+      width: 88vw;
+    }
+
+    .cover {
+      box-sizing: border-box;
+      cursor: pointer;
+      height: 34vw;
+      padding: 3vw;
+      position: relative;
+      width: 100%;
+
+      @include medium-blog {
+        height: 56vw;
+        width: 80%;
+      }
+
+      @include small-blog {
+        height: 50vw;
+        width: 89vw;
+      }
+
+      &:hover {
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+
+    .frame {
+      box-sizing: border-box;
+      border: solid 8px $white;
+      height: 24vw;
+      position: relative;
+      text-align: center;
+
+      @include medium-blog {
+        height: 41vw;
+      }
+
+      @include small-blog {
+      	border: solid 3px $white;
+      	height: 44vw;
+      }
+    }
+
+    .main-wrapper {
+      @include center(false,true);
+
+      width: 100%;
+    }
+
+    .main-tag {
+      color: $secondary;
+      font-family: Raleway-Regular;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0.2em 0;
+    }
+
+    .main-title {
+      color: $white !important;
+      font-family: Raleway-SemiBold; 
+      font-size: 3.5vw;
+      line-height: 1.3em;
+      margin: 0;
+
+      @include medium-blog {
+        font-size: 6vw;
+      }
+    }
+  }
+
+  .main-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .shadow {
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .main-info {
+    background-color: $secondary;
+    font-size: .8em;
+    line-height: 1.6em;
+    padding: 5%;
+
+    @include medium-blog {
+      font-size: .8em;
+      width: 80%;
+    }
+
+    @include small-blog {
+      padding: 7% 7% 5%;
+      text-align: center;
+      font-size: .8em !important;
+      width: 89vw;
+    }
+
+    .main-date {
+      color: $asphalt;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      margin: 0;
+      vertical-align: top;
+      width: 25%;
+
+      @include small-blog {
+        display: none;
+      }
+    }
+
+    .main-excerpt {
+      color: $primary;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      margin: 0;
+      vertical-align: top;
+      width: 70%;
+
+      @include small-blog {
+        width: 100%;
+      }
+    }
+
+    .mobile-date {
+      color: $asphalt;
+      display: none;
+      font-family: Raleway-SemiBold;
+      margin: 0.7em 0 0;
+
+      @include small-blog {
+        display: block;
+      }
+    }
+  }
+
+  .blog-container {
+    height: 70vw;
+    margin: 1vw 0 0 0;
+    width: 86vw;
+
+    @include medium-blog {
+      margin: 0 0 2vw 2vw;
+      width: 63vw;
+    }
+
+    @include small-blog {
+      height: 100%;
+      margin: .4em;
+      width: 100%;
+    }
+  }
+
+  .popular {
+    border-top: solid 5px $secondary;
+    display: block;
+    float: right;
+    margin: 1vw 1.5vw;
+    width: 26vw;
+
+    @include medium-blog {
+      border: none;
+      float: none;
+      margin: 0 auto 3vw;
+      width: 320px;
+    }
+
+    @include small-blog {
+      display: none;
+    }
+
+    .popular-title {
+      color: $primary;
+      font-family: Raleway-Bold;
+      font-size: 1.4em;
+      margin: 1em 0 1.2em;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-wrapper {
+      border: solid 2px $secondary;
+      padding: 5px 15px 0 15px;
+      position: relative;
+    }
+
+    .popular-nav {
+      @include center(true,false);
+
+      background-color: $white;
+      margin: -23px 0;
+      min-width: 155px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .week-btn, .month-btn {
+      background-color: $white;
+      border: none;
+      color: $black;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway-Bold;
+      font-size: 0.7em;
+      font-weight: bold;
+      vertical-align: middle;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $asphalt;
+      }
+    }
+
+    .nav-line {
+      background-color: $secondary;
+      display: inline-block;
+      height: 35px;
+      margin: 0 12px;
+      vertical-align: middle;
+      width: 1px;
+    }
+
+    .popular-main {
+      cursor: pointer;
+      height: 13vw;
+      margin: 20px 0;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+
+      @include medium-blog {
+        height: 165px;
+        margin: 15px 0 20px;
+      }
+
+      &:hover {
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+
+    .popular-frame {
+      border: solid 3px $white;
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+
+    .frame-wrapper {
+      @include center(false,true);
+
+      color: $white;
+      font-family: Raleway-SemiBold;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-tag {
+      font-size: 1rem;
+      margin: 0;
+      color: $secondary;
+    }
+
+    .popular-head {
+      font-size: 1.5vw;
+      margin: 3px 0 0;
+
+      @include medium-blog {
+        font-size: 1.5em;
+      }
+    }
+
+    .popular-item {
+      height: 6vw;
+      margin: 20px 0;
+      width: 100%;
+
+      @include medium-blog {
+        height: 75px;
+      }
+    }
+
+    .item-image {
+      display: inline-block;
+      height: 100%;
+      width: 35%;
+    }
+
+    .item-text {
+      display: inline-block;
+      height: 100%;
+      margin-left: 7%;
+      position: relative;
+      vertical-align: top;
+      width: 56%;
+    }
+
+    .item-wrapper {
+      @include center(false,true);
+
+      width: 100%;
+    }
+
+    .tag {
+      color: $secondary;
+      font-family: Raleway-SemiBold;
+      font-size: 1.1em;
+      margin: 0;
+
+      @include medium-blog {
+      	font-size: .8em;
+      }
+    }
+
+    .title {
+      color: $smoke;
+      cursor: pointer;
+      font-family: Raleway-SemiBold;
+      font-size: 1.4vw;
+      margin: 2px 0 0;
+
+      @include medium-blog {
+        font-size: .9em;
+      }
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+
+  .articles {
+    display: block;
+    float: right;
+    width: 57vw;
+
+    @include medium-blog {
+      float: none;
+      width: 100%;
+      text-align: center; 
+    }
+
+    @include small-blog {
+      float: none;
+      margin-top: 1em;
+      width: 92vw;
+    }
+
+    .article-item {
+      display: inline-block;
+      margin: 1vw;
+      vertical-align: top;
+      width: 26.5vw;
+
+      &:hover {
+      cursor: pointer;
+
+      .item-info {
+        background-color: $primary;
+      }
+
+      .item-title, .item-excerpt, .item-date {
+        color: $white;
+      }
+    }
+
+      @include medium-blog {
+        width: 320px;
+        display: inline-block;
+      }
+
+      @include small-blog {
+        margin: 2vw;
+        width: 88vw;
+      }
+    }
+  }
+
+  .item-cover {
+    height: 17vw;
+
+    @include medium-blog {
+      height: 27vw;
+    }
+
+    @include small-blog {
+      height: 55vw;
+    }
+  }
+
+  .item-content {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+    @include medium-blog {
+      font-size: .8em;
+    }
+
+    .item-info {
+      background-color: $ashes;
+      margin: -1vw auto 1vw;
+      padding: 1.5vw;
+      position: relative;
+      width: 25vw;
+
+      @include medium-blog {
+        margin: -1.6vw auto 2vw;
+        width: 300px;
+      }
+
+      @include small-blog {
+      	font-size: .8em !important;
+        margin: -2vw auto 2vw;
+        padding: 1.5vw 4.5vw 5vw;
+        width: 84vw;
+      }
+    }
+
+    .item-tag {
+      @include center(true,false);
+
+      background-color: $secondary;
+      color: $asphalt;
+      font-family: Raleway-Bold;
+      font-size: .7em;
+      line-height: 2.3em;
+      margin: -1.15em 0;
+      padding: 0 0.9em;
+      text-transform: uppercase;
+      top: 0;
+
+      @include small-blog {
+      	font-size: 1em;
+      }
+    }
+
+    .item-title {
+      color: $primary;
+      cursor: pointer;
+      font-family: Raleway-SemiBold;
+      font-size: 1.4em;
+      margin: 1em 0 0.5em;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .item-excerpt {
+      color: $smoke;
+      font-family: Raleway-SemiBold;
+      font-size: .867em;
+      line-height: 1.4;
+      margin: .6em .2em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .item-date {
+      color: $smoke;
+      font-family: Raleway-Bold;
+      font-size: .7em;
+
+      @include small-blog {
+        display: none;
+      }
+    }
+  }
+
+  .margin-right {
+  	margin: 1vw 0 1vw .66vw !important;  	
+
+  	@include medium-blog {
+  	  margin: 1vw !important;
+  	}
+  }
+
+  .margin-left {    
+    margin: 1vw 1vw 1vw 0 !important;
+
+    @include medium-blog {
+     margin: 1vw !important;
+    }
+  }
+
+  .menu-link {
+  color: $white !important;
+  }
+  
+  a {
+  	color: none;
+  }
+
+  .alternative-link {
+  	color: $primary !important;
+  }
+
+}
+
