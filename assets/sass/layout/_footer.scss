@@ -1,10 +1,11 @@
-.empress-footer{
-	background-color: $dark-brown;
+.footer {
+	background-color: $charcoal;
+	clear: both;
   color: $white;
 	font-size: .7em;
-	font-family: Raleway-Light;
+	font-family: Raleway-Medium;
   text-align: center;
-  
+
   &.footer-alt{
     @media #{$medium-and-up} {
       margin-left: -140px;
@@ -14,131 +15,132 @@
       margin-left: -160px;
     }
   }
-  
-  .footer-row{
-    margin-bottom: 0px;  
+
+  .footer-row {
+    margin-bottom: 0px;
   }
-  
-  b{
-    font-family: Raleway-bold;
+
+  b {
+    font-family: Raleway-SemiBold;
   }
-  
-  .footer-col{
-    border: solid 2px $dark-gray;
+
+  .footer-col {
+    border: solid 2px $smoke;
     display: inline-flex;
     align-items: center;
     height: 211px;
-    
-    @media #{$small-and-down} {	
+
+    @media #{$small-and-down} {
       height: 150px;
     }
   }
-  
-  .borders-none{
+
+  .borders-none {
     border-right: none;
     border-left: none;
   }
-  
-  .col-middle{
-    @media #{$small-and-down} {	
+
+  .col-middle {
+    @media #{$small-and-down} {
       border: none;
     }
   }
-  
-  .address-wrapper{
+
+  .address-wrapper {
     margin: auto;
-    
-    .address-paragraph{
+
+    .address-paragraph {
       max-width: 262px;
-      
-      @media #{$small-and-down} {	
+
+      @media #{$small-and-down} {
         margin: 0px;
       }
     }
   }
-  
-  .moprosoft-certified-wrapper{
+
+  .moprosoft-certified-wrapper {
     margin: auto;
-    
-      .moprosoft-logo-footer{
-        display: inline-block;
-   
-        @media #{$small-and-down} {	
-          height: 43px;
-        }
+
+    .moprosoft-logo-footer{
+      display: inline-block;
+
+      @media #{$small-and-down} {
+        height: 43px;
       }
-    
-      .moprosoft-paragraph{
-        display: inline-block;
-        line-height: 14px;
-        max-width: 272px;
-        margin: 0 10px;
-        
-        @media #{$small-and-down} {	
-          display: block;
-          font-size: .9em;
-          text-align: center;
-        }
-        
-        @media #{$medium-and-up} {
-          text-align: center;
-        }  
-        
-        @media #{$large-and-up} {
-          text-align: left ;
-        }
+    }
+
+    .moprosoft-paragraph {
+      display: inline-block;
+      line-height: 14px;
+      max-width: 272px;
+      margin: 0 10px;
+
+      @media #{$small-and-down} {
+        display: block;
+        font-size: .9em;
+        text-align: center;
       }
+
+      @media #{$medium-and-up} {
+        text-align: center;
+      }
+
+      @media #{$large-and-up} {
+        text-align: left ;
+      }
+    }
   }
-  
-  .footer-contact-wrapper{ 
+
+  .footer-contact-wrapper {
     text-align: left;
     margin: auto;
     width: min-content;
   }
-  
-  .footer-social-network-wrapper{
+
+  .footer-social-network-wrapper {
     display: inline-flex;
     margin: 10px;
-    
+
     @media #{$medium-and-up} {
       display: inherit;
       text-align: center;
     }
-    
+
     @media #{$large-and-up} {
       display: inline-flex;
       text-align: left;
     }
-    
-    .footer-contact-logo{
+
+    .footer-contact-logo {
       display: inline-block;
     }
-    .footer-contact-paragraph{
+
+    .footer-contact-paragraph {
       display: inline-block;
       margin: 10px;
     }
   }
-  
-  .footer-copyright{
-    align-items: center;  
+
+  .footer-copyright {
+    align-items: center;
     display: flex;
     height: 96px;
     width: 100%;
-    
-    @media #{$small-and-down} {	
-      border-bottom: solid 2px $dark-gray; 
+
+    @media #{$small-and-down} {
+      border-bottom: solid 2px $smoke;
       height: 50px;
     }
-      .empress-footer-logo{
-        position: absolute;
-        left: 3%;
-      }
-    
-      .footer-autor-page{
-        position: absolute;
-        right: 3%;
-        margin: 0px;
-      }
+
+    .empress-footer-logo {
+      position: absolute;
+      left: 3%;
+    }
+
+    .footer-autor-page {
+      position: absolute;
+      right: 3%;
+      margin: 0px;
+    }
   }
-  
 }
