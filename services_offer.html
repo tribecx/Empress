@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="manifest" href="assets/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
@@ -135,6 +136,37 @@
     </div>
     </div>
      <footer class="footer">
+      <section class="contact-section">
+       <div class="row contact-row">
+         <div class="col l6 m5 s12 contact-title" >Contáctanos</div> 
+         <div class="col l6 m5 s12">
+           <form id="msform" class="contact-form" method="post">
+            <fieldset class="borderless">
+              <i class="large material-icons contact-arrow next">arrow_forward</i>
+              <input type="email" class="input-email" placeholder="Introduce tu correo electrónico" name="mail" id="email">
+              <div id="alert-message" class="alerts"></div>
+            </fieldset>
+            <fieldset class="borderless" id="selection">          
+              <input type="radio" id="radio01" name="radio" value="PROVEEDORES"/>
+              <label for="radio01" class="radio-custom">PROVEEDORES</label>
+              <input type="radio" id="radio02" name="radio" value="ASESORIA" />
+              <label for="radio02" class="radio-custom">ASESORÍA</label>  
+              <input type="radio" id="radio03" name="radio" value="TEMA 3" />
+              <label for="radio03" class="radio-custom">TEMA 3</label> 
+              <input type="radio" id="radio04" name="radio" value="TEMA 4" />
+              <label for="radio04" class="radio-custom">TEMA 4</label>              
+              <i class="large material-icons contact-arrow arrow-alt" id="submit-btn">arrow_forward</i>
+              <div id="alert-message-submit" class="alerts"></div>
+            </fieldset>
+            <fieldset class="borderless">
+             <p class="answer-message">Muchas gracias por tu interés. Recibirás un correo<br> en tu bandeja de entrada en un momento</p>
+             <i class="material-icons contact-arrow">done</i>
+            </fieldset>
+            <div id="form-messages"></div>
+          </form>
+         </div>
+       </div> 
+      </section>
       <div class="row footer-row">
         <div class="col l3 m4 s12 footer-col borders-none">
           <div class="address-wrapper">
@@ -176,5 +208,9 @@
         <p class="footer-autor-page">Site by Tribe</p>
       </div>
     </footer>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>       
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+     
 </body>
 </html>
