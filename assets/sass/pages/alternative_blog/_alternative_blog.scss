@@ -1,5 +1,5 @@
 .alternative_blog {
-	
+
 	.background {
 	  background-image: url("../images/trama-blog.png");
       background-position: center;
@@ -32,7 +32,7 @@
     width: 100%;
   }
 
-  .image {  	
+  .image {
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -112,7 +112,7 @@
 
     .main-title {
       color: $white !important;
-      font-family: Raleway-SemiBold; 
+      font-family: Raleway-SemiBold;
       font-size: 3.5vw;
       line-height: 1.3em;
       margin: 0;
@@ -402,7 +402,7 @@
     @include medium-blog {
       float: none;
       width: 100%;
-      text-align: center; 
+      text-align: center;
     }
 
     @include small-blog {
@@ -534,14 +534,14 @@
   }
 
   .margin-right {
-  	margin: 1vw 0 1vw .66vw !important;  	
+  	margin: 1vw 0 1vw .66vw !important;
 
   	@include medium-blog {
   	  margin: 1vw !important;
   	}
   }
 
-  .margin-left {    
+  .margin-left {
     margin: 1vw 1vw 1vw 0 !important;
 
     @include medium-blog {
@@ -549,17 +549,8 @@
     }
   }
 
-  .menu-link {
-  color: $white !important;
-  }
-  
   a {
   	color: none;
   }
 
-  .alternative-link {
-  	color: $primary !important;
-  }
-
 }
-

@@ -40,16 +40,14 @@ function showPosts(posts, tags) {
     var id = posts[i].id;
 
     var post =
-    '<a href="blog-note.html?id='+id+'">'+
-      '<div class="article-item margin-left">'+
-        '<div class="item-cover item-cover'+i+'"></div>'+
-        '<div class="item-content">'+
-          '<div class="item-info">'+
-            '<p class="item-tag">'+tag+'</p>'+
-            '<h3 class="item-title">'+title+'</h3>'+
-            '<p class="item-excerpt">'+content+'</p>'+
-            '<p class="item-date">'+date+'</p>'+
-          '</div>'+
+    '<a href="blog-note.html?id='+id+'" class="article-item margin-left">'+
+      '<div class="item-cover item-cover'+i+'"></div>'+
+      '<div class="item-content">'+
+        '<div class="item-info">'+
+          '<p class="item-tag">'+tag+'</p>'+
+          '<h3 class="item-title">'+title+'</h3>'+
+          '<p class="item-excerpt">'+content+'</p>'+
+          '<p class="item-date">'+date+'</p>'+
         '</div>'+
       '</div>'+
     '</a>';
@@ -85,10 +83,16 @@ function dateConverter(date) {
 
 function menuBehaviour() {
   $(document).scroll(function() {
-    if ($(document).scrollTop() < ($('.background').offset().top + $('.background').innerHeight())) {
-      $('.menu-link').removeClass('alternative-link');
-    } else {
-      $('.menu-link').addClass('alternative-link');
-    }
+    var bgBottom = $('.background').offset().top + $('.background').innerHeight();
+
+    $('.menu-link').each(function() {
+      var current = $(this).offset().top + $(this).innerHeight();
+
+      if (current > bgBottom) {
+        $(this).removeClass('alt');
+      } else {
+        $(this).addClass('alt');
+      }
+    });
   });
 }
