@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 function getNews() {
   $.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/empress935163467.wordpress.com/posts?per_page=100&orderby=date",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts?per_page=100&orderby=date",
   	dataType: 'json'
   }).then(function(posts) {
     getTags(posts);
@@ -14,7 +14,7 @@ function getNews() {
 
 function getTags(posts) {
   $.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/empress935163467.wordpress.com/tags",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/tags",
   	dataType: 'json'
   }).then(function(data) {
     var tags = [];
@@ -29,10 +29,67 @@ function getTags(posts) {
   });
 }
 
+function showMain(posts, tags) {
+    var background = posts[0].featured_media_url;
+    var image = '.cover-image';
+    var popularImage = '.main-image';
+    var tag = traslateTag(posts[0].tags[0], tags);
+    var title = posts[0].title.rendered;
+    var content = $(posts[0].excerpt.rendered).text();
+    var date = dateConverter(posts[0].date);
+    var id = posts[0].id;
+
+    var main =
+    '<a href="blog-note.html?id='+id+'" class="main-link">'+
+      '<div class="cover">'+
+        '<div class="main-image">'+
+          '<div class="cover-image"></div>'+
+        '</div>'+
+        '<div class="shadow"></div>'+
+        '<div class="frame">'+
+          '<div class="main-wrapper">'+
+            '<p class="main-tag">'+tag+'</p>'+
+            '<h2 class="main-title">'+title+'</h2>'+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="main-info">'+
+        '<p class="main-date">'+date+'</p>'+
+        '<p class="main-excerpt">'+content+'</p>'+
+        '<p class="mobile-date">'+date+'</p>'+
+      '</div>'+
+    '</a>';
+
+    $('.main-article').append(main);
+
+    $(image).css('background','url("'+background+'") center/cover no-repeat');
+
+    var popularMain = 
+    '<a href="blog-note.html">'+
+      '<div class="main-image"></div>'+
+    '</a>'+
+    '<div class="shadow"></div>'+
+    '<div class="popular-frame">'+
+      '<div class="frame-wrapper">'+
+        '<p class="popular-tag">'+tag+'</p>'+
+        '<h3 class="popular-head">'+title+'</h3>'+
+      '</div>'+
+    '</div>';
+
+    $('.popular-main').append(popularMain);
+
+    $(popularImage).css('background','url("'+background+'") center/cover no-repeat');
+}
+
 function showPosts(posts, tags) {
-  for (var i = 0; i <= posts.length; i++) {
+  
+  showMain(posts, tags);  
+  showPopular(posts, tags);
+
+  for (var i = 1; i <= posts.length; i++) {
     var background = posts[i].featured_media_url;
     var image = '.item-cover'+i+'';
+    var popularImage = '.item-image'+i+'';
     var tag = traslateTag(posts[i].tags[0], tags);
     var title = posts[i].title.rendered;
     var content = $(posts[i].excerpt.rendered).text();
@@ -55,6 +112,36 @@ function showPosts(posts, tags) {
     $('.articles').append(post);
 
     $(image).css('background','url("'+background+'") center/cover no-repeat');
+  
+  }
+}
+
+function showPopular (posts, tags) {
+
+for (var i = 1; i <= 5; i++) {
+    var background = posts[i].featured_media_url;
+    var popularImage = '.item-image'+i+'';
+    var tag = traslateTag(posts[i].tags[0], tags);
+    var title = posts[i].title.rendered;
+    var id = posts[i].id;
+
+    var popular =
+    '<div class="popular-item">'+
+      '<a href="blog-note.html?id='+id+'">'+
+        '<div class="item-image item-image'+i+'"></div>'+
+        '<div class="item-text">'+
+          '<div class="item-wrapper">'+
+            '<p class="tag">'+tag+'</p>'+
+            '<h4 class="title">'+title+'</h4>'+
+          '</div>'+
+        '</div>'+
+      '</a>'+
+    '</div>';
+
+    $('.popular-wrapper').append(popular);
+
+    $(popularImage).css('background','url("'+background+'") center/cover no-repeat');
+
   }
 }
 
