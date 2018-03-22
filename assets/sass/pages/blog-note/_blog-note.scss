@@ -146,6 +146,7 @@
 .popular-news-wrapper{
   border: 2px solid $secondary;
   display: block;
+  padding: 5px 15px 0 15px;
   position: relative;
 }
 
@@ -171,34 +172,43 @@
 }
 
 .most-popular-image {
-  background-image: url("../images/clients.png");
+  background-image: url("../images/nuestra-oferta.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10%;
-  padding: 1.5em;
+  height: 13vw;
+  margin: 20px 0;
+  padding: 20px;
   position: relative;
+  width: 100%;
 
   &:hover{
     cursor: pointer;
   }
 
   .popular-title-wraper {
+    border: solid 3px $white;
+    height: 100%;
+    position: relative;
+    width: 100%;
 
     .popular-titles {
-      border: 3px solid $white;
+      @include center(false,true);
+
+      color: $white;
+      font-family: Raleway-SemiBold;
+      height: 100%;
       text-align: center;
+      width: 100%;
 
       &:hover {
         border-color: $primary;
       }
 
       .tiny-title {
+        font-size: 1.4vw;
+        margin: 0;
         color: $secondary;
-        font-family: Raleway-SemiBold;
-        font-size: 15px;
-        display: block;
-        margin-top: 10px;
 
         &:hover {
           color: $primary;
@@ -206,10 +216,8 @@
         }
 
       .soft-title {
-        color: $white;
-        font-family: Raleway-SemiBold;
-        font-size: 1.333em;
-        margin-bottom: 10px;
+        font-size: 1.6vw;
+        margin: 3px 0 0;
 
         &:hover {
           color: $primary;
@@ -219,31 +227,57 @@
   }
 }
 
-.little-popular-image {
-  @extend .most-popular-image;
+.news-background {
+  height: 6vw;
+  margin: 20px 0;
+  width: 100%;
 
-  @media #{$medium-and-down} {
-    margin: 11% !important;
+  &:hover {
+    .medium-title {
+      color: $grave;
+    }
   }
 }
 
+.notes-image {
+  width: 43% !important;
+  height: 100%;
+  display: inline-block;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.notes-info {
+  display: inline-block;
+  height: 100%;
+  margin-left: 7%;
+  position: relative;
+  vertical-align: top;
+  width: 56% !important;
+}
 
 .titles-wrapper {
-  margin: 7%;
+  @include center(false,true);
+
+  width: 100%;
   text-align: left;
 
   .little-title {
     color: $secondary;
     font-family: Raleway-SemiBold;
-    font-size: 11px;
-    margin: auto;
+    font-size: .9em;
+    margin: 0;
   }
 
   .medium-title {
     color: black;
     font-family: Raleway-SemiBold;
-    font-size: 15px;
-    margin: auto;
+    font-size: 1.3vw;
+    margin: 2px 0 0;
   }
 }
 
@@ -377,6 +411,12 @@
 
 .menu {
   z-index: 2;
+}
+
+.right {
+  @media #{$small-and-down} {
+    float: none !important;
+  }
 }
 
 }
