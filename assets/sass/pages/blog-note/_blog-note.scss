@@ -1,4 +1,5 @@
 .blog-note {
+  
 .centered-title-section {
   position: relative;
   z-index: 1;
@@ -329,7 +330,7 @@
   opacity: 0.9;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .white {
@@ -367,13 +368,6 @@
   }
 }
 
-.menu-link {
-  color: $white !important;
-}
-
-.alternative-link {
-  color: $primary !important;
-}
 
 .menu {
   z-index: 2;

@@ -29,58 +29,6 @@ function getTags(posts) {
   });
 }
 
-function showMain(posts, tags) {
-    var background = posts[0].featured_media_url;
-    var image = '.cover-image';
-    var popularImage = '.main-image';
-    var tag = traslateTag(posts[0].tags[0], tags);
-    var title = posts[0].title.rendered;
-    var content = $(posts[0].excerpt.rendered).text();
-    var date = dateConverter(posts[0].date);
-    var id = posts[0].id;
-
-    var main =
-    '<a href="blog-note.html?id='+id+'" class="main-link">'+
-      '<div class="cover">'+
-        '<div class="main-image">'+
-          '<div class="cover-image"></div>'+
-        '</div>'+
-        '<div class="shadow"></div>'+
-        '<div class="frame">'+
-          '<div class="main-wrapper">'+
-            '<p class="main-tag">'+tag+'</p>'+
-            '<h2 class="main-title">'+title+'</h2>'+
-          '</div>'+
-        '</div>'+
-      '</div>'+
-      '<div class="main-info">'+
-        '<p class="main-date">'+date+'</p>'+
-        '<p class="main-excerpt">'+content+'</p>'+
-        '<p class="mobile-date">'+date+'</p>'+
-      '</div>'+
-    '</a>';
-
-    $('.main-article').append(main);
-
-    $(image).css('background','url("'+background+'") center/cover no-repeat');
-
-    var popularMain = 
-    '<a href="blog-note.html">'+
-      '<div class="main-image"></div>'+
-    '</a>'+
-    '<div class="shadow"></div>'+
-    '<div class="popular-frame">'+
-      '<div class="frame-wrapper">'+
-        '<p class="popular-tag">'+tag+'</p>'+
-        '<h3 class="popular-head">'+title+'</h3>'+
-      '</div>'+
-    '</div>';
-
-    $('.popular-main').append(popularMain);
-
-    $(popularImage).css('background','url("'+background+'") center/cover no-repeat');
-}
-
 function showPosts(posts, tags) {
   
   showMain(posts, tags);  
@@ -143,6 +91,58 @@ for (var i = 1; i <= 5; i++) {
     $(popularImage).css('background','url("'+background+'") center/cover no-repeat');
 
   }
+}
+
+function showMain(posts, tags) {
+    var background = posts[0].featured_media_url;
+    var image = '.cover-image';
+    var popularImage = '.main-image';
+    var tag = traslateTag(posts[0].tags[0], tags);
+    var title = posts[0].title.rendered;
+    var content = $(posts[0].excerpt.rendered).text();
+    var date = dateConverter(posts[0].date);
+    var id = posts[0].id;
+
+    var main =
+    '<a href="blog-note.html?id='+id+'" class="main-link">'+
+      '<div class="cover">'+
+        '<div class="main-image">'+
+          '<div class="cover-image"></div>'+
+        '</div>'+
+        '<div class="shadow"></div>'+
+        '<div class="frame">'+
+          '<div class="main-wrapper">'+
+            '<p class="main-tag">'+tag+'</p>'+
+            '<h2 class="main-title">'+title+'</h2>'+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="main-info">'+
+        '<p class="main-date">'+date+'</p>'+
+        '<p class="main-excerpt">'+content+'</p>'+
+        '<p class="mobile-date">'+date+'</p>'+
+      '</div>'+
+    '</a>';
+
+    $('.main-article').append(main);
+
+    $(image).css('background','url("'+background+'") center/cover no-repeat');
+
+    var popularMain = 
+    '<a href="blog-note.html">'+
+      '<div class="main-image"></div>'+
+    '</a>'+
+    '<div class="shadow"></div>'+
+    '<div class="popular-frame">'+
+      '<div class="frame-wrapper">'+
+        '<p class="popular-tag">'+tag+'</p>'+
+        '<h3 class="popular-head">'+title+'</h3>'+
+      '</div>'+
+    '</div>';
+
+    $('.popular-main').append(popularMain);
+
+    $(popularImage).css('background','url("'+background+'") center/cover no-repeat');
 }
 
 function traslateTag(id, tags) {

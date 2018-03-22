@@ -4,10 +4,16 @@ $(document).ready(function() {
 
 function menuNoteBehaviour() {
   $(document).scroll(function() {
-    if ($(document).scrollTop() < ($('.notebackground').offset().top + $('.notebackground').innerHeight())) {
-      $('.menu-link').removeClass('alternative-link');
-    } else {
-      $('.menu-link').addClass('alternative-link');
-    }
+    var bgBottom = $('.notebackground').offset().top + $('.notebackground').innerHeight();
+
+    $('.menu-link').each(function() {
+      var current = $(this).offset().top + $(this).innerHeight();
+
+      if (current > bgBottom) {
+        $(this).removeClass('alt');
+      } else {
+        $(this).addClass('alt');
+      }
+    });
   });
 }
