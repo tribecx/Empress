@@ -340,6 +340,12 @@
       margin: 20px 0;
       width: 100%;
 
+      &:hover {
+        .title {
+          color: $grave;
+        }
+      }
+
       @include medium-blog {
         height: 75px;
       }
@@ -378,7 +384,7 @@
     }
 
     .title {
-      color: $smoke;
+      color: $black;
       cursor: pointer;
       font-family: Raleway-SemiBold;
       font-size: 1.4vw;
@@ -386,10 +392,6 @@
 
       @include medium-blog {
         font-size: .9em;
-      }
-
-      &:hover {
-        color: $dark;
       }
     }
   }
