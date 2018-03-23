@@ -129,7 +129,7 @@ function showMain(posts, tags) {
     $(image).css('background','url("'+background+'") center/cover no-repeat');
 
     var popularMain = 
-    '<a href="blog-note.html">'+
+    '<a href="blog-note.html?id='+id+'">'+
       '<div class="main-image"></div>'+
     '</a>'+
     '<div class="shadow"></div>'+
