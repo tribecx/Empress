@@ -89,3 +89,13 @@ $large-blog-width: 1200px;
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+
+//variables for multiline with text with ellipsis
+
+$new-font: .867em;
+$line-height: 1.4;
+$lines-to-show: 6;
+
+$title-font: 1.2em;
+$title-lines: 1;
