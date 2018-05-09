@@ -4,20 +4,6 @@ a {
 }
 
 html{
-  line-height: 1.5;
-
-  @media only screen and (min-width: 0) {
-    font-size: 14px;
-  }
-
-  @media only screen and (min-width: $medium-screen) {
-    font-size: 14.5px;
-  }
-
-  @media only screen and (min-width: $large-screen) {
-    font-size: 15px;
-  }
-
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: $off-black;

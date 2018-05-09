@@ -33,6 +33,7 @@
   .who-image {
     background: url('../images/who.jpg') center/cover no-repeat;
     height: 72.8vh;
+    margin-left: -2.9em;
     margin-top: -90vh;
     width: 84.3%;
 
@@ -64,7 +65,7 @@
   .text-wrapper {
     font-family: Raleway-Bold;
     margin-top: 5vw;
-    padding: 0 11.1vw 0 12vw;
+    padding: 0 12.25vw 0 3.5vw;
 
     @media #{$medium-and-down} {
       margin: 0 0 3em;
@@ -92,8 +93,8 @@
   .who-title {
     color: $primary;
     display: inline-block;
-    font-size: 3em;
-    margin: 0 0 0.6em -3.5em;
+    font-size: 4.8em;
+    margin: 0 0 0.6em -1.5em;
     width: 100%;
 
     @media #{$medium-and-down} {
@@ -106,11 +107,15 @@
     }
   }
 
+  .separator-green {
+    margin-left: -45px;
+  }
+
   .who-paraghraph {
     color: $asphalt;
     font-family: Raleway-Medium;
-    font-size: 0.6em;
-    line-height: 1.4em;
+    font-size: 1.4em;
+    line-height: 1.3em;
     margin: 2.5em 0;
 
     @media #{$medium-and-down} {
@@ -122,9 +127,9 @@
     border: solid 2px $secondary;
     color: $secondary;
     display: inline-block;
-    font-size: 0.6em;
+    font-size: 1.1em;
     line-height: 29px;
-    padding: 0 1.5em;
+    padding: 0 5em;
     text-transform: uppercase;
 
     &:hover {

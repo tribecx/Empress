@@ -1,6 +1,6 @@
 .home-news {
   background-color: $secondary;
-  padding: 3em 0 2em;
+  padding: 7em 0 4em;
   text-align: center;
 
   @media #{$medium-and-down} {
@@ -17,7 +17,7 @@
 
   .news-wrapper {
     margin: 0;
-    padding: 0 3em;
+    padding: 0 5.5em;
 
     @media #{$medium-and-down} {
       padding: 0 2em;
@@ -34,6 +34,7 @@
 
   .news-item {
     margin: 0.5em 0 0.3em;
+    padding: 0 1em;
 
     &:hover {
       cursor: pointer;
@@ -48,17 +49,17 @@
     }
 
     .thumbnail {
-      height: 200px;
+      padding-top: 63%;
       width: 100%;
     }
 
     .info {
       background-color: $white;
       display: inline-block;
-      margin: -3em auto 1em;
-      padding: 0.5em 0.8em 1em;
+      margin: -5em auto 1em;
+      padding: 1.1em 2.5em 1.9em;
       position: relative;
-      width: calc(100% - 1em);
+      width: calc(100% - 2em);
 
       @media #{$medium-and-down} {
         margin: -1em auto 0.4em;
@@ -75,7 +76,7 @@
       background-color: $secondary;
       color: $asphalt;
       font-family: Raleway-Bold;
-      font-size: 0.7em;
+      font-size: 1.3em;
       height: 2.3em;
       line-height: 2.3em;
       padding: 0 0.8em;
@@ -96,7 +97,7 @@
 
       color: $smoke;
       font-family: Raleway-SemiBold;
-      margin: 0.6em 0.2em;
+      margin: 0.6em 0.4em 1.1em;
 
       @media #{$medium-and-down} {
         color: $asphalt;
@@ -106,7 +107,7 @@
     .time {
       color: $smoke;
       font-family: Raleway-Bold;
-      font-size: 0.7em;
+      font-size: 1.3em;
 
       @media #{$medium-and-down} {
         color: $asphalt;
@@ -119,10 +120,10 @@
     color: $primary;
     display: inline-block;
     font-family: Raleway-Bold;
-    font-size: 0.6em;
+    font-size: 1.1em;
     letter-spacing: 0.1em;
     line-height: 2.6em;
-    margin-top: 0.8em;
+    margin-top: 2em;
     padding: 0 1.5em;
     text-decoration: none;
     text-transform: uppercase;

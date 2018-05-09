@@ -1,4 +1,5 @@
 .home-tech {
+  background-color: $primary;
   margin: 0;
   position: relative;
 
@@ -22,6 +23,7 @@
   .tech-image {
     background: url('../images/tech.jpg') center/cover no-repeat;
     height: 79vh;
+    margin-left: 24%;
     margin-top: -90vh;
     width: 76%;
   }
@@ -40,7 +42,7 @@
   .text-wrapper {
     font-family: Raleway-Bold;
     margin-top: 5vw;
-    padding: 0 3vw;
+    padding: 0 11vw 0 12.75vw;
 
     @media #{$medium-and-down} {
       padding: 0 3vw 0 11.5vw;
@@ -65,14 +67,14 @@
   }
 
   .tech-title {
-    color: $primary;
+    color: $white;
     display: inline-block;
-    font-size: 3em;
-    margin: 0 0 0.6em -2em;
+    font-size: 5.4em;
+    margin: 0 0 0.6em -1.5em;
     width: 100%;
 
     @media #{$medium-and-down} {
-      margin: 0 0 0.6em -1.4em;
+      margin: 0 0 0.6em -1em;
     }
 
     @media #{$small-and-down} {
@@ -82,67 +84,34 @@
   }
 
   .separator-green {
-    margin-left: 3px;
+    margin-left: -10px;
   }
 
-  .tech-info {
-    @media #{$medium-and-down} {
-      margin-left: -105%;
-      width: 190%;
-    }
-
-    @media #{$small-and-down} {
-      margin-left: -20vw;
-      width: 92vw;
-    }
+  .tech-paraghraph {
+    color: $white;
+    font-family: Raleway-Medium;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin: 2.5em 0;
   }
 
-  .tech-table {
-    border-collapse: separate;
-    border-spacing: 3px 0;
-    font-size: 0.6em;
-    margin-top: 2em;
-
-    @media #{$small-and-down} {
-      border-spacing: 5px 0;
-      font-size: 0.63em;
-    }
-
-    .table-row {
-      background-color: $ivory;
-
-      &:nth-child(even) {
-        background-color: $bone;
-      }
-    }
-
-    .table-head, .table-cell {
-      border-radius: 0 !important;
-      color: $asphalt;
-      padding: 2px 15px;
-      text-align: center;
-    }
-
-    .table-head {
-      background-color: $secondary;
-      font-family: Raleway-SemiBold;
-    }
-
-    .table-cell {
-      font-family: Raleway-Medium;
-    }
-  }
-
-  .tech-icons {
-    margin: 1em 0;
-    text-align: center;
-  }
-
-  .tech-icon {
+  .tech-btn {
+    border: solid 2px $secondary;
+    color: $secondary;
     display: inline-block;
-    margin: 3px;
-    max-height: 35px;
-    max-width: 82px;
-    vertical-align: middle;
+    font-size: 1.1em;
+    line-height: 29px;
+    padding: 0 3em;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 0.59em;
+      padding: 0 0.9em;
+    }
   }
 }

@@ -1,136 +1,137 @@
 .contact-section {
   background-color: $primary;
   color: $white;
-  padding: 50px;
-  
-    .contact-title {
-      color: $white;
-      font-family: Raleway-Bold;
-      letter-spacing: 1px;
-      line-height: 60px;
+  clear: both;
+  padding: 7em 6em;
+
+  .contact-title {
+    color: $white;
+    font-family: Raleway-Bold;
+    letter-spacing: 1px;
+    line-height: 60px;
+
+    @media #{$small-and-down} {
+      font-size: 3.8em;
+    }
+
+    @media #{$medium-and-up} {
+      font-size: 5.2em;
+    }
+
+    @media #{$large-and-up} {
+      font-size: 5.8em;
+    }
+  }
+
+  .contact-row {
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+
+    @media #{$small-and-down} {
+      display: block !important;
+    }
+  }
+
+  .contact-form {
+    position: relative;
+
+    input {
+      font-family: Raleway-Medium;
+      font-size: 1.8em;
+    }
+
+    .input-email {
+      border-bottom: 2px solid $white;
+      margin: auto;
+
+      ::placeholder{
+        color: $ashes;
+        font-family: Raleway-Thin;
+      }
+    }
+
+    .contact-arrow {
+      color: $secondary !important;
+      cursor: pointer;
+      font-size: 2rem;
+      line-height: 1.5;
+      position: absolute;
+      right: 0;
+
+      &:hover{
+        color: $white;
+      }
+
+      &.arrow-alt {
+        right: -30px;
+      }
+    }
+
+    .alerts {
+      font-family: Raleway-Light;
+      font-size: 1em;
+      color: $secondary;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    /*Hide all except first fieldset*/
+    fieldset:not(:first-of-type) {
+      display: none;
+    }
+
+    fieldset {
+      border: none;
       text-align: center;
-      
-      @media #{$small-and-down} {
-        font-size: 2.1em;
-      }
-      @media #{$medium-and-up} {
-        font-size: 3.5em;
-      }
 
-      @media #{$large-and-up} {
-        font-size: 4.1em;
+      .radio-custom {
+        background-color: $ashes;
+        border: 0 none;
+        border-radius: 3px;
+        cursor: pointer;
+        color: $primary !important;
+        font-family: Raleway-Bold !important;
+        font-size: .6em;
+        height: 44px;
+        margin: 5px;
+        text-align: center;
+        width: 110px;
+
+        &.active{
+          background-color:$secondary;
+        }
       }
     }
-    
-    .contact-row {
-      align-items: center;
-      display: flex;
-      
-      @media #{$small-and-down} {
-        display: block !important;
-      }
-      
+
+    .answer-message {
+      color: $secondary;
+      display: inline-block;
+      font-size: 1em;
     }
 
-    .contact-form {
-      position: relative;
-      
-        .input-email {
-          border-bottom: 1px solid $white;
-          margin: auto;
-          
-          ::placeholder{
-            color: $ashes;
-            font-size: 1.12em;
-            font-family: Raleway-Thin;
-          }
-        }
-      
-        .contact-arrow {
-          color: $secondary !important;
-          cursor: pointer;
-          font-size: 2rem;
-          line-height: 1.5;
-          position: absolute;
-          right: 0;   
-          
-          &:hover{
-            color: $white;
-          }
-          
-          &.arrow-alt {
-            right: -30px;
-          }
-        }
-      
-        .alerts {
-          font-family: Raleway-Light;
-          font-size: 1em;
-          color: $secondary;
-        }
-      
-        a:link {
-          text-decoration: none; 
-        }
-        /*Hide all except first fieldset*/
-        fieldset:not(:first-of-type) {
-          display: none;
-        }
-      
-        fieldset {
-          border: none;
-          text-align: center;
-          
-          .radio-custom {
-            background-color: $ashes;
-            border: 0 none;
-            border-radius: 3px;
-            cursor: pointer;
-            color: $primary !important;
-            font-family: Raleway-Bold !important;
-            font-size: .6em;
-            height: 44px;
-            margin: 5px;
-            text-align: center;
-            width: 110px;
-            
-            &.active{
-              background-color:$secondary;
-            }
-          }  
-        }
-
-        .answer-message {
-          color: $secondary;
-          display: inline-block;
-          font-size: 1em;       
-        }
-      
-        input[type="radio"] {
-          display:none;
-        }
-      
-        input[type="radio"] + label {
-          font-family:Raleway-Bold;
-          font-size:.8em;
-          padding: 10px !important
-        }
-      
-        input[type="radio"] + label span {
-          display: none;
-        }
-
-        input[type="radio"] + label span {
-          display: none;
-        }
-      
-        [type="radio"] + label:before, [type="radio"] + label:after {
-          content: none !important;
-        }
+    input[type="radio"] {
+      display:none;
     }
+
+    input[type="radio"] + label {
+      font-family:Raleway-Bold;
+      font-size:.8em;
+      padding: 10px !important
+    }
+
+    input[type="radio"] + label span {
+      display: none;
+    }
+
+    input[type="radio"] + label span {
+      display: none;
+    }
+
+    [type="radio"] + label:before, [type="radio"] + label:after {
+      content: none !important;
+    }
+  }
 }
-
-
-
-
-

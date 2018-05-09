@@ -1,5 +1,5 @@
 .menu {
-  padding: 40px 1.5em 0 !important;
+  padding: 40px 3.6em 0 2.8em !important;
   position: fixed;
 
   @media #{$medium-and-up} {
@@ -7,7 +7,7 @@
   }
 
   @media #{$large-and-up} {
-    width: 160px;
+    width: 157px;
   }
 
   .menu-img {
@@ -17,11 +17,10 @@
 
   .menu-img, .menu-link {
     display: block;
-    text-align: right;
   }
 
   .menu-link:first-child {
-    margin-top: 3.7em;
+    margin-top: 5em;
   }
 
   .menu-link:last-child {
@@ -31,7 +30,7 @@
   .menu-link {
     color: $primary;
     font-family: Raleway-Bold;
-    font-size: 0.8em;
+    font-size: 1.3em;
     line-height: 1.2em;
     margin: 1em 0;
 
