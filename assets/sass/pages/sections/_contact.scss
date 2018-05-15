@@ -1,0 +1,56 @@
+.contact {
+  .decor {
+    height: 42vw;
+    position: relative;
+  }
+
+  .location {
+    padding: 8em 8em 0 6em;
+  }
+
+  .contact-image {
+    background: url('../images/contact/contact-image.jpg') center/cover no-repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .contact-trama {
+    background: url('../images/texture-green.png') center/cover no-repeat;
+    bottom: 4em;
+    height: 100%;
+    left: 2em;
+    position: absolute;
+    width: 100%;
+  }
+
+  .section-title {
+    margin: 0 0 0.4em 0;
+  }
+
+  .separator-green{
+    margin: 1em 0 1em 3em;
+  }
+
+  .location-image {
+    margin-bottom: 3em;
+    margin-top: 4em;
+    width: 100%;
+  }
+
+  .location-info {
+    color: $smoke;
+    display: block;
+    font-family: Raleway-SemiBold;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+  }
+
+  .location-tel {
+    color: $primary;
+    font-family: Raleway-Bold;
+  }
+}

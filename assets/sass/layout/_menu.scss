@@ -1,5 +1,5 @@
 .menu {
-  padding: 40px 3.6em 0 2.8em !important;
+  padding: 28px 3.6em 0 2.8em !important;
   position: fixed;
 
   @media #{$medium-and-up} {
@@ -20,7 +20,7 @@
   }
 
   .menu-link:first-child {
-    margin-top: 5em;
+    margin-top: 2.8em;
   }
 
   .menu-link:last-child {

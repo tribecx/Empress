@@ -1,0 +1,119 @@
+.section {
+  padding-top: 0;
+
+  .decor {
+    padding: 0;
+    position: relative;
+  }
+
+  .slide-image {
+    height: 32vw;
+    width: 84%;
+  }
+
+  .texture {
+    background: url('../images/texture-green-short.png') center/130% no-repeat;
+    height: 190px;
+    margin-left: -15% !important;
+    margin-top: 70px;
+    width: 80%;
+  }
+
+  .titles {
+    height: 32vw;
+    padding: 0;
+    position: relative;
+  }
+
+  .section-subtitle {
+    color: $secondary;
+    font-family: Raleway-Bold;
+    font-size: 1.4em;
+    margin: 1em 0 1em -1.6em !important;
+    padding: 0;
+  }
+
+  .section-title {
+    color: $primary;
+    font-family: Raleway-Bold;
+    font-size: 5.4em;
+    margin: 0 0 0.5em -0.5em;
+  }
+
+  .titles-decor {
+    background: url('../images/devices2.svg') center/cover no-repeat;
+    bottom: 15%;
+    height: 93px;
+    position: absolute;
+    right: 10%;
+    width: 198px;
+  }
+
+  .options {
+    padding: 0;
+    text-align: right;
+  }
+
+  .option {
+    background: $secondary;
+    border: none;
+    border-radius: none;
+    color: $black;
+    display: inline-block;
+    font-family: Raleway-Medium;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    margin-right: 18%;
+    min-height: 50px;
+    padding: 0.5em 10%;
+    width: 60%;
+
+    &:hover, &.active {
+      background: $primary;
+      color: $secondary;
+    }
+  }
+
+  .info {
+    margin-bottom: 12em;
+    padding: 0 12em 0 1em;
+
+    .info-title {
+      color: $primary;
+      font-family: Raleway-Bold;
+      font-size: 1.6em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .info-paragraph, .info-list {
+      color: $asphalt;
+      font-family: Raleway-Medium;
+      font-size: 1.4em;
+      margin: 0.2em 0 1.4em;
+    }
+
+    .info-list {
+      font-size: 1.4em;
+      margin-top: 0.5em;
+      padding-left: 1.8em;
+
+      &.decimal {
+        .info-item {
+          list-style-image: none;
+          list-style-type: decimal;
+        }
+      }
+    }
+
+    .info-item {
+      list-style-image: url(../images/icons/bullet.svg);
+      padding-left: 1em;
+    }
+
+    .info-image {
+      margin: 1em 0;
+      width: 100%;
+    }
+  }
+}
