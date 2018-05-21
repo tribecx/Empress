@@ -7,6 +7,18 @@
   .section-title {
     display: inline-block;
     margin: 0.5em 0 0.5em -0.5em;
+
+    @media #{$medium-and-up} {
+      width: 50%;
+    }
+
+    @media #{$small-and-down} {
+      margin: 3em 0 0.4em 8%;
+    }
+  }
+
+  .options {
+    width: 100%;
   }
 
   .separator-green {

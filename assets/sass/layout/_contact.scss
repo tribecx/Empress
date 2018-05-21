@@ -4,6 +4,14 @@
   clear: both;
   padding: 7em 6em;
 
+  @media #{$medium-and-down} {
+    padding: 5em 4em;
+  }
+
+  @media #{$small-and-down} {
+    padding: 3em 2em;
+  }
+
   .contact-title {
     color: $white;
     font-family: Raleway-Bold;
@@ -15,7 +23,7 @@
     }
 
     @media #{$medium-and-up} {
-      font-size: 5.2em;
+      font-size: 4em;
     }
 
     @media #{$large-and-up} {
@@ -45,6 +53,10 @@
       border-bottom: 2px solid $white;
       margin: auto;
 
+      @media #{$small-and-down} {
+        font-size: 1.4em;
+      }
+
       ::placeholder{
         color: $ashes;
         font-family: Raleway-Thin;
@@ -69,9 +81,10 @@
     }
 
     .alerts {
-      font-family: Raleway-Light;
-      font-size: 1em;
       color: $secondary;
+      font-family: Raleway-Bold;
+      font-size: 1.2em;
+      margin-top: 1em;
     }
 
     a:link {

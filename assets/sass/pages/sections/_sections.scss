@@ -23,6 +23,16 @@
     height: 32vw;
     padding: 0;
     position: relative;
+    width: 100%;
+
+    @media #{$small-and-down} {
+      font-size: 1.2em;
+      margin-top: 5em;
+    }
+  }
+
+  .titles-wrapper {
+    width: 100%;
   }
 
   .section-subtitle {
@@ -31,6 +41,10 @@
     font-size: 1.4em;
     margin: 1em 0 1em -1.6em !important;
     padding: 0;
+
+    @media #{$small-and-down} {
+      margin: 1em auto 1em 5em !important;
+    }
   }
 
   .section-title {
@@ -38,6 +52,15 @@
     font-family: Raleway-Bold;
     font-size: 5.4em;
     margin: 0 0 0.5em -0.5em;
+
+    @media #{$medium-and-down} {
+      font-size: 4em;
+    }
+
+    @media #{$small-and-down} {
+      font-size: 3em;
+      margin: 0 0 0.5em 8%;
+    }
   }
 
   .titles-decor {
@@ -47,6 +70,7 @@
     position: absolute;
     right: 10%;
     width: 198px;
+    z-index: -1;
   }
 
   .options {
@@ -68,6 +92,15 @@
     padding: 0.5em 10%;
     width: 60%;
 
+    @media #{$medium-and-down} {
+      font-size: 1.2em;
+    }
+
+    @media #{$small-and-down} {
+      margin: 0 10% 1em 10%;
+      width: 80%;
+    }
+
     &:hover, &.active {
       background: $primary;
       color: $secondary;
@@ -78,6 +111,15 @@
     display: none;
     margin-bottom: 12em;
     padding: 0 12em 0 1em;
+
+    @media #{$medium-and-down} {
+      padding: 0 6em 0 0;
+      margin-bottom: 4em;
+    }
+
+    @media #{$small-and-down} {
+      padding: 2em 2em 0;
+    }
 
     &.active {
       display: block;

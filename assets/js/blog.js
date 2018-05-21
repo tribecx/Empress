@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 function getNews() {
   $.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts?per_page=100&orderby=date",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/aplicacionesempress.wordpress.com/posts?per_page=100&orderby=date",
   	dataType: 'json'
   }).then(function(posts) {
     getTags(posts);
@@ -14,7 +14,7 @@ function getNews() {
 
 function getTags(posts) {
   $.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/tags",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/aplicacionesempress.wordpress.com/tags",
   	dataType: 'json'
   }).then(function(data) {
     var tags = [];
@@ -32,7 +32,7 @@ function getTags(posts) {
 function showPosts(posts, tags) {
 
   showMain(posts, tags);
-  showPopular(posts, tags);
+  //showPopular(posts, tags);
 
   for (var i = 1; i <= posts.length; i++) {
     var background = posts[i].featured_media_url;
@@ -60,7 +60,6 @@ function showPosts(posts, tags) {
     $('.articles').append(post);
 
     $(image).css('background','url("'+background+'") center/cover no-repeat');
-
   }
 }
 

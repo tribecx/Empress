@@ -7,4 +7,9 @@
   @media #{$large-and-up} {
     width: calc(100% - 157px);
   }
+
+  @media #{$small-and-down} {
+    float: none;
+    width: 100%;
+  }
 }

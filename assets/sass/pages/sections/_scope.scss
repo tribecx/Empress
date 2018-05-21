@@ -7,5 +7,15 @@
   .titles {
     height: auto;
     margin-top: 8em;
+
+    @media #{$small-and-down} {
+      margin-top: 0;
+    }
+  }
+
+  .options {
+    @media #{$small-and-down} {
+      margin-top: 8em;
+    }
   }
 }

@@ -78,18 +78,6 @@
     }
   }
 
-  .who-tag {
-    color: $secondary;
-    display: block;
-    font-size: 0.9em;
-    margin: 0;
-    width: 100%;
-
-    @media #{$small-and-down} {
-      margin-bottom: 1em;
-    }
-  }
-
   .who-title {
     color: $primary;
     display: inline-block;
@@ -102,7 +90,7 @@
     }
 
     @media #{$small-and-down} {
-      font-size: 1.7em;
+      font-size: 4em;
       margin-left: -7vw;
     }
   }
@@ -119,7 +107,7 @@
     margin: 2.5em 0;
 
     @media #{$medium-and-down} {
-      font-size: 0.63em;
+      font-size: 1.2em;
     }
   }
 
@@ -138,7 +126,6 @@
     }
 
     @media #{$small-and-down} {
-      font-size: 0.59em;
       padding: 0 0.9em;
     }
   }

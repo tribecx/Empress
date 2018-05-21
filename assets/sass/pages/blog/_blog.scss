@@ -5,6 +5,10 @@
   .content {
     width: calc(100% - 185px);
     margin-bottom: 4em;
+
+    @media #{$small-and-down} {
+      width: 100%;
+    }
   }
 
   .background {
@@ -18,15 +22,6 @@
     position: absolute;
     width: 100%;
     z-index: -1;
-
-    @include medium-blog {
-      height: 80vw;
-      max-height: 720px;
-    }
-
-    @include small-blog {
-      height: 90vw;
-    }
   }
 
   .item-cover {
@@ -51,14 +46,13 @@
     margin: 6.5em 10px 0;
     width: calc(calc(62.101*#{$wu}) - 20px);
 
-    @include medium-blog {
-      margin: 6em 0 1vw 3vw;
-      width: 76vw;
+    @media #{$medium-and-down} {
+      width: 80%;
     }
 
-    @include small-blog {
-      margin: 7em 0 0 .4em;
-      width: 88vw;
+    @media #{$small-and-down} {
+      margin: 8em 5% 0;
+      width: 90%;
     }
 
     .cover {
@@ -68,16 +62,6 @@
       padding: calc(4.5*#{$wu});
       position: relative;
       width: 100%;
-
-      @include medium-blog {
-        height: 56vw;
-        width: 80%;
-      }
-
-      @include small-blog {
-        height: 50vw;
-        width: 89vw;
-      }
 
       &:hover {
         .shadow {
@@ -93,13 +77,8 @@
       position: relative;
       text-align: center;
 
-      @include medium-blog {
-        height: 41vw;
-      }
-
-      @include small-blog {
-      	border: solid 3px $white;
-      	height: 44vw;
+      @media #{$small-and-down} {
+        border: solid 4px $white;
       }
     }
 
@@ -118,7 +97,7 @@
       line-height: 1.18em;
       margin: 0;
 
-      @include medium-blog {
+      @media #{$small-and-down} {
         font-size: 6vw;
       }
     }
@@ -153,18 +132,6 @@
     line-height: 1.6em;
     padding: 6%;
 
-    @include medium-blog {
-      font-size: 1.3em;
-      width: 80%;
-    }
-
-    @include small-blog {
-      padding: 7% 7% 5%;
-      text-align: center;
-      font-size: 1.3em !important;
-      width: 89vw;
-    }
-
     .main-date {
       color: $smoke;
       display: inline-block;
@@ -173,7 +140,7 @@
       vertical-align: top;
       width: 31%;
 
-      @include small-blog {
+      @media #{$small-and-down} {
         display: none;
       }
     }
@@ -188,11 +155,7 @@
       vertical-align: top;
       width: 67%;
 
-      @include small-blog {
-        display: block;
-        height: .8em*1.4*7;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      @media #{$small-and-down} {
         width: 100%;
       }
     }
@@ -202,28 +165,12 @@
       display: none;
       font-family: Raleway-SemiBold;
       margin: 0.7em 0 0;
-
-      @include small-blog {
-        display: block;
-      }
     }
   }
 
   .blog-container {
-    height: 70vw;
     margin: 1vw 0 0 0;
     width: 100%;
-
-    @include medium-blog {
-      margin: 0 0 2vw 2vw;
-      width: 63vw;
-    }
-
-    @include small-blog {
-      height: 100%;
-      margin: .4em;
-      width: 100%;
-    }
   }
 
   .popular {
@@ -233,17 +180,6 @@
     margin: 10px 85px 0 20px;
     position: relative;
     width: calc(calc(37.9*#{$wu}) - 105px);
-
-    @include medium-blog {
-      border: none;
-      float: none;
-      margin: 0 auto 3vw;
-      width: 320px;
-    }
-
-    @include small-blog {
-      display: none;
-    }
 
     .popular-title {
       color: $primary;
@@ -303,11 +239,6 @@
       position: relative;
       width: 100%;
 
-      @include medium-blog {
-        height: 165px;
-        margin: 15px 0 20px;
-      }
-
       &:hover {
         .shadow {
           background-color: rgba(0,0,0,0.6);
@@ -336,20 +267,12 @@
     .popular-head {
       font-size: 2.2em;
       margin: 3px 0 0;
-
-      @include medium-blog {
-        font-size: 2.0vw;
-      }
     }
 
     .popular-item {
       height: 6vw;
       margin: 20px 0;
       width: 100%;
-
-      @include medium-blog {
-        height: 75px;
-      }
     }
 
     .item-image {
@@ -379,10 +302,6 @@
       font-size: 1em;
       margin: 0;
       text-transform: capitalize;
-
-      @include medium-blog {
-      	font-size: .8em;
-      }
     }
 
     .title {
@@ -393,14 +312,6 @@
       height: 2.3em;
       margin: 2px 0 0;
       overflow: hidden;
-
-      @include medium-blog {
-        font-size: .9em;
-      }
-
-      @include small-blog {
-
-      }
 
       &:hover {
         color: $grave;
@@ -414,16 +325,14 @@
     float: right;
     width: calc(62.101*#{$wu});
 
-    @include medium-blog {
+    @media #{$medium-and-down} {
       float: none;
-      width: 100%;
-      text-align: center;
+      width: calc(80% + 20px);
     }
 
-    @include small-blog {
-      float: none;
-      margin-top: 1em;
-      width: 92vw;
+    @media #{$small-and-down} {
+      margin: 0 calc(5% - 10px) 0;
+      width: calc(90% + 20px);
     }
 
     .article-item {
@@ -433,6 +342,10 @@
       max-width: calc(50% - 20px);
       min-width: 0;
       vertical-align: top;
+
+      @media #{$small-and-down} {
+        max-width: calc(100% - 20px);
+      }
 
       &:hover {
       cursor: pointer;
@@ -445,27 +358,13 @@
         color: $white;
       }
     }
-
-      @include medium-blog {
-        width: 320px;
-        display: inline-block;
-      }
-
-      @include small-blog {
-        margin: 2vw;
-        width: 88vw;
-      }
     }
   }
 
   .item-cover {
     height: calc(18*#{$wu});
 
-    @include medium-blog {
-      height: 27vw;
-    }
-
-    @include small-blog {
+    @media #{$small-and-down} {
       height: 55vw;
     }
   }
@@ -475,28 +374,12 @@
     text-align: center;
     width: 100%;
 
-    @include medium-blog {
-      font-size: .8em;
-    }
-
     .item-info {
       background-color: $dark-bone;
       margin: -10px auto 10px;
       padding: 15px 15px 20px;
       position: relative;
       width: calc(100% - 20px);
-
-      @include medium-blog {
-        margin: -1.6vw auto 2vw;
-        width: 300px;
-      }
-
-      @include small-blog {
-      	font-size: .8em !important;
-        margin: -2vw auto 2vw;
-        padding: 1.5vw 4.5vw 5vw;
-        width: 84vw;
-      }
     }
 
     .item-tag {
@@ -511,10 +394,6 @@
       padding: 0 0.9em;
       text-transform: uppercase;
       top: 0;
-
-      @include small-blog {
-      	font-size: 1em;
-      }
     }
 
     .item-title {
@@ -530,10 +409,6 @@
       &:hover {
         color: $white;
       }
-
-      @include small-blog {
-        font-size: 1.5em;
-      }
     }
 
     .item-excerpt {
@@ -545,13 +420,6 @@
       line-height: $line-height;
       margin: 1em 0 1.5em;
       overflow: hidden;
-
-      @include small-blog {
-        font-size: 1.2em;
-        height: 5.783em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
     }
 
     .item-date {
@@ -560,7 +428,7 @@
       font-size: 1.3em;
       margin: 0;
 
-      @include small-blog {
+      @media #{$small-and-down} {
         display: none;
       }
     }
@@ -568,18 +436,10 @@
 
   .margin-right {
   	margin: 1vw 0 1vw .66vw !important;
-
-  	@include medium-blog {
-  	  margin: 1vw !important;
-  	}
   }
 
   .margin-left {
     margin: 1vw 1vw 1vw 0 !important;
-
-    @include medium-blog {
-     margin: 1vw !important;
-    }
   }
 
   a {

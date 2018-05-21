@@ -2,4 +2,10 @@
   .slide-image {
     background: url('../images/services.svg') top right/contain no-repeat;
   }
+
+  .separator-green {
+    @media #{$small-and-down} {
+      margin-left: 20%;
+    }
+  }
 }

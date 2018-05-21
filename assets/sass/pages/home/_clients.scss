@@ -31,22 +31,6 @@
       }
     }
 
-    .clients-tag {
-      color: $secondary;
-      display: block;
-      font-size: 0.9em;
-      margin: 0;
-      text-align: right;
-
-      @media #{$medium-and-down} {
-        text-align: center;
-      }
-
-      @media #{$small-and-down} {
-        margin-bottom: 0.8em;
-      }
-    }
-
     .clients-title {
       color: $primary;
       display: inline-block;
@@ -54,7 +38,7 @@
       margin: 0 0 0.6em;
 
       @media #{$small-and-down} {
-        font-size: 1.7em;
+        font-size: 4em;
       }
     }
 
@@ -73,9 +57,9 @@
 
     .separator-green {
       margin-left: -20px;
-      
+
       @media #{$small-and-down} {
-        border: solid 1px $white;
+        margin-left: 0;
       }
     }
 
@@ -85,12 +69,17 @@
       font-size: 1.4em;
       line-height: 1.3em;
       margin: 2.5em 0;
+
+      @media #{$medium-and-down} {
+        font-size: 1.2em;
+      }
     }
 
     .clients-btn {
       border: solid 2px $secondary;
       color: $secondary;
       display: inline-block;
+      font-family: Raleway-Bold;
       font-size: 1.1em;
       line-height: 29px;
       padding: 0 3em;
@@ -102,7 +91,6 @@
       }
 
       @media #{$small-and-down} {
-        font-size: 0.59em;
         padding: 0 0.9em;
       }
     }

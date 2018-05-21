@@ -8,7 +8,7 @@ function getPost() {
   var id = getUrlParameter('id');
 
   $.ajax({
-    url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts/"+id+"",
+    url: "https://public-api.wordpress.com/wp/v2/sites/aplicacionesempress.wordpress.com/posts/"+id+"",
     dataType: 'json'
   }).then(function(data) {
     drawPost(data);
@@ -17,7 +17,7 @@ function getPost() {
 
 function getNews() {
   $.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/posts?per_page=100&orderby=date",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/aplicacionesempress.wordpress.com/posts?per_page=100&orderby=date",
   	dataType: 'json'
   }).then(function(posts) {
     getTags(posts);
@@ -26,7 +26,7 @@ function getNews() {
 
 function getTags(posts) {
   $.ajax({
-  	url: "https://public-api.wordpress.com/wp/v2/sites/ocupasite.wordpress.com/tags",
+  	url: "https://public-api.wordpress.com/wp/v2/sites/aplicacionesempress.wordpress.com/tags",
   	dataType: 'json'
   }).then(function(data) {
     var tags = [];
@@ -115,7 +115,7 @@ function showMainPopular (posts, tags) {
   var date = dateConverter(posts[0].date);
   var id = posts[0].id;
 
-  var main = 
+  var main =
   '<div class="most-popular-image">'+
   '<a href="blog-note.html?id='+id+'">'+
     '<div class="shadow"></div>'+
@@ -139,24 +139,25 @@ function showPopular (posts, tags) {
 
 	for (var i = 1; i <= 5; i++) {
     var background = posts[i].featured_media_url;
-    var popularImage = '.notes-image'+i+'';
+    var popularImage = '.item-image'+i+'';
     var tag = traslateTag(posts[i].tags[0], tags);
     var title = posts[i].title.rendered;
     var id = posts[i].id;
 
     var popular =
-    '<div class="news-background">'+
-    '<div class="col m5 l5 notes-image notes-image'+i+'"></div>'+
-      '<a href="blog-note.html?id='+id+'">'+
-        '<div class="col m7 l7 notes-info">'+
-        '<div class="titles-wrapper">'+
-          '<p class="little-title">'+tag+'</p>'+
-          '<p class="medium-title">'+title+'</p>'+
-        '</div>'+
-      '</a>'+
-    '</div>'+
-    '</div>'
-    $('.litlle-news').append(popular);
+      '<div class="popular-item">'+
+        '<a href="blog-note.html?id='+id+'">'+
+          '<div class="item-image item-image'+i+'"></div>'+
+          '<div class="item-text">'+
+            '<div class="item-wrapper">'+
+              '<p class="tag">'+tag+'</p>'+
+              '<h4 class="title" title="'+title+'">'+title+'</h4>'+
+            '</div>'+
+          '</div>'+
+        '</a>'+
+      '</div>';
+
+    $('.little-news').append(popular);
 
     $(popularImage).css('background','url("'+background+'") center/cover no-repeat');
 

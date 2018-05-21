@@ -17,6 +17,12 @@
       background: url('../images/texture-green.png') 0 0/cover no-repeat;
       height: 100%;
       width: 100%;
+
+      @media #{$small-and-down} {
+        bottom: 0;
+        height: 113vw;
+        position: absolute;
+      }
     }
   }
 
@@ -26,6 +32,13 @@
     margin-left: 24%;
     margin-top: -90vh;
     width: 76%;
+
+    @media #{$small-and-down} {
+      height: 109.4vw;
+      margin: 0 8vw 65px;
+      position: relative;
+      width: 84vw;
+    }
   }
 
   .tech-text {
@@ -54,18 +67,6 @@
     }
   }
 
-  .tech-tag {
-    color: $secondary;
-    display: block;
-    font-size: 0.9em;
-    margin: 0;
-    width: 100%;
-
-    @media #{$small-and-down} {
-      margin-bottom: 1em;
-    }
-  }
-
   .tech-title {
     color: $white;
     display: inline-block;
@@ -78,7 +79,7 @@
     }
 
     @media #{$small-and-down} {
-      font-size: 1.7em;
+      font-size: 4em;
       margin: 0 0 0.6em -0.8em;
     }
   }
@@ -93,6 +94,10 @@
     font-size: 1.4em;
     line-height: 1.3em;
     margin: 2.5em 0;
+
+    @media #{$medium-and-down} {
+      font-size: 1.2em;
+    }
   }
 
   .tech-btn {
@@ -110,7 +115,6 @@
     }
 
     @media #{$small-and-down} {
-      font-size: 0.59em;
       padding: 0 0.9em;
     }
   }

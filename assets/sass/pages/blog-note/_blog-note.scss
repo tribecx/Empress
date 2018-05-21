@@ -1,18 +1,27 @@
 .blog-note {
+  .content {
+    margin-right: 157px;
+    width: calc(100% - 314px);
+
+    @media #{$small-and-down} {
+      margin: 0 2.5%;
+      width: 95%;
+    }
+  }
+
 .centered-title-section {
   position: relative;
   z-index: 1;
-  width: 91.6666666667%;
 
   .centered-title-wrapper {
     padding: 10em 3em 5em;
 
-    @media #{$small-and-down} {
+    @media #{$medium-and-down} {
       padding: 50px !important;
     }
 
-    @media #{$medium-and-down} {
-      padding: 50px !important;
+    @media #{$small-and-down} {
+      padding: 8em 15px 2em !important;
     }
 
     .centered-title {
@@ -22,8 +31,8 @@
       margin: auto;
       text-align: center;
 
-      @media #{$small-and-down} {
-        font-size: 35px;
+      @media #{$medium-and-down} {
+        font-size: 4em;
       }
     }
 
@@ -40,6 +49,10 @@
         margin: 0.8em;
         padding: 0.5em 1em;
         text-align: center;
+
+        @media #{$small-and-down} {
+          margin: 0.8em 0;
+        }
       }
 
       .subtitle-time {
@@ -69,18 +82,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vw;
+  height: auto;
   margin: 50px 30px 50px 40px;
-
-   @media #{$small-and-down} {
-    height: 334px;
-    margin-top: -40px;
-    position: relative;
-  }
+  min-height: 34vw;
 
   @media #{$medium-and-down} {
-    height: 80vh;
     margin: 35px;
+  }
+
+  @media #{$small-and-down} {
+    margin: 10px;
+    min-height: 57vw;
+    position: relative;
   }
 }
 
@@ -92,15 +105,44 @@
     padding: 0 35px !important;
   }
 
+  @media #{$small-and-down} {
+    padding: 0 10px !important;
+  }
+
   .post-information {
     color: $asphalt;
     font-size: 1.6em;
     font-family: Raleway-Regular;
     line-height: 20px;
+    overflow: hidden;
 
     img {
       width: 100%;
     }
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  p {
+    max-width: 100%;
   }
 }
 
@@ -177,8 +219,6 @@
 }
 
 .main-global {
-  height: 13vw;
-
   &:hover{
     cursor: pointer;
   }
@@ -199,18 +239,21 @@
   }
 
   .popular-title-wraper {
-    border: solid 3px $white;
+    border: solid 8px $white;
     height: 100%;
     position: relative;
     width: 100%;
     z-index: 10;
 
-    .popular-titles {
-      @include center(false,true);
+    @media #{$medium-and-down} {
+      border: solid 4px $white;
+    }
 
+    .popular-titles {
       color: $white;
       font-family: Raleway-SemiBold;
       height: 100%;
+      padding: 1.5em 1em 2em;
       text-align: center;
       width: 100%;
 
@@ -219,11 +262,11 @@
       }
 
       .tiny-title {
+        color: $secondary;
         display: block;
         font-size: 1em;
         margin: 0;
-        color: $secondary;
-
+        text-transform: capitalize;
         }
 
       .soft-title {
@@ -291,11 +334,65 @@
   }
 }
 
-.litlle-news {
+.little-news {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   cursor: pointer;
+
+  .popular-item {
+    height: 6vw;
+    margin: 20px 0;
+    width: 100%;
+
+    @media #{$medium-and-down} {
+      height: 10vw;
+    }
+  }
+
+  .item-image {
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+  }
+
+  .item-text {
+    display: inline-block;
+    height: 100%;
+    margin-left: 7%;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 56%;
+  }
+
+  .item-wrapper {
+    @include center(false,true);
+
+    width: 100%;
+  }
+
+  .tag {
+    color: $secondary;
+    font-family: Raleway-Bold;
+    font-size: 1em;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .title {
+    color: $black;
+    cursor: pointer;
+    font-family: Raleway-Bold;
+    font-size: 1.6em;
+    height: 2.3em;
+    margin: 2px 0 0;
+    overflow: hidden;
+
+    &:hover {
+      color: $grave;
+    }
+  }
 }
 
 .center-notes {
@@ -385,10 +482,12 @@
 }
 
 .information {
+  background-color: $white;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 !important;
   position: relative;
   z-index: 1;
-  background-color: $white;
-  padding: 0 !important;
 }
 
 .note-menu {
