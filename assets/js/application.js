@@ -1,6 +1,7 @@
 $(document).ready(function() {
   menu();
-  clientsState();
+  changeSection();
+  dropDown();
   equalHeight();
   menuPosition();
 });
@@ -11,15 +12,30 @@ function menu() {
   });
 }
 
-function clientsState() {
-  $('.clients-anchor').each(function(index, element) {
+function changeSection() {
+  $('.option').each(function(index, element) {
     $(element).on('click', function() {
-      $('.clients-anchor').removeClass('active');
+      $('.option').removeClass('active');
+      $('.info').removeClass('active');
       $(this).addClass('active');
+      $('.info:eq('+index+')').addClass('active');
 
-      $('.clients-item').fadeOut('fast').promise().done(function() {
-        $('.clients-item:eq('+index+')').fadeIn('fast');
+      $('.info').fadeOut('fast').promise().done(function() {
+        $('.info:eq('+index+')').fadeIn('fast');
       });
+    });
+  });
+}
+
+function dropDown() {
+  $('.info-drop').each(function(index, element) {
+    $(element).on('click', function() {
+      if ($('.info-down:eq('+index+')').hasClass('visible')) {
+        $(this).children('.dropdown-state').replaceWith('(+)');
+      }
+      
+      $('.info-down:eq('+index+')').toggleClass('visible');
+      $(this).children('.dropdown-state').replaceWith('(-)');
     });
   });
 }

@@ -75,8 +75,13 @@
   }
 
   .info {
+    display: none;
     margin-bottom: 12em;
     padding: 0 12em 0 1em;
+
+    &.active {
+      display: block;
+    }
 
     .info-title {
       color: $primary;
@@ -86,11 +91,21 @@
       text-transform: uppercase;
     }
 
+    .info-subtitle {
+      font-family: Raleway-Bold;
+      font-size: 1.4em;
+      margin: 0;
+    }
+
     .info-paragraph, .info-list {
       color: $asphalt;
       font-family: Raleway-Medium;
       font-size: 1.4em;
       margin: 0.2em 0 1.4em;
+
+      .info-subtitle {
+        font-size: 1em;
+      }
     }
 
     .info-list {
@@ -113,7 +128,71 @@
 
     .info-image {
       margin: 1em 0;
-      width: 100%;
+      max-width: 100%;
+    }
+
+    .value-wrapper {
+      padding: 3em 0 1em 3em;
+    }
+
+    .value-image {
+      display: inline-block;
+      margin-right: 3em;
+      vertical-align: middle;
+    }
+
+    .value-text {
+      display: inline-block;
+      font-family: Raleway-Regular;
+      vertical-align: middle;
+      width: calc(100% - 88px);
+    }
+
+    .value-head {
+      font-family: Raleway-Bold;
+      font-size: 1.4em;
+      margin: 0.4em 0;
+    }
+
+    .value-paragraph {
+      font-size: 1.4em;
+      margin: 0.4em 0;
+    }
+  }
+
+  .info-link {
+    border: solid 2px $secondary;
+    color: $secondary;
+    display: inline-block;
+    font-family: Raleway-Bold;
+    font-size: 1.1em;
+    line-height: 29px;
+    margin-top: 2em;
+    padding: 0 3em;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+
+  .info-drop {
+    color: $primary;
+    cursor: pointer;
+    font-family: Raleway-Bold;
+    font-size: 1.4em;
+    margin: 1em 0 0;
+    text-transform: uppercase;
+  }
+
+  .info-down {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+
+    &.visible {
+      height: auto;
     }
   }
 }

@@ -5,7 +5,7 @@
   width: 91.6666666667%;
 
   .centered-title-wrapper {
-    padding: 50px 30px;
+    padding: 10em 3em 5em;
 
     @media #{$small-and-down} {
       padding: 50px !important;
@@ -17,7 +17,8 @@
 
     .centered-title {
       color: $white;
-      font-family: Raleway-SemiBold;
+      font-family: Raleway-Bold;
+      font-size: 6em;
       margin: auto;
       text-align: center;
 
@@ -34,19 +35,19 @@
         background-color: $secondary;
         color: $white;
         display: inline-block;
-        font-family: Raleway-SemiBold;
-        font-size: .8em;
-        line-height: 16px;
-        padding: .5em;
+        font-family: Raleway-Bold;
+        font-size: 1.4em;
+        margin: 0.8em;
+        padding: 0.5em 1em;
         text-align: center;
       }
 
       .subtitle-time {
         color: $ashes;
         display: inline-block;
-        font-family: Raleway-SemiBold;
-        font-size: .8em;
-        line-height: 16px;
+        font-family: Raleway-Bold;
+        font-size: 1.3em;
+        margin: 0.8em;
         text-align: center;
       }
     }
@@ -70,7 +71,6 @@
   background-size: cover;
   height: 40vw;
   margin: 50px 30px 50px 40px;
-  /*padding: 250px;*/
 
    @media #{$small-and-down} {
     height: 334px;
@@ -94,9 +94,13 @@
 
   .post-information {
     color: $asphalt;
-    font-size: .9em;
+    font-size: 1.6em;
     font-family: Raleway-Regular;
     line-height: 20px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -136,7 +140,7 @@
   color: #07778C;
   display: block;
   font-family: Raleway-Bold;
-  font-size: 21px;
+  font-size: 2.5em;
   height: 50.4px;
   line-height: 1.2em;
   margin: 1em 0 0.6em;
@@ -157,7 +161,7 @@
   background-color: $white;
   color: black;
   font-family: Raleway-Bold;
-  font-size: 0.7em;
+  font-size: 1.1em;
   height: 2.3em;
   line-height: 2.3em;
   padding: 0 0.8em;
@@ -216,7 +220,7 @@
 
       .tiny-title {
         display: block;
-        font-size: 1.4vw;
+        font-size: 1em;
         margin: 0;
         color: $secondary;
 
@@ -224,7 +228,7 @@
 
       .soft-title {
         display: block;
-        font-size: 1.6vw;
+        font-size: 2.2em;
         margin: 3px 0 0;
       }
     }
@@ -244,7 +248,7 @@
 }
 
 .notes-image {
-  width: 43% !important;
+  width: 35% !important;
   height: 100%;
   display: inline-block;
 }
@@ -273,15 +277,15 @@
   .little-title {
     color: $secondary;
     font-family: Raleway-SemiBold;
-    font-size: .9em;
+    font-size: 1em;
     margin: 0;
   }
 
   .medium-title {
     color: black;
     font-family: Raleway-SemiBold;
-    font-size: 1.3vw;
-    height: 3.0em;
+    font-size: 1.6em;
+    height: 2.4em;
     overflow: hidden;
     margin: 2px 0 0;
   }
@@ -418,9 +422,5 @@
   @media #{$small-and-down} {
     float: none !important;
   }
-}
-
-img {
-  width: 100%;
 }
 }
