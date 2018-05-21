@@ -30,8 +30,8 @@ function getTags(posts) {
 }
 
 function showPosts(posts, tags) {
-  
-  showMain(posts, tags);  
+
+  showMain(posts, tags);
   showPopular(posts, tags);
 
   for (var i = 1; i <= posts.length; i++) {
@@ -45,12 +45,12 @@ function showPosts(posts, tags) {
     var id = posts[i].id;
 
     var post =
-    '<a href="blog-note.html?id='+id+'" class="article-item margin-left">'+
+    '<a href="blog-note.html?id='+id+'" class="article-item">'+
       '<div class="item-cover item-cover'+i+'"></div>'+
       '<div class="item-content">'+
         '<div class="item-info">'+
           '<p class="item-tag">'+tag+'</p>'+
-          '<h3 class="item-title">'+title+'</h3>'+
+          '<h3 class="item-title" title="'+title+'">'+title+'</h3>'+
           '<p class="item-excerpt">'+content+'</p>'+
           '<p class="item-date">'+date+'</p>'+
         '</div>'+
@@ -60,7 +60,7 @@ function showPosts(posts, tags) {
     $('.articles').append(post);
 
     $(image).css('background','url("'+background+'") center/cover no-repeat');
-  
+
   }
 }
 
@@ -80,7 +80,7 @@ for (var i = 1; i <= 5; i++) {
         '<div class="item-text">'+
           '<div class="item-wrapper">'+
             '<p class="tag">'+tag+'</p>'+
-            '<h4 class="title">'+title+'</h4>'+
+            '<h4 class="title" title="'+title+'">'+title+'</h4>'+
           '</div>'+
         '</div>'+
       '</a>'+
@@ -111,10 +111,8 @@ function showMain(posts, tags) {
         '</div>'+
         '<div class="shadow"></div>'+
         '<div class="frame">'+
-          '<div class="main-wrapper">'+
-            '<p class="main-tag">'+tag+'</p>'+
-            '<h2 class="main-title">'+title+'</h2>'+
-          '</div>'+
+          '<p class="main-tag">'+tag+'</p>'+
+          '<h2 class="main-title" title="'+title+'">'+title+'</h2>'+
         '</div>'+
       '</div>'+
       '<div class="main-info">'+
@@ -128,17 +126,15 @@ function showMain(posts, tags) {
 
     $(image).css('background','url("'+background+'") center/cover no-repeat');
 
-    var popularMain = 
+    var popularMain =
     '<a href="blog-note.html?id='+id+'">'+
       '<div class="main-image"></div>'+
-    '</a>'+
-    '<div class="shadow"></div>'+
-    '<div class="popular-frame">'+
-      '<div class="frame-wrapper">'+
+      '<div class="shadow"></div>'+
+      '<div class="popular-frame">'+
         '<p class="popular-tag">'+tag+'</p>'+
-        '<h3 class="popular-head">'+title+'</h3>'+
+        '<h3 class="popular-head" title="'+title+'">'+title+'</h3>'+
       '</div>'+
-    '</div>';
+    '</a>';
 
     $('.popular-main').append(popularMain);
 

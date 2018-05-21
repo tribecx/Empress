@@ -1,388 +1,589 @@
-/*.blog-background {
-  background-color: $white;
-}
+.blog {
+  // wu = width unit. Units like vw but using content abailable space
+  $wu: calc(calc(100vw - 185px) / 100);
 
-.blog-cover {
-  background-image: url("../images/blog-cover.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 80px;
-  position: relative;
-
-  @media #{$small-and-down} {
-    margin: 80px 25px 0 32px;
-    padding: 0 !important;
+  .content {
+    width: calc(100% - 185px);
+    margin-bottom: 4em;
   }
 
-  @media #{$medium-and-down} {
-    margin-left: 25px !important;
-  }
-
-
-
-  .shadow {
-    background-color: rgba(0,0,0,0.3);
-    height: 100%;
-    left: 0;
+  .background {
+    background-image: url("../images/trama-blog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $primary;
+    height: 46vw;
+    max-height: 590px;
     position: absolute;
-    top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 
-    &:hover {
-      background-color: rgba(0,0,0,0.6);
+    @include medium-blog {
+      height: 80vw;
+      max-height: 720px;
+    }
+
+    @include small-blog {
+      height: 90vw;
     }
   }
 
-  .blog-title-wrapper {
-    padding: 30px 30px 80px 30px;
-
-    @media #{$small-and-down} {
-      padding: 10px !important;
-    }
-
-    .blog-titles {
-      border: 8px solid $white;
-      text-align: center;
-
-      @media #{$small-and-down} {
-        border: 3px solid $white;
-      }
-
-      .blog-small-title {
-      	color: $secondary;
-      	font-family: Raleway-SemiBold;
-      	margin-top: 40px;
-
-        @media #{$small-and-down} {
-          margin-top: 15px !important;
-        }
-      }
-
-      .blog-big-title {
-      	color: $white;
-      	font-family: Raleway-SemiBold;
-      	margin-bottom: 30px !important;
-      	margin: auto;
-      	text-align: center;
-      	width: 74%;
-
-        @media #{$small-and-down} {
-          font-size: 22px;
-          width: 85%;
-          margin-bottom: 15px !important;
-        }
-
-        @media #{$medium-and-down} {
-          width: 86%;
-        }
-      }
-    }
-  }
-}
-
-.blog-info-cover {
-  background-color: $secondary;
-  position: relative;
-  z-index: 1;
-
-  @media #{$small-and-down} {
-    font-size: 13px;
-    display: flex;
-    flex-direction: column-reverse;
+  .item-cover {
+  	background-image: url("../images/blog-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  	height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 
-  @media #{$medium-and-down} {
-    margin-left: 25px !important;
-  }
-
-  .time-wrapper {
-  	padding: 1em;
-
-    @media #{$small-and-down} {
-      padding-top: 0;
-      text-align: center;
-    }
-
-  	.blog-cover-time {
-  	  color: $asphalt;
-  	  font-family: Raleway-SemiBold;
-  	  font-size: .8em;
-  	  margin-top: 15px !important;
-  	  margin: auto;
-  	}
-  }
-
-  .info-wrapper {
-  	padding: 1em;
-
-    @media #{$small-and-down} {
-      padding-bottom: 0;
-    }
-
-  	.info-cover {
-  	  color: $primary;
-  	  font-family: Raleway-SemiBold;
-  	  font-size: .8em;
-  	  margin: 15px auto !important;
-  	  text-align: left;
-  	}
-  }
-}
-
-.section-popular {
-  margin-top: 10px !important;
-  padding: 0 2em !important;
-
-  @media #{$small-and-down} {
-    margin: 0 15% !important;
-  }
-
-  @media #{$medium-and-down} {
-    margin: 0 15% 0 17% !important;
-  }
-}
-
-.most-popular {
-  border-top: 5px solid $secondary;
-
-  @media #{$medium-and-down} {
-    border: none;
-  }
-}
-
-.title-popular {
-  color: #07778C;
-  display: block;
-  font-family: Raleway-Bold;
-  font-size: 21px;
-  height: 50.4px;
-  line-height: 1.2;
-  margin: 1em 0 0.6em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.popular-news-wrapper{
-  border: 2px solid $secondary;
-  display: block;
-  position: relative;
-}
-
-.week-title {
-  @include center(true,false);
-
-  background-color: $white;
-  color: $black;
-  font-family: Raleway-Bold;
-  font-size: 0.7em;
-  height: 2.3em;
-  line-height: 2.3em;
-  padding: 0 0.8em;
-  text-transform: uppercase;
-  top: -1.2em;
-  transform: translate(-100%, 0) !important;
-}
-
-.month-title {
-  @extend .week-title;
-  transform: translate(0, 0) !important;
-  border-left: 2px solid $secondary;
-}
-
-.most-popular-image {
-  background-image: url("../images/robot.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10%;
-  padding: 1.5em;
-  position: relative;
-
-  &:hover{
-    cursor: pointer;
-  }
-
-  .shadow {
-    background-color: rgba(0,0,0,0.3);
+  .image {
     height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
+    object-fit: cover;
     width: 100%;
-    z-index: 1;
-
-    &:hover {
-      background-color: rgba(0,0,0,0.6);
-    }
   }
 
-  .popular-title-wraper {
+  .main-article {
+    color: $white;
+    display: inline-block;
+    margin: 6.5em 10px 0;
+    width: calc(calc(62.101*#{$wu}) - 20px);
 
-    .popular-titles {
-      border: 3px solid $white;
-      text-align: center;
+    @include medium-blog {
+      margin: 6em 0 1vw 3vw;
+      width: 76vw;
+    }
+
+    @include small-blog {
+      margin: 7em 0 0 .4em;
+      width: 88vw;
+    }
+
+    .cover {
+      box-sizing: border-box;
+      cursor: pointer;
+      min-height: calc(38.813*#{$wu});
+      padding: calc(4.5*#{$wu});
+      position: relative;
+      width: 100%;
+
+      @include medium-blog {
+        height: 56vw;
+        width: 80%;
+      }
+
+      @include small-blog {
+        height: 50vw;
+        width: 89vw;
+      }
 
       &:hover {
-        border-color: $primary;
-
-        .tiny-title, .soft-title {
-          color: $primary;
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
         }
       }
+    }
 
-      .tiny-title {
-        color: $secondary;
-        font-family: Raleway-SemiBold;
-        font-size: 15px;
+    .frame {
+      box-sizing: border-box;
+      border: solid 8px $white;
+      padding: 9% 5% 5%;
+      position: relative;
+      text-align: center;
+
+      @include medium-blog {
+        height: 41vw;
+      }
+
+      @include small-blog {
+      	border: solid 3px $white;
+      	height: 44vw;
+      }
+    }
+
+    .main-tag {
+      color: $secondary;
+      font-family: Raleway-Bold;
+      font-size: 1.4em;
+      margin: 0.2em 0;
+      text-transform: capitalize;
+    }
+
+    .main-title {
+      color: $white !important;
+      font-family: Raleway-Bold;
+      font-size: calc(4.1*#{$wu});
+      line-height: 1.18em;
+      margin: 0;
+
+      @include medium-blog {
+        font-size: 6vw;
+      }
+    }
+  }
+
+  .main-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    .cover-image {
+      height: 100%;
+    }
+  }
+
+  .shadow {
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .main-info {
+    background-color: $secondary;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    padding: 6%;
+
+    @include medium-blog {
+      font-size: 1.3em;
+      width: 80%;
+    }
+
+    @include small-blog {
+      padding: 7% 7% 5%;
+      text-align: center;
+      font-size: 1.3em !important;
+      width: 89vw;
+    }
+
+    .main-date {
+      color: $smoke;
+      display: inline-block;
+      font-family: Raleway-Bold;
+      margin: 0;
+      vertical-align: top;
+      width: 31%;
+
+      @include small-blog {
+        display: none;
+      }
+    }
+
+    .main-excerpt {
+      color: $primary;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      margin: 0;
+      max-height: 6.4em;
+      overflow: hidden;
+      vertical-align: top;
+      width: 67%;
+
+      @include small-blog {
         display: block;
-        margin-top: 10px;
-        }
+        height: .8em*1.4*7;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+      }
+    }
 
-      .soft-title {
-        color: $white;
-        font-family: Raleway-SemiBold;
-        font-size: 20px;
-        margin-bottom: 10px;
+    .mobile-date {
+      color: $asphalt;
+      display: none;
+      font-family: Raleway-SemiBold;
+      margin: 0.7em 0 0;
+
+      @include small-blog {
+        display: block;
       }
     }
   }
-}
 
-.little-popular-image {
-  @extend .most-popular-image;
-}
+  .blog-container {
+    height: 70vw;
+    margin: 1vw 0 0 0;
+    width: 100%;
 
+    @include medium-blog {
+      margin: 0 0 2vw 2vw;
+      width: 63vw;
+    }
 
-.titles-wrapper {
-  margin: 7%;
-  text-align: left;
-
-  .little-title {
-    color: $secondary;
-    font-family: Raleway-SemiBold;
-    font-size: 11px;
-    margin: auto;
-  }
-
-  .medium-title {
-    color: black;
-    font-family: Raleway-SemiBold;
-    font-size: 15px;
-    margin: auto;
-  }
-}
-
-.litlle-news {
-  cursor: pointer;
-}
-
-.news-padding {
-  padding: 0 !important;
-
-  @media #{$small-and-down} {
-    padding: 0 !important;
-  }
-}
-
-.padding-left {
-  padding: 0 0 0 5px !important;
-
-  @media #{$small-and-down} {
-    padding: 0 !important;
-  }
-}
-
-.padding-right {
-  padding: 0 5px 0 0 !important;
-
-  @media #{$small-and-down} {
-    padding: 0 !important;
-  }
-}
-
-.blue-background {
-  background-image: url("../images/texture-green.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $primary;
-  height: 85%;
-  left: 0;
-  position: absolute;
-  opacity: 0.9;
-  top: 0;
-  width: 100%;
-  z-index: 0;
-
-  @media #{$small-and-down} {
-    height: 340px !important;
-  }
-
-  @media #{$medium-and-up} {
-    height: 70%;
-  }
-
-  @media #{$large-and-up} {
-    height: 85%;
-  }
-
-  @media #{$extra-large-and-up} {
-    height: 90%;
-  }
-}
-
-.blog-menu {
-  position: fixed;
-  z-index: 1;
-}
-
-.blog-menu-link {
-  color: $white !important;
-}
-
-.reverse {
-  @media #{$small-and-down} {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @media #{$medium-and-up} {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @media #{$medium-and-down} {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @media #{$large-and-up} {
-    display: block;
-  }
-}
-
-.medium {
-  @media #{$small-and-down} {
-    margin-left: 25px !important;
-    padding: 1em 0 !important;
-  }
-
-  @media #{$medium-and-up} {
-    padding: 1em !important;
-  }
-  @media #{$medium-and-down} {
-    padding: 1em !important;
-  }
-  @media #{$large-and-up} {
-    padding: 0 !important;
-  }
-}
-
-.news-background {
-
-  &:hover {
-    .info-section, .image-section {
-      background-color: $charcoal;
+    @include small-blog {
+      height: 100%;
+      margin: .4em;
+      width: 100%;
     }
   }
+
+  .popular {
+    border-top: solid 5px $secondary;
+    display: block;
+    float: right;
+    margin: 10px 85px 0 20px;
+    position: relative;
+    width: calc(calc(37.9*#{$wu}) - 105px);
+
+    @include medium-blog {
+      border: none;
+      float: none;
+      margin: 0 auto 3vw;
+      width: 320px;
+    }
+
+    @include small-blog {
+      display: none;
+    }
+
+    .popular-title {
+      color: $primary;
+      font-family: Raleway-Bold;
+      font-size: 2.5em;
+      margin: 1em 0 1.2em;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-wrapper {
+      border: solid 1px $secondary;
+      padding: 5px 5.8% 0;
+      position: relative;
+    }
+
+    .popular-nav {
+      @include center(true,false);
+
+      background-color: $white;
+      margin: -23px 0;
+      min-width: 155px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .week-btn, .month-btn {
+      background-color: $white;
+      border: none;
+      color: $black;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway-Bold;
+      font-size: 1.1em;
+      vertical-align: middle;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $asphalt;
+      }
+    }
+
+    .nav-line {
+      background-color: $secondary;
+      display: inline-block;
+      height: 35px;
+      margin: 0 12px;
+      vertical-align: middle;
+      width: 1px;
+    }
+
+    .popular-main {
+      cursor: pointer;
+      margin: 20px 0;
+      min-height: calc(15*#{$wu});
+      padding: 20px;
+      position: relative;
+      width: 100%;
+
+      @include medium-blog {
+        height: 165px;
+        margin: 15px 0 20px;
+      }
+
+      &:hover {
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+
+    .popular-frame {
+      border: solid 3px $white;
+      color: $white;
+      font-family: Raleway-Bold;
+      height: 100%;
+      padding: 1.5em 1em 2em;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-tag {
+      color: $secondary;
+      font-size: 1em;
+      margin: 0;
+      text-transform: capitalize;
+    }
+
+    .popular-head {
+      font-size: 2.2em;
+      margin: 3px 0 0;
+
+      @include medium-blog {
+        font-size: 2.0vw;
+      }
+    }
+
+    .popular-item {
+      height: 6vw;
+      margin: 20px 0;
+      width: 100%;
+
+      @include medium-blog {
+        height: 75px;
+      }
+    }
+
+    .item-image {
+      display: inline-block;
+      height: 100%;
+      width: 35%;
+    }
+
+    .item-text {
+      display: inline-block;
+      height: 100%;
+      margin-left: 7%;
+      position: relative;
+      vertical-align: top;
+      width: 56%;
+    }
+
+    .item-wrapper {
+      @include center(false,true);
+
+      width: 100%;
+    }
+
+    .tag {
+      color: $secondary;
+      font-family: Raleway-Bold;
+      font-size: 1em;
+      margin: 0;
+      text-transform: capitalize;
+
+      @include medium-blog {
+      	font-size: .8em;
+      }
+    }
+
+    .title {
+      color: $black;
+      cursor: pointer;
+      font-family: Raleway-Bold;
+      font-size: 1.6em;
+      height: 2.3em;
+      margin: 2px 0 0;
+      overflow: hidden;
+
+      @include medium-blog {
+        font-size: .9em;
+      }
+
+      @include small-blog {
+
+      }
+
+      &:hover {
+        color: $grave;
+      }
+    }
+  }
+
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: calc(62.101*#{$wu});
+
+    @include medium-blog {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    @include small-blog {
+      float: none;
+      margin-top: 1em;
+      width: 92vw;
+    }
+
+    .article-item {
+      display: inline-block;
+      flex: 1 1 320px;
+      margin: 10px;
+      max-width: calc(50% - 20px);
+      min-width: 0;
+      vertical-align: top;
+
+      &:hover {
+      cursor: pointer;
+
+      .item-info {
+        background-color: $primary;
+      }
+
+      .item-title, .item-excerpt, .item-date {
+        color: $white;
+      }
+    }
+
+      @include medium-blog {
+        width: 320px;
+        display: inline-block;
+      }
+
+      @include small-blog {
+        margin: 2vw;
+        width: 88vw;
+      }
+    }
+  }
+
+  .item-cover {
+    height: calc(18*#{$wu});
+
+    @include medium-blog {
+      height: 27vw;
+    }
+
+    @include small-blog {
+      height: 55vw;
+    }
+  }
+
+  .item-content {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+    @include medium-blog {
+      font-size: .8em;
+    }
+
+    .item-info {
+      background-color: $dark-bone;
+      margin: -10px auto 10px;
+      padding: 15px 15px 20px;
+      position: relative;
+      width: calc(100% - 20px);
+
+      @include medium-blog {
+        margin: -1.6vw auto 2vw;
+        width: 300px;
+      }
+
+      @include small-blog {
+      	font-size: .8em !important;
+        margin: -2vw auto 2vw;
+        padding: 1.5vw 4.5vw 5vw;
+        width: 84vw;
+      }
+    }
+
+    .item-tag {
+      @include center(true,false);
+
+      background-color: $secondary;
+      color: $asphalt;
+      font-family: Raleway-Bold;
+      font-size: 1.3em;
+      line-height: 2.3em;
+      margin: -1.15em 0;
+      padding: 0 0.9em;
+      text-transform: uppercase;
+      top: 0;
+
+      @include small-blog {
+      	font-size: 1em;
+      }
+    }
+
+    .item-title {
+      color: $primary;
+      cursor: pointer;
+      display: block;
+      font-family: Raleway-Bold;
+      font-size: 2.1em;
+      height: 2.2em;
+      margin: 0.9em 0 0;
+      overflow: hidden;
+
+      &:hover {
+        color: $white;
+      }
+
+      @include small-blog {
+        font-size: 1.5em;
+      }
+    }
+
+    .item-excerpt {
+      color: $smoke;
+      display: block;
+      font-family: Raleway-Medium;
+      font-size: 1.3em;
+      height: 2.6em;
+      line-height: $line-height;
+      margin: 1em 0 1.5em;
+      overflow: hidden;
+
+      @include small-blog {
+        font-size: 1.2em;
+        height: 5.783em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .item-date {
+      color: $smoke;
+      font-family: Raleway-Bold;
+      font-size: 1.3em;
+      margin: 0;
+
+      @include small-blog {
+        display: none;
+      }
+    }
+  }
+
+  .margin-right {
+  	margin: 1vw 0 1vw .66vw !important;
+
+  	@include medium-blog {
+  	  margin: 1vw !important;
+  	}
+  }
+
+  .margin-left {
+    margin: 1vw 1vw 1vw 0 !important;
+
+    @include medium-blog {
+     margin: 1vw !important;
+    }
+  }
+
+  a {
+  	color: none;
+  }
+
 }
-*/
