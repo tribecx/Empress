@@ -42,109 +42,110 @@
   }
 
   .contact-form {
-    position: relative;
+    height: 50px;
+    width: 100%;
 
-    input {
-      font-family: Raleway-Medium;
-      font-size: 1.8em;
-    }
-
-    .input-email {
-      border-bottom: 2px solid $white;
-      margin: auto;
-
-      @media #{$small-and-down} {
-        font-size: 1.4em;
-      }
-
-      ::placeholder{
-        color: $ashes;
-        font-family: Raleway-Thin;
+    &.submitted {
+      .contact-input:invalid {
+        border: none;
+        border-bottom: solid 2px $blood;
       }
     }
+  }
 
-    .contact-arrow {
-      color: $secondary !important;
-      cursor: pointer;
-      font-size: 2rem;
-      line-height: 1.5;
-      position: absolute;
-      right: 0;
+  .contact-field {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
 
-      &:hover{
-        color: $white;
-      }
+  .contact-input, .contact-radiogroup {
+    float: left;
+    width: calc(100% - 60px);
+  }
 
-      &.arrow-alt {
-        right: -30px;
-      }
-    }
+  .contact-input {
+    background-color: $primary;
+    border: none;
+    border-bottom: solid 2px $white;
+    box-shadow: none;
+    color: $white;
+    font-size: 1.8em;
+    line-height: 48px;
+  }
 
-    .alerts {
-      color: $secondary;
-      font-family: Raleway-Bold;
-      font-size: 1.2em;
-      margin-top: 1em;
-    }
+  .radio-wrapper {
+    display: block;
+    float: left;
+    padding: 6px 7.5px;
+    width: 25%;
 
-    a:link {
-      text-decoration: none;
-    }
-
-    /*Hide all except first fieldset*/
-    fieldset:not(:first-of-type) {
-      display: none;
-    }
-
-    fieldset {
-      border: none;
-      text-align: center;
-
+    @include on-event {
       .radio-custom {
-        background-color: $ashes;
-        border: 0 none;
-        border-radius: 3px;
-        cursor: pointer;
-        color: $primary !important;
-        font-family: Raleway-Bold !important;
-        font-size: .6em;
-        height: 44px;
-        margin: 5px;
-        text-align: center;
-        width: 110px;
-
-        &.active{
-          background-color:$secondary;
-        }
+        background-color: $smoke;
       }
     }
+  }
 
-    .answer-message {
+  .radio-input {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked ~ .radio-custom {
+      background-color: $secondary;
+    }
+  }
+
+  .radio-custom {
+    background-color: $ashes;
+    border-radius: 5px;
+    color: $primary;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Raleway-Bold;
+    font-size: 1.1em;
+    line-height: 38px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .next-btn {
+    background: url('../images/icons/form-next.svg') right center no-repeat;
+    border: none;
+    height: 100%;
+    width: 60px;
+  }
+
+  .contact-alert {
+    color: $secondary;
+    float: left;
+    height: inherit;
+    position: relative;
+    width: calc(100% - 60px);
+
+    &.success {
       color: $secondary;
-      display: inline-block;
-      font-size: 1em;
     }
 
-    input[type="radio"] {
-      display:none;
+    &.error {
+      color: $white;
     }
+  }
 
-    input[type="radio"] + label {
-      font-family:Raleway-Bold;
-      font-size:.8em;
-      padding: 10px !important
-    }
+  .alert-center {
+    @include center(false,true);
 
-    input[type="radio"] + label span {
-      display: none;
-    }
+    font-family: Raleway-Medium;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0;
+    width: 100%;
+  }
 
-    input[type="radio"] + label span {
-      display: none;
-    }
-
-    [type="radio"] + label:before, [type="radio"] + label:after {
-      content: none !important;
-    }
+  .success-icon {
+    background: url('../images/icons/form-check.svg') right center no-repeat;
+    float: left;
+    height: 100%;
+    width: 60px;
   }
 }

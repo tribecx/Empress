@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="14px" viewBox="0 0 36 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Flecha formulario</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="07-Contacto" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.2-Formulario-de-contacto" transform="translate(-1270.000000, -508.000000)">
+            <g id="Group-11" transform="translate(80.000000, 390.000000)">
+                <g id="Flecha-formulario" transform="translate(1190.000000, 119.000000)">
+                    <rect id="Rectangle-18-Copy-3" fill="#D9DC58" x="0" y="5" width="33" height="2"></rect>
+                    <polyline id="Path-12" stroke="#D9DC58" stroke-width="2" points="26 0 34 6 26 12"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
