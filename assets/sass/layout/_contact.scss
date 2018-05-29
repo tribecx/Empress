@@ -80,6 +80,10 @@
     padding: 6px 7.5px;
     width: 25%;
 
+    @media #{$small-and-down} {
+      width: 50%;
+    }
+
     @include on-event {
       .radio-custom {
         background-color: $smoke;

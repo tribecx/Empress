@@ -197,31 +197,40 @@
     </div>
     <section class="contact-section">
       <div class="row contact-row">
-        <div class="col l6 m5 s12 contact-title" >Contáctanos</div>
-        <div class="col l6 m5 s12">
-          <form id="msform" class="contact-form" method="post">
-            <fieldset class="borderless">
-              <i class="large material-icons contact-arrow next">arrow_forward</i>
-              <input type="email" class="input-email" placeholder="Introduce tu correo electrónico" name="mail" id="email">
-              <div id="alert-message" class="alerts"></div>
-            </fieldset>
-            <fieldset class="borderless" id="selection">
-              <input type="radio" id="radio01" name="radio" value="PROVEEDORES"/>
-              <label for="radio01" class="radio-custom">PROVEEDORES</label>
-              <input type="radio" id="radio02" name="radio" value="ASESORIA" />
-              <label for="radio02" class="radio-custom">ASESORÍA</label>
-              <input type="radio" id="radio03" name="radio" value="TEMA 3" />
-              <label for="radio03" class="radio-custom">TEMA 3</label>
-              <input type="radio" id="radio04" name="radio" value="TEMA 4" />
-              <label for="radio04" class="radio-custom">TEMA 4</label>
-              <i class="large material-icons contact-arrow arrow-alt" id="submit-btn">arrow_forward</i>
-              <div id="alert-message-submit" class="alerts"></div>
-            </fieldset>
-            <fieldset class="borderless">
-              <p class="answer-message">Muchas gracias por tu interés. Recibirás un correo<br> en tu bandeja de entrada en un momento</p>
-              <i class="material-icons contact-arrow">done</i>
-            </fieldset>
-            <div id="form-messages"></div>
+        <div class="col l6 m4 s12 contact-title">Contáctanos</div>
+        <div class="col l6 m6 s12">
+          <form class="contact-form" id="contact-form" action="assets/php/contact.php" method="POST">
+            <div class="contact-field">
+              <input class="contact-input" type="email" name="email" id="email" placeholder="Introduce tu correo electrónico" required>
+              <button class="next-btn" type="button" name="next"></button>
+            </div>
+            <div class="contact-field">
+              <div class="contact-radiogroup">
+                <label class="radio-wrapper">
+                  <input class="radio-input" type="radio" name="subject" value="proveedores" id="subject1" checked required>
+                  <span class="radio-custom">PROVEEDORES</span>
+                </label>
+                <label class="radio-wrapper">
+                  <input class="radio-input" type="radio" name="subject" value="asesoria" id="subject2" required>
+                  <span class="radio-custom">ASESORÍA</span>
+                </label>
+                <label class="radio-wrapper">
+                  <input class="radio-input" type="radio" name="subject" value="TEMA 3" id="subject3" required>
+                  <span class="radio-custom">TEMA 3</span>
+                </label>
+                <label class="radio-wrapper">
+                  <input class="radio-input" type="radio" name="subject" value="TEMA 4" id="subject4" required>
+                  <span class="radio-custom">TEMA 4</span>
+                </label>
+              </div>
+              <input class="contact-submit next-btn" type="submit" name="submit" value="">
+            </div>
+            <div class="contact-field">
+              <div class="contact-alert">
+                <p class="alert-center"></p>
+              </div>
+              <div class="success-icon"></div>
+            </div>
           </form>
         </div>
       </div>
