@@ -124,6 +124,7 @@
     align-items: center;
     display: flex;
     height: 96px;
+		position: relative;
     width: 100%;
 
     @media #{$small-and-down} {
@@ -132,14 +133,16 @@
     }
 
     .empress-footer-logo {
+			@include center(false,true);
+			
 			left: 3%;
-      position: absolute;
     }
 
     .footer-autor-page {
+			@include center(false,true);
+			
 			color: $white;
 			margin: 0px;
-      position: absolute;
       right: 3%;
 
 			&:hover {

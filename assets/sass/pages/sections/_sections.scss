@@ -180,7 +180,10 @@
     .value-image {
       display: inline-block;
       margin-right: 3em;
+      max-height: 50px;
+      max-width: 56px;
       vertical-align: middle;
+      width: 23%;
     }
 
     .value-text {

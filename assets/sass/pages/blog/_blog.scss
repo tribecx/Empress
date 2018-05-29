@@ -44,7 +44,7 @@
     color: $white;
     display: inline-block;
     margin: 6.5em 10px 0;
-    width: calc(calc(62.101*#{$wu}) - 20px);
+    width: calc(62% - 20px);
 
     @media #{$medium-and-down} {
       width: 80%;
@@ -179,7 +179,7 @@
     float: right;
     margin: 10px 85px 0 20px;
     position: relative;
-    width: calc(calc(37.9*#{$wu}) - 105px);
+    width: calc(38% - 105px);
 
     .popular-title {
       color: $primary;
@@ -200,6 +200,9 @@
       @include center(true,false);
 
       background-color: $white;
+
+      display: none;
+      
       margin: -23px 0;
       min-width: 155px;
       text-align: center;
@@ -323,7 +326,7 @@
     display: flex;
     flex-wrap: wrap;
     float: right;
-    width: calc(62.101*#{$wu});
+    width: 62%;
 
     @media #{$medium-and-down} {
       float: none;

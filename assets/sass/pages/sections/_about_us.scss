@@ -4,9 +4,15 @@
     width: 82%;
   }
 
+  .texture {
+    height: 15vw;
+    margin-top: 5vw;
+  }
+
   .section-title {
     display: inline-block;
     margin: 0.8em 0 0.2em -0.8em;
+    width: 45%;
 
     @media #{$small-and-down} {
       margin: 3em 0 0.4em 8%;
