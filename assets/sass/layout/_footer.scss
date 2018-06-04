@@ -63,8 +63,9 @@
 
     .moprosoft-logo-footer{
       display: inline-block;
+			height: 66px;
 
-      @media #{$small-and-down} {
+      @media #{$medium-and-down} {
         height: 43px;
       }
     }
@@ -115,6 +116,7 @@
     }
 
     .footer-contact-paragraph {
+			color: $white;
       display: inline-block;
       margin: 10px;
     }
@@ -134,13 +136,13 @@
 
     .empress-footer-logo {
 			@include center(false,true);
-			
+
 			left: 3%;
     }
 
     .footer-autor-page {
 			@include center(false,true);
-			
+
 			color: $white;
 			margin: 0px;
       right: 3%;
@@ -150,4 +152,11 @@
 			}
     }
   }
+
+	.ceiling {
+		bottom: 15px;
+		display: none;
+		position: fixed;
+		right: 15px;
+	}
 }
