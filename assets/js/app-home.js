@@ -1,6 +1,7 @@
 $(document).ready(function() {
   menu();
   menuPosition();
+  scrollAnimation();
   getNews();
   contactSteps();
   mailer();
@@ -27,6 +28,12 @@ function menuPosition() {
       menu.css({'position':'fixed','top':0});
     }
   });
+}
+
+function scrollAnimation() {
+  window.sr = ScrollReveal({ delay: 100 });
+
+  sr.reveal('.reveal');
 }
 
 function getNews() {

@@ -1,6 +1,7 @@
 $(document).ready(function() {
   menu();
   menuPosition();
+  scrollAnimation();
   changeSection();
   dropDown();
   contactSteps();
@@ -28,6 +29,13 @@ function menuPosition() {
       menu.css({'position':'fixed','top':0});
     }
   });
+}
+
+function scrollAnimation() {
+  window.sr = ScrollReveal({ delay: 100 });
+
+  sr.reveal('.reveal', 50);
+  sr.reveal('.option', 50);
 }
 
 function changeSection() {

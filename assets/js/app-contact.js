@@ -1,6 +1,7 @@
 $(document).ready(function() {
     menu();
     menuPosition();
+    scrollAnimation();
     contactSteps();
     mailer();
     smoothScroll();
@@ -26,6 +27,12 @@ function menuPosition() {
       menu.css({'position':'fixed','top':0});
     }
   });
+}
+
+function scrollAnimation() {
+  window.sr = ScrollReveal({ delay: 100 });
+
+  sr.reveal('.reveal', 50);
 }
 
 function contactSteps() {
