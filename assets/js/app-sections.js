@@ -53,6 +53,11 @@ function changeSection() {
   });
 
   $('.sections > .option').each(function(index, element) {
+    if ($(window).width() <= 600) {
+      $(this).eq(0).removeClass('active');
+      $('.info').eq(0).removeClass('active');
+    }
+
     $(element).on('click', function() {
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
